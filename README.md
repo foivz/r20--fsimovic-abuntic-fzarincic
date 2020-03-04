@@ -6,7 +6,7 @@ Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
 Fran Šimović| fsimovic@foi.hr| 0246071172 | fsimovic
 Ante Buntić | abuntic@foi.hr | 0016131614 | abuntic
-Filip Žarinčić | fzarincic@foi.hr | ... | fzarincic
+Filip Žarinčić | fzarincic@foi.hr | 0016124436 | fzarincic
 
 ## Opis domene
 ClubbingPay je desktop aplikacija koja služi za izdavanje računa i praćenje rada u noćnim klubovima. U aplikaciji se zapolenik dodaje od strane administratora odnosno nadređenog. Svaki zaposlenik ima vlastitu indentifikacijsku karticu koja mu služi za prijavu u sustav, te nakon toga slijedi izdavanje računa. Svi računi se bilježe u centralizitanoj bazi podataka. Aplikacija sadržavi statistiku u obliku grafova za praćenje rada kluba i stanja zaliha, koja omogućuje naručivanje artikala.
