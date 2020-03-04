@@ -1,36 +1,29 @@
-# Inicijalne upute za prijavu projekta iz Programskog inženjerstva
-
-Poštovane kolegice i kolege, 
-
-čestitamo vam jer ste uspješno prijavili svoj projektni tim na kolegiju Programsko inženjerstvo, te je za vas automatski kreiran repozitorij koji ćete koristiti za verzioniranje vašega koda, ali i za pisanje dokumentacije.
-
-Ovaj dokument (README.md) predstavlja **osobnu iskaznicu vašeg projekta**. Vaš prvi zadatak, ukoliko niste odabrali da želite raditi na projektu sa gospodarstvom je **prijaviti vlastiti projektni prijedlog** na način da ćete prijavu vašeg projekta, sukladno uputama danim u ovom tekstu, napisati upravo u ovaj dokument, umjesto ovoga teksta.
-
-Za upute o sintaksi koju možete koristiti u ovom dokumentu i kod pisanje vaše projektne dokumentacije pogledajte [ovaj link](https://guides.github.com/features/mastering-markdown/).
-
-Nakon vaše prijave bit će vam dodijeljen mentor s kojim ćete tijekom semestra raditi na ovom projektu. A sada, vrijeme je da prijavite vaš projekt. Za prijavu vašeg projektnog prijedloga molimo vas koristite **predložak** koji je naveden u nastavku, a započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta :) 
-
-# Naziv projekta
-(u redak iznad navedite kratki proizvoljni naziv projekta prikladan akademskoj zajednici, a ovaj tekst obrišite)
+# ClubbingPay
 
 ## Projektni tim
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
 Fran Šimović| fsimovic@foi.hr| 0246071172 | fsimovic
-Ante Buntić | abuntic@foi.hr | ... | abuntic
+Ante Buntić | abuntic@foi.hr | 0016131614 | abuntic
 Filip Žarinčić | fzarincic@foi.hr | ... | fzarincic
 
 ## Opis domene
-Umjesto ovih uputa opišite domenu ili problem koji pokrivate vašim  projektom. Domena može biti proizvoljna, ali obratite pozornost da sukladno ishodima učenja, domena omogući primjenu zahtijevanih koncepata kako je to navedeno u sljedećem poglavlju. Priložite odgovarajuće skice gdje je to prikladno.
+ClubbingPay je desktop aplikacija koja služi za izdavanje računa i praćenje rada u noćnim klubovima. U aplikaciji se zapolenik dodaje od strane administratora odnosno nadređenog. Svaki zaposlenik ima vlastitu indentifikacijsku karticu koja mu služi za prijavu u sustav, te nakon toga slijedi izdavanje računa. Svi računi se bilježe u centralizitanoj bazi podataka. Aplikacija sadržavi statistiku u obliku grafova za praćenje rada kluba i stanja zaliha, koja omogućuje naručivanje artikala.
 
 ## Specifikacija projekta
-Umjesto ovih uputa opišite zahtjeve za funkcionalnošću programskog proizvoda. Pobrojite osnovne funkcionalnosti i za svaku naznačite ime odgovornog člana tima. Opišite buduću arhitekturu programskog proizvoda. Obratite pozornost da bi arhitektura trebala biti višeslojna s odvojenom (dislociranom) bazom podatka. Također uzmite u obzir da bi svaki član tima treba biti odgovorana za otprilike 3 funkcionalnosti, te da bi opterećenje članova tima trebalo biti ujednačeno. Priložite odgovarajuće dijagrame i skice gdje je to prikladno. Funkcionalnosti sustava bobrojite u tablici ispod koristeći predložak koji slijedi:
 
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
-F01 | Login | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
-F02 | Pregled dnevnika | .... | ...
+F01 | Registracija | Novom zaposleniku se kreira profil od strane administratora | Fran Šimović
+F02 | Prijava | Zaposlenik se pomoću identifikacijske kartice prijavljuje u aplikaciju | Fran Šimović
+F03 | Help | Pomoć pri snalaženju u aplikaciji (F1) | Filip Žarinčić
+F04 | Kreiranje i ispis računa | Zaposlenik dodaje stavke i količinu te ispisuje račun | Ante Buntić
+F05 | Unos novog artikla | Dodavanje novog artikla na stanje zaliha | Ante Buntić
+F06 | Ažuriranje količine artikla | Nakon izdanog računa ili unosa artikla na stanje zaliha, ažurira se količina artikla | Ante Buntić
+F07 | Statistika zaliha | Prikaz potrošnje i trenutnog stanja zaliha pomoću grafova | Fran Šimović
+F08 | Korisničkog sučelja | Izrada interaktivnog sučelja | Filip Žarinčić
+F09 | Dokumentacija | Izrada cjelokupne dokumentacije | Filip Žarinčić
 
 ## Tehnologije i oprema
 - GitHub
