@@ -1,4 +1,4 @@
-# ClubbingPay
+# PI20-030 ClubbingPay
 
 ## Projektni tim
 
