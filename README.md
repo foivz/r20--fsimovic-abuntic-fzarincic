@@ -1,5 +1,4 @@
-# PI20-030 ClubbingPay
-mentor: Marko Mijač
+# PI20-030 ClubbingPay mentor: Marko Mijač
 
 ## Projektni tim
 
