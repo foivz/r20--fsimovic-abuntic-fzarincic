@@ -17,13 +17,13 @@ Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
 F01 | Registracija | Novom zaposleniku se kreira profil od strane administratora | Fran Šimović
 F02 | Prijava | Zaposlenik se pomoću identifikacijske kartice prijavljuje u aplikaciju | Fran Šimović
-F03 | Help | Pomoć pri snalaženju u aplikaciji (F1) | Filip Žarinčić
+F03 | Evidencija zaposlenika | Nadređeni ili administrator ima pogled na sve zaposlenike | Filip Žarinčić
 F04 | Kreiranje i ispis računa | Zaposlenik dodaje stavke i količinu te ispisuje račun | Ante Buntić
-F05 | Unos novog artikla | Dodavanje novog artikla na stanje zaliha | Ante Buntić
-F06 | Ažuriranje količine artikla | Nakon izdanog računa ili unosa artikla na stanje zaliha, ažurira se količina artikla | Ante Buntić
+F05 | Unos ili uređivanje novog artikla | Dodavanje novog artikla na stanje zaliha | Ante Buntić
+F06 | Narudžbenica | Omogućuje kreiranje narudžbenice artikala ukoliko ga nema na stanju | Ante Buntić
 F07 | Statistika zaliha | Prikaz potrošnje i trenutnog stanja zaliha pomoću grafova | Fran Šimović
-F08 | Korisničkog sučelja | Izrada interaktivnog sučelja | Filip Žarinčić
-F09 | Dokumentacija | Izrada cjelokupne dokumentacije | Filip Žarinčić
+F08 | Uredi zaposlenika | Omogućuje izmjenu podataka pojedinog zaposlenika | Filip Žarinčić
+F09 | Izvještaji | Omogućuje pogleda na sve prodane artikle za određeni datum, kako bi se lakše vodile poslovne knjige te kako bi nadređeni imao skup podataka na jednom mjestu za analizu poslovanja | Filip Žarinčić
 
 ## Tehnologije i oprema
 - GitHub
