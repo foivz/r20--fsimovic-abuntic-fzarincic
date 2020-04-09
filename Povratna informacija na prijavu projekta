@@ -1,9 +1,7 @@
 Poštovani članovi tima,
 
-tema projekta može ostati, ali prijava projekta nije dobra. Premalo je pravih funkcionalnosti. Popravite prijavu pa mi javite da pregledam.
-Uzmite u obzir i sljedeće komentare:
-* Help treba postojati, ali u ovom smislu ga ne smatramo funkcionalnošću aplikacije
-* Ažuriranje količine artikla nije zasebna funkcionalnost. To je linija kôda koja ažurira bazu prilikom izdavanja računa ili 
-zaprimanja artikala na skladište.
-* Korisničko sučelje nije funkcionalnost
-* Dokumentacija nije funkcionalnost
+* što se tiče prijave preko identifikacijske kartice, neka aplikacija prilikom registracije kreira identifikacijsku karticu,
+koja sadrži npr. QR kode, pa se onda skeniranjem QR koda možete logirati).
+* što se tiče evidencije zaposlenika, osim pregleda zaposlenika neka administrator može i "zaključati/otključati" korisnika, također
+generirati novu lozinku i izdati novu identifikacijsku karticu.
+* što se tiče rada s artiklima, možete kreirati novi artikl u katalogu, ali mijenjanje stanja artikla se mora riješiti preko primke.
