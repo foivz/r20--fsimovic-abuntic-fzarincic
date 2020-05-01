@@ -8,7 +8,7 @@ ClubbingPay je desktop aplikacija koja služi za izdavanje računa i praćenje r
 
 ## ERA dijagram
 U nastavku se nalazi ERA model za naš projekt koji će biti implementiran na dodjeljenom serveru kao MS SQL baza podataka.
-![ERA dijagram](https://lh5.googleusercontent.com/7LUws9s2j4vvP22P9KW0BcO1hd2VW-I7CvALPKFTN_0pCi0DO0ZoGlf0qz96yrg5sRfewNeQjacW7Q=w1920-h942-rw)
+![ERA dijagram](https://i.imgur.com/duXgfO2.png)
 ERA dijagram sadrži sljedeće entitete: 
 ***Primka** - dokument koji se kreira kod zaprimanja robe na skladište
 *StavkaPrimke - slabi entitet koji povezuje primku i artikl
@@ -20,14 +20,14 @@ ERA dijagram sadrži sljedeće entitete:
 *Stavka narudžbenice
 ## Dijagrami slučajeva korištenja
 Dijagram slučajeva korištenja koji objedinjuje sve slučajeve korištenja. Imamo zaposlenike koji su zapravo korisnici aplikacije te specijalizaciju zaposlenika koju predstavlja administrator. Administrator bi trebao imati mogućnosti koje nema obični zaposlenik. Prije ikakve aktivnosti potrebna je prijava koja je uključena u sve ostale slučajeve korištenja. Također određeni slučajevi korištenja su prošireni drugim slučajevima korištenja
-![Usecase dijagram](https://lh6.googleusercontent.com/jl37lZcYju2AGmeG2EyUpu7hLccmYZAIKRN2rFHpxUmHciS8CTmfpH2VaiHQNq0IzznDkvnkmhGhqg=w1920-h942-rw)
+![Usecase dijagram](https://i.imgur.com/pe7dswD.jpg)
 
 Dijagram slučajeva korištenja - Ante Buntić:
-![Usecase dijagram - Ante Buntić](https://lh6.googleusercontent.com/nLGpdZQmHJ3ByLTc_ZVgQwsU04CqdtdhzjaL0EN4C9w4kKGunTuILe7pWdu0-ZYk_xjX_fvyeQGhMg=w1920-h942-rw)
+![Usecase dijagram - Ante Buntić](https://i.imgur.com/cHsTgxO.png)
 
 Dijagram slučajeva korištenja - Fran Šimović:
-![Usecase dijagram - Fran Šimović](https://lh4.googleusercontent.com/kd5UzcC6K0pBEkA-oYMIV3X3w3te7waivG9OCAs9wYmKvaiO3a56IXgW7CCCVvtxIWuXM-rzz0kF3w=w1920-h942-rw)
+![Usecase dijagram - Fran Šimović](https://i.imgur.com/EKkeccT.jpg)
 
 Dijagram slučajeva korištenja - Filip Žarinčić:
-![Usecase dijagram - Filip Žarinčić](https://lh3.googleusercontent.com/j1MLjeyYBXB28vXX1NTRH7dY-GRAMA99iYXf-XTVGNevjQY0AioNXxzV2hCmx3BhUlNzg52rsSS0fg=w1920-h942-rw)
+![Usecase dijagram - Filip Žarinčić](https://i.imgur.com/d7yFe3l.jpg)
 
