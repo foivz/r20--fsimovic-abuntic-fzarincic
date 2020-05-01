@@ -11,9 +11,9 @@ U nastavku se nalazi ERA model za naš projekt koji će biti implementiran na do
 ![ERA dijagram](https://i.imgur.com/duXgfO2.png)
 ERA dijagram sadrži sljedeće entitete: 
 
-*Primka - dokument koji se kreira kod zaprimanja robe na skladište.  
-*StavkaPrimke - slabi entitet koji povezuje primku i artikl.  
-*Artikl - sadrži popis svih artikala sa količinom koja postoji.  
+* Primka - dokument koji se kreira kod zaprimanja robe na skladište.  
+* StavkaPrimke - slabi entitet koji povezuje primku i artikl.  
+* Artikl - sadrži popis svih artikala sa količinom koja postoji.  
 *KategorijaArtikla - šifrarnik kategorija artikala.  
 *Račun - dokument koji se kreira kod prodaje robe.  
 *Stavka računa - slabi entitet koji povezuje entitete račun i artikl.  
