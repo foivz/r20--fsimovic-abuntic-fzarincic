@@ -10,7 +10,8 @@ ClubbingPay je desktop aplikacija koja služi za izdavanje računa i praćenje r
 U nastavku se nalazi ERA model za naš projekt koji će biti implementiran na dodjeljenom serveru kao MS SQL baza podataka.
 ![ERA dijagram](https://i.imgur.com/duXgfO2.png)
 ERA dijagram sadrži sljedeće entitete: 
-***Primka** - dokument koji se kreira kod zaprimanja robe na skladište
+*Primka - dokument koji se kreira kod zaprimanja robe na skladište
+
 *StavkaPrimke - slabi entitet koji povezuje primku i artikl
 *Artikl - sadrži popis svih artikala sa količinom koja postoji
 *KategorijaArtikla - šifrarnik kategorija artikala
