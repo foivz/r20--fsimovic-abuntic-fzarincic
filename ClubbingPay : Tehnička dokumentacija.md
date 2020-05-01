@@ -7,8 +7,17 @@
 ClubbingPay je desktop aplikacija koja služi za izdavanje računa i praćenje rada u noćnim klubovima. U aplikaciji se zapolenik dodaje od strane administratora odnosno nadređenog. Svaki zaposlenik ima vlastitu indentifikacijsku karticu koja mu služi za prijavu u sustav, te nakon toga slijedi izdavanje računa. Svi računi se bilježe u centralizitanoj bazi podataka. Aplikacija sadržavi statistiku u obliku grafova za praćenje rada kluba i stanja zaliha, koja omogućuje naručivanje artikala.
 
 ## ERA dijagram
-
+U nastavku se nalazi ERA model za naš projekt koji će biti implementiran na dodjeljenom serveru kao MS SQL baza podataka.
 ![ERA dijagram](https://lh5.googleusercontent.com/7LUws9s2j4vvP22P9KW0BcO1hd2VW-I7CvALPKFTN_0pCi0DO0ZoGlf0qz96yrg5sRfewNeQjacW7Q=w1920-h942-rw)
+ERA dijagram sadrži sljedeće entitete: 
+***Primka** - dokument koji se kreira kod zaprimanja robe na skladište
+*StavkaPrimke - slabi entitet koji povezuje primku i artikl
+*Artikl - sadrži popis svih artikala sa količinom koja postoji
+*KategorijaArtikla - šifrarnik kategorija artikala
+*Račun - dokument koji se kreira kod prodaje robe
+*Stavka računa - slabi entitet koji povezuje entitete račun i artikl
+*Narudžbenica - dokument koji se kreira kod narudžbe robe
+*Stavka narudžbenice
 ## Dijagrami slučajeva korištenja
 Dijagram slučajeva korištenja koji objedinjuje sve slučajeve korištenja. Imamo zaposlenike koji su zapravo korisnici aplikacije te specijalizaciju zaposlenika koju predstavlja administrator. Administrator bi trebao imati mogućnosti koje nema obični zaposlenik. Prije ikakve aktivnosti potrebna je prijava koja je uključena u sve ostale slučajeve korištenja. Također određeni slučajevi korištenja su prošireni drugim slučajevima korištenja
 ![Usecase dijagram](https://lh6.googleusercontent.com/jl37lZcYju2AGmeG2EyUpu7hLccmYZAIKRN2rFHpxUmHciS8CTmfpH2VaiHQNq0IzznDkvnkmhGhqg=w1920-h942-rw)
