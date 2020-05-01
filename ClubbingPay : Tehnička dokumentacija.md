@@ -11,5 +11,5 @@ ClubbingPay je desktop aplikacija koja služi za izdavanje računa i praćenje r
 ...
 
 ## Dijagrami slučajeva korištenja
-
+Dijagram slučajeva korištenja koji objedinjuje sve slučajeve korištenja. Imamo zaposlenike koji su zapravo korisnici aplikacije te specijalizaciju zaposlenika koju predstavlja administrator. Administrator bi trebao imati mogućnosti koje nema obični zaposlenik. Prije ikakve aktivnosti potrebna je prijava koja je uključena u sve ostale slučajeve korištenja. Također određeni slučajevi korištenja su prošireni drugim slučajevima korištenja
 ![Usecase dijagram](https://lh6.googleusercontent.com/qH1q3T0xXi5m7jWOHl_cvbWmmhwIRYOxNLnSPRbkd2lPGy2lDg4gofPdl0PVIuT9KDaY7l0dckdH9s8vn7mI=w1920-h882-rw)
