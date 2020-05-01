@@ -8,8 +8,7 @@ ClubbingPay je desktop aplikacija koja služi za izdavanje računa i praćenje r
 
 ## ERA dijagram
 
-...
-
+![ERA dijagram](https://lh5.googleusercontent.com/7LUws9s2j4vvP22P9KW0BcO1hd2VW-I7CvALPKFTN_0pCi0DO0ZoGlf0qz96yrg5sRfewNeQjacW7Q=w1920-h942-rw)
 ## Dijagrami slučajeva korištenja
 Dijagram slučajeva korištenja koji objedinjuje sve slučajeve korištenja. Imamo zaposlenike koji su zapravo korisnici aplikacije te specijalizaciju zaposlenika koju predstavlja administrator. Administrator bi trebao imati mogućnosti koje nema obični zaposlenik. Prije ikakve aktivnosti potrebna je prijava koja je uključena u sve ostale slučajeve korištenja. Također određeni slučajevi korištenja su prošireni drugim slučajevima korištenja
 ![Usecase dijagram](https://lh6.googleusercontent.com/jl37lZcYju2AGmeG2EyUpu7hLccmYZAIKRN2rFHpxUmHciS8CTmfpH2VaiHQNq0IzznDkvnkmhGhqg=w1920-h942-rw)
