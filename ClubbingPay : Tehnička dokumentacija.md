@@ -10,15 +10,17 @@ ClubbingPay je desktop aplikacija koja služi za izdavanje računa i praćenje r
 U nastavku se nalazi ERA model za naš projekt koji će biti implementiran na dodjeljenom serveru kao MS SQL baza podataka.
 ![ERA dijagram](https://i.imgur.com/duXgfO2.png)
 ERA dijagram sadrži sljedeće entitete: 
-*Primka - dokument koji se kreira kod zaprimanja robe na skladište
 
-*StavkaPrimke - slabi entitet koji povezuje primku i artikl
-*Artikl - sadrži popis svih artikala sa količinom koja postoji
-*KategorijaArtikla - šifrarnik kategorija artikala
-*Račun - dokument koji se kreira kod prodaje robe
-*Stavka računa - slabi entitet koji povezuje entitete račun i artikl
-*Narudžbenica - dokument koji se kreira kod narudžbe robe
-*Stavka narudžbenice
+*Primka - dokument koji se kreira kod zaprimanja robe na skladište.
+*StavkaPrimke - slabi entitet koji povezuje primku i artikl.
+*Artikl - sadrži popis svih artikala sa količinom koja postoji.
+*KategorijaArtikla - šifrarnik kategorija artikala.
+*Račun - dokument koji se kreira kod prodaje robe.
+*Stavka računa - slabi entitet koji povezuje entitete račun i artikl.
+*Narudžbenica - dokument koji se kreira kod narudžbe robe.
+*Stavka narudžbenice - slabi entitet koji povezuje entitete narudžbenica i artikl
+*Zaposlenik - sadrži sve informacije o zaposleniku
+
 ## Dijagrami slučajeva korištenja
 Dijagram slučajeva korištenja koji objedinjuje sve slučajeve korištenja. Imamo zaposlenike koji su zapravo korisnici aplikacije te specijalizaciju zaposlenika koju predstavlja administrator. Administrator bi trebao imati mogućnosti koje nema obični zaposlenik. Prije ikakve aktivnosti potrebna je prijava koja je uključena u sve ostale slučajeve korištenja. Također određeni slučajevi korištenja su prošireni drugim slučajevima korištenja
 ![Usecase dijagram](https://i.imgur.com/pe7dswD.jpg)
