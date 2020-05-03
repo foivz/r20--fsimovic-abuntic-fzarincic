@@ -142,6 +142,7 @@
     <Compile Include="Model\ClubbingPayDbContext.cs" />
     <Compile Include="Model\GenericRepository.cs" />
     <Compile Include="Interfaces\IGenericRepository.cs" />
+    <Compile Include="Model\NewClass.cs" />
     <Compile Include="Model\Primka.cs" />
     <Compile Include="Model\Racun.cs" />
     <Compile Include="Model\StavkaPrimke.cs" />
