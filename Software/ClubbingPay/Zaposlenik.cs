@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClubbingPay
 {
-    class ZaposlenikVrane
+    class Zaposlenik
     {
     }
 }
