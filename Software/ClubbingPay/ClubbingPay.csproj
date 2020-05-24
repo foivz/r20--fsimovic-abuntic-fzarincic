@@ -53,7 +53,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaTest.Designer.cs">
+      <DependentUpon>FormaTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewClass.cs" />
+    <Compile Include="ProbaGita.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
