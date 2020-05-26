@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1062
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubbingPay", "ClubbingPay\ClubbingPay.csproj", "{E4815047-D226-494B-B68F-13ACB9F6103C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "ClubbingPay\PresentationLayer.csproj", "{E4815047-D226-494B-B68F-13ACB9F6103C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{EBF7A609-B621-4104-9577-CE3482C43E25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseLayer", "DatabaseLayer\DatabaseLayer.csproj", "{BA0D004A-446A-4155-954A-D5C10AB129C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{E4815047-D226-494B-B68F-13ACB9F6103C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4815047-D226-494B-B68F-13ACB9F6103C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4815047-D226-494B-B68F-13ACB9F6103C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBF7A609-B621-4104-9577-CE3482C43E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF7A609-B621-4104-9577-CE3482C43E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF7A609-B621-4104-9577-CE3482C43E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF7A609-B621-4104-9577-CE3482C43E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0D004A-446A-4155-954A-D5C10AB129C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0D004A-446A-4155-954A-D5C10AB129C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0D004A-446A-4155-954A-D5C10AB129C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0D004A-446A-4155-954A-D5C10AB129C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
