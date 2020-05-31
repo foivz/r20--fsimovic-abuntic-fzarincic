@@ -8,7 +8,7 @@ namespace DatabaseLayer.Model
 {
     public class KategorijaArtikla
     {
-        private int Id { get; set; }
+        public int Id { get; set; }
         public string Naziv { get; set; }
     }
 }

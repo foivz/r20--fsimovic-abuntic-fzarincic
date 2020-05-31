@@ -8,7 +8,7 @@ namespace DatabaseLayer.Model
 {
     public class Zaposlenik
     {
-        private int id { get; set; }
+        public int Id { get; set; }
         public string Ime { get; set; }
         public string Prezime { get; set; }
         public string Telefon { get; set; }
