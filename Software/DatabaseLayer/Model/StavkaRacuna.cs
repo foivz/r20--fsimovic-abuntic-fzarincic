@@ -9,7 +9,6 @@ namespace DatabaseLayer.Model
     public class StavkaRacuna
     {
         public int Kolicina { get; set; }
-
         public virtual Racun Racun { get; set; }
         public virtual Artikl Artikl { get; set; }
     }

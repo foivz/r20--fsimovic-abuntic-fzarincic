@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 
 namespace DatabaseLayer.Model
 {
     public class Zaposlenik
     {
+        [Key]
         public int Id { get; set; }
         public string Ime { get; set; }
         public string Prezime { get; set; }
@@ -16,6 +19,7 @@ namespace DatabaseLayer.Model
         public string BrojZIroRacuna { get; set; }
         public bool Aktivan { get; set; }
         public string LozinkaHash { get; set; }
+        [Required]
         public Uloga Uloga { get; set; }
         public string OIB { get; set; }
         public string KorisnickoIme { get; set; }
