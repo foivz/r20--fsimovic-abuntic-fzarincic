@@ -150,3 +150,7 @@ D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\BusinessLayer\obj\Debug\B
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\BusinessLayer\obj\Debug\BusinessLayer.pdb
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\BusinessLayer\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\BusinessLayer\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\BusinessLayer\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\BusinessLayer\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.xml

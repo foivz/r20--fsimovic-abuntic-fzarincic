@@ -183,3 +183,7 @@ D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\D
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CopyComplete
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.dll
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.pdb
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\bin\Debug\EntityFramework.dll
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\bin\Debug\EntityFramework.xml
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.xml

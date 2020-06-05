@@ -174,7 +174,7 @@
     <Compile Include="Model\Narudzbenica.cs" />
     <Compile Include="Model\Primka.cs" />
     <Compile Include="Model\Racun.cs" />
-    <Compile Include="Model\StavkaNarudzbe.cs" />
+    <Compile Include="Model\StavkaNarudzbenice.cs" />
     <Compile Include="Model\StavkaPrimke.cs" />
     <Compile Include="Model\StavkaRacuna.cs" />
     <Compile Include="Model\Uloga.cs" />

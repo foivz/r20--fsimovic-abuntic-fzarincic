@@ -14,6 +14,6 @@ namespace DatabaseLayer.Model
         public Zaposlenik Zaposlenik { get; set; }
         public Dobavljac Dobavljac { get; set; }
 
-        public virtual ICollection<StavkaNarudzbe> StavkaNarudzbe { get; set; }
+        public virtual ICollection<StavkaNarudzbenice> StavkaNarudzbe { get; set; }
     }
 }

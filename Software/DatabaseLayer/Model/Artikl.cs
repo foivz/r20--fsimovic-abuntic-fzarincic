@@ -17,7 +17,7 @@ namespace DatabaseLayer.Model
         public KategorijaArtikla Kategorija { get; set; }
 
         public virtual ICollection<StavkaRacuna> StavkaRacuna { get; set; }
-        public virtual ICollection<StavkaNarudzbe> StavkaNarudzbe { get; set; }
+        public virtual ICollection<StavkaNarudzbenice> StavkaNarudzbe { get; set; }
         public virtual ICollection<StavkaPrimke> StavkaPrimke { get; set; }
     }
 }
