@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
+
 namespace DatabaseLayer.Model
 {
+    /// <summary>
+    /// Klasa Artikl
+    /// </summary>
     public class Artikl
     {
-        [Key]
+        //[Key]
         public int Id { get; set; }
         public string Naziv { get; set; }
         public int Kolicina { get; set; }
         public double Cijena { get; set; }
-        [Required]
+        //[Required]
         public KategorijaArtikla Kategorija { get; set; }
 
         public virtual ICollection<StavkaRacuna> StavkaRacuna { get; set; }

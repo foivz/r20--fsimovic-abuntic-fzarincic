@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
+
 namespace DatabaseLayer.Model
 {
+    /// <summary>
+    /// Klasa Dobavljač
+    /// </summary>
     public class Dobavljac
     {
-        [Key]
+        //[Key]
         public int Id { get; set; }
         public string Naziv { get; set; }
         public string Oib { get; set; }

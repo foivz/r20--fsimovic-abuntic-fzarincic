@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
-using System.Data.Entity;
 
 namespace DatabaseLayer.Model
 {
+    /// <summary>
+    /// Klasa Primka
+    /// </summary>
     public class Primka
     {
-        [Key]
+        //[Key]
         public int Id { get; set; }
         public DateTime Datum { get; set; }
         public int Odgoda { get; set; }
         public string Napomena { get; set; }
-        [Required]
+        //[Required]
         public Zaposlenik Zaposlenik { get; set; }
-        [Required]
+        //[Required]
         public Dobavljac Dobavljac { get; set; }
         public virtual ICollection<StavkaPrimke> StavkaPrimke { get; set; }
     }

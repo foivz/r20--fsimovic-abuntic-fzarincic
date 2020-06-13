@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DatabaseLayer.Enum
+namespace DatabaseLayer.Enums
 {
-    enum Result
+    /// <summary>
+    /// Enumeracija sa 3 moguća ishoda (uspješno, već postoji, neuspješno)
+    /// </summary>
+    public enum Result
     {
         Success,
         AlreadyExists,
