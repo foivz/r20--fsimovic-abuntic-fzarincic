@@ -1,6 +1,4 @@
-﻿using AForge.Video;
-using AForge.Video.DirectShow;
-using BusinessLayer.Services;
+﻿using BusinessLayer.Services;
 using PresentationLayer.Services;
 using System;
 using System.Collections.Generic;
