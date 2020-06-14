@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocumentsForms\FormSviZaposlenici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForms\FormSviZaposlenici.Designer.cs">
+      <DependentUpon>FormSviZaposlenici.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocumentsForms\NoviDobavljacForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,7 +96,16 @@
     <Compile Include="DocumentsForms\RacunForm.Designer.cs">
       <DependentUpon>RacunForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrationForms\FormRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForms\FormRegistration.Designer.cs">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Services\NotificationService.cs" />
+    <EmbeddedResource Include="DocumentsForms\FormSviZaposlenici.resx">
+      <DependentUpon>FormSviZaposlenici.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\NoviDobavljacForm.resx">
       <DependentUpon>NoviDobavljacForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +136,9 @@
     <EmbeddedResource Include="DocumentsForms\RacunForm.resx">
       <DependentUpon>RacunForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationForms\FormRegistration.resx">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -138,6 +156,10 @@
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
       <Project>{F4FF231B-3F8F-41D3-8F03-4FF5A679AFD2}</Project>
       <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DatabaseLayer\DatabaseLayer.csproj">
+      <Project>{57E33383-E08F-4F56-958E-ECAAB3E80C80}</Project>
+      <Name>DatabaseLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

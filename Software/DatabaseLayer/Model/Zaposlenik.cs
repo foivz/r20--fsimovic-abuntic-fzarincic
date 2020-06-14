@@ -24,5 +24,24 @@ namespace DatabaseLayer.Model
         public Uloga Uloga { get; set; }
         public string OIB { get; set; }
         public string KorisnickoIme { get; set; }
+
+        public Zaposlenik()
+        {
+
+        }
+
+        public Zaposlenik(string ime, string prezime, string telefon, string email, string brojZiroRacuna, string lozinka, string oib, string korisnickoIme)
+        {
+            Ime = ime;
+            Prezime = prezime;
+            Telefon = telefon;
+            Email = email;
+            BrojZIroRacuna = brojZiroRacuna;
+            Aktivan = true;
+            Uloga = null;
+            OIB = oib;
+            KorisnickoIme = korisnickoIme;
+            LozinkaHash = lozinka.GetHashCode().ToString();
+        }
     }
 }

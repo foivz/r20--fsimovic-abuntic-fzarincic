@@ -31,6 +31,8 @@
             this.buttonQrLogin = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.buttonGenQrFrom = new System.Windows.Forms.Button();
+            this.buttonRegistracija = new System.Windows.Forms.Button();
+            this.buttonSviZaposlenici = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonQrLogin
@@ -63,11 +65,33 @@
             this.buttonGenQrFrom.UseVisualStyleBackColor = true;
             this.buttonGenQrFrom.Click += new System.EventHandler(this.buttonGenQrFrom_Click);
             // 
+            // buttonRegistracija
+            // 
+            this.buttonRegistracija.Location = new System.Drawing.Point(186, 60);
+            this.buttonRegistracija.Name = "buttonRegistracija";
+            this.buttonRegistracija.Size = new System.Drawing.Size(75, 23);
+            this.buttonRegistracija.TabIndex = 7;
+            this.buttonRegistracija.Text = "Registracija";
+            this.buttonRegistracija.UseVisualStyleBackColor = true;
+            this.buttonRegistracija.Click += new System.EventHandler(this.buttonRegistracija_Click);
+            // 
+            // buttonSviZaposlenici
+            // 
+            this.buttonSviZaposlenici.Location = new System.Drawing.Point(186, 103);
+            this.buttonSviZaposlenici.Name = "buttonSviZaposlenici";
+            this.buttonSviZaposlenici.Size = new System.Drawing.Size(75, 41);
+            this.buttonSviZaposlenici.TabIndex = 8;
+            this.buttonSviZaposlenici.Text = "Ispis zaposlenika";
+            this.buttonSviZaposlenici.UseVisualStyleBackColor = true;
+            this.buttonSviZaposlenici.Click += new System.EventHandler(this.buttonSviZaposlenici_Click);
+            // 
             // FormHelp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(312, 221);
+            this.Controls.Add(this.buttonSviZaposlenici);
+            this.Controls.Add(this.buttonRegistracija);
             this.Controls.Add(this.buttonGenQrFrom);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.buttonQrLogin);
@@ -82,5 +106,7 @@
         private System.Windows.Forms.Button buttonQrLogin;
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Button buttonGenQrFrom;
+        private System.Windows.Forms.Button buttonRegistracija;
+        private System.Windows.Forms.Button buttonSviZaposlenici;
     }
 }

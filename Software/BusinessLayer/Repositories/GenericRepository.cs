@@ -28,9 +28,9 @@ namespace BusinessLayer.Repositories
         /// </summary>
         /// <param name="entity">entity = zapis koji dodajemo u bazu</param>
         /// <returns></returns>
-        public async Task Add(TEntity entity)
+        public void Add(TEntity entity)
         {
-            await _appDbContext.AddAsync(entity);
+            _appDbContext.Add(entity);
         }
 
         /// <summary>
@@ -57,9 +57,9 @@ namespace BusinessLayer.Repositories
         /// Metoda GetAll dosvaća sve zapise.
         /// </summary>
         /// <returns>Vraća sve dohvaćene zapise u obliku liste.</returns>
-        public async Task<IEnumerable<TEntity>> GetAll()
+        public List<TEntity> GetAll()
         {
-            return await _appDbContext.Set<TEntity>().ToListAsync();
+            return _appDbContext.Set<TEntity>().ToList() as List<TEntity>;
         }
 
         /// <summary>

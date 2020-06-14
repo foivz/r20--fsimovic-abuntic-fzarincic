@@ -15,3 +15,4 @@ D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\bin\Debug\D
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CoreCompileInputs.cache
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.dll
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.pdb
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.csprojAssemblyReference.cache

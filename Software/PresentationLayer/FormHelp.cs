@@ -1,5 +1,7 @@
-﻿using PresentationLayer.LoginForms;
+﻿using PresentationLayer.DocumentsForms;
+using PresentationLayer.LoginForms;
 using PresentationLayer.QRForms;
+using PresentationLayer.RegistrationForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,6 +38,20 @@ namespace PresentationLayer
         private void buttonGenQrFrom_Click(object sender, EventArgs e)
         {
             FormQrGenerate form = new FormQrGenerate();
+            form.Show();
+            this.Hide();
+        }
+
+        private void buttonRegistracija_Click(object sender, EventArgs e)
+        {
+            FormRegistration form = new FormRegistration();
+            form.Show();
+            this.Hide();
+        }
+
+        private void buttonSviZaposlenici_Click(object sender, EventArgs e)
+        {
+            FormSviZaposlenici form = new FormSviZaposlenici();
             form.Show();
             this.Hide();
         }
