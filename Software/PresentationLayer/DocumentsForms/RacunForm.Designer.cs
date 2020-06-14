@@ -46,6 +46,7 @@
             this.btnDodajArtikl = new System.Windows.Forms.Button();
             this.txtZaposlenik = new System.Windows.Forms.Label();
             this.txtZaposlenikIme = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeRacuna)).BeginInit();
             this.SuspendLayout();
             // 
@@ -201,11 +202,21 @@
             this.txtZaposlenikIme.Size = new System.Drawing.Size(0, 17);
             this.txtZaposlenikIme.TabIndex = 17;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 17);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Stavke racuna:";
+            // 
             // RacunForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtZaposlenikIme);
             this.Controls.Add(this.txtZaposlenik);
             this.Controls.Add(this.btnDodajArtikl);
@@ -252,5 +263,6 @@
         private System.Windows.Forms.Button btnDodajArtikl;
         private System.Windows.Forms.Label txtZaposlenik;
         private System.Windows.Forms.Label txtZaposlenikIme;
+        private System.Windows.Forms.Label label2;
     }
 }
