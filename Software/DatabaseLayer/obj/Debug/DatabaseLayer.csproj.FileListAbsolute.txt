@@ -4,3 +4,9 @@ C:\Users\Fran\Desktop\Test2\ClubbingPay\DatabaseLayer\obj\Debug\DatabaseLayer.cs
 C:\Users\Fran\Desktop\Test2\ClubbingPay\DatabaseLayer\obj\Debug\DatabaseLayer.dll
 C:\Users\Fran\Desktop\Test2\ClubbingPay\DatabaseLayer\obj\Debug\DatabaseLayer.pdb
 C:\Users\Fran\Desktop\Test2\ClubbingPay\DatabaseLayer\obj\Debug\DatabaseLayer.csprojAssemblyReference.cache
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\bin\Debug\DatabaseLayer.dll
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\bin\Debug\DatabaseLayer.pdb
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.csprojAssemblyReference.cache
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CoreCompileInputs.cache
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.dll
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.pdb

@@ -34,7 +34,7 @@ namespace BusinessLayer.Services
         //U Server= staviti svoj localhost
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseSqlServer(
-                "Server = DESKTOP-H4KS5T0;" +
+                "Server = BUNTIC;" +
                 "Database = dbClubbingPay;" +
                 "Trusted_Connection = true;");
     }

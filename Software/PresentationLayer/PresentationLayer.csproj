@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocumentsForms\PrimkaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForms\PrimkaForm.Designer.cs">
+      <DependentUpon>PrimkaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHelp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,7 +87,16 @@
     <Compile Include="QRForms\FormQrGenerate.Designer.cs">
       <DependentUpon>FormQrGenerate.cs</DependentUpon>
     </Compile>
+    <Compile Include="DocumentsForms\RacunForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForms\RacunForm.Designer.cs">
+      <DependentUpon>RacunForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Services\NotificationService.cs" />
+    <EmbeddedResource Include="DocumentsForms\PrimkaForm.resx">
+      <DependentUpon>PrimkaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHelp.resx">
       <DependentUpon>FormHelp.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +117,9 @@
     </Compile>
     <EmbeddedResource Include="QRForms\FormQrGenerate.resx">
       <DependentUpon>FormQrGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentsForms\RacunForm.resx">
+      <DependentUpon>RacunForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
