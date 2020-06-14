@@ -34,8 +34,7 @@ namespace BusinessLayer.Services
         //U Server= staviti svoj localhost
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseSqlServer(
-                "Server = DESKTOP-H4KS5T0;" +
-                "Database = dbClubbingPay;" +
-                "Trusted_Connection = true;");
+               "Data Source = 31.147.204.119\\PISERVER, 1433; Initial Catalog = PI20_030_DB; Persist Security Info=True;User ID = PI20_030_User; Password=iy-mBvVo");
+
     }
 }
