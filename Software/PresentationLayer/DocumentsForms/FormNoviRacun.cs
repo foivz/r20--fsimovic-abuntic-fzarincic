@@ -17,6 +17,8 @@ namespace PresentationLayer.DocumentsForms
     public partial class FormNoviRacun : Form
     {
         private UnitOfWork unitOfWork = new UnitOfWork(new ClubbingPayDbContext());
+        private ICollection<StavkaRacuna> stavkaRacuna = new List<StavkaRacuna>();
+
         public FormNoviRacun()
         {
             InitializeComponent();
@@ -32,6 +34,18 @@ namespace PresentationLayer.DocumentsForms
         {
             cmbArtikl.DataSource = unitOfWork.Artikli.GetAll();
             cmbArtikl.DisplayMember = "Naziv";
+        }
+
+        private void btnDodajArtikl_Click(object sender, EventArgs e)
+        {
+            stavkaRacuna.Add(cmbArtikl.SelectedItem as StavkaRacuna);
+            OsvjeziDgv();
+        }
+
+        private void OsvjeziDgv()
+        {
+            dgvStavkeRacuna.DataSource = null;
+            dgvStavkeRacuna.DataSource = stavkaRacuna.ToList();
         }
     }
 }

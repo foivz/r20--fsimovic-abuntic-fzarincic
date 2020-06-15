@@ -15,6 +15,7 @@ namespace BusinessLayer.Services
         public IKategorijaArtiklaRepository KategorijaArtikla { get; set; }
         public IArtiklRepository Artikli { get; set; }
         public IDobavljacRepository Dobavljaci { get; set; }
+        public IRacunRepository Racuni { get; set; }
         public UnitOfWork(ClubbingPayDbContext dbContext)
         {
             _appDbContext = dbContext;
