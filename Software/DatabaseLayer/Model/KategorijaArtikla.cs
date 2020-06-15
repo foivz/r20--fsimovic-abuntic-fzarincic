@@ -14,5 +14,11 @@ namespace DatabaseLayer.Model
         //[Key]
         public int Id { get; set; }
         public string Naziv { get; set; }
+
+        public KategorijaArtikla(string naziv)
+        {
+            Naziv = naziv;
+        }
+
     }
 }

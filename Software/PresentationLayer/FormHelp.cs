@@ -55,5 +55,17 @@ namespace PresentationLayer
             form.Show();
             this.Hide();
         }
+
+        private void buttonDodajArtikl_Click(object sender, EventArgs e)
+        {
+            FormNoviRacun form = new FormNoviRacun();
+            form.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormPrimka form = new FormPrimka();
+            form.ShowDialog();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace PresentationLayer.DocumentsForms
 {
-    partial class NoviDobavljacForm
+    partial class FormNoviDobavljac
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnOdustani = new System.Windows.Forms.Button();
-            this.btnIzradi = new System.Windows.Forms.Button();
+            this.btnDodaj = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tboNaziv = new System.Windows.Forms.TextBox();
             this.tboOIB = new System.Windows.Forms.TextBox();
@@ -51,15 +51,17 @@
             this.btnOdustani.TabIndex = 22;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
+            this.btnOdustani.Click += new System.EventHandler(this.btnOdustani_Click);
             // 
-            // btnIzradi
+            // btnDodaj
             // 
-            this.btnIzradi.Location = new System.Drawing.Point(12, 169);
-            this.btnIzradi.Name = "btnIzradi";
-            this.btnIzradi.Size = new System.Drawing.Size(105, 48);
-            this.btnIzradi.TabIndex = 21;
-            this.btnIzradi.Text = "Izradi primku";
-            this.btnIzradi.UseVisualStyleBackColor = true;
+            this.btnDodaj.Location = new System.Drawing.Point(12, 169);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(105, 48);
+            this.btnDodaj.TabIndex = 21;
+            this.btnDodaj.Text = "Dodaj dobavljaca";
+            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnIzradi_Click);
             // 
             // label1
             // 
@@ -142,7 +144,7 @@
             this.label5.TabIndex = 31;
             this.label5.Text = "Adresa:";
             // 
-            // NoviDobavljacForm
+            // FormNoviDobavljac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -158,8 +160,8 @@
             this.Controls.Add(this.tboNaziv);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOdustani);
-            this.Controls.Add(this.btnIzradi);
-            this.Name = "NoviDobavljacForm";
+            this.Controls.Add(this.btnDodaj);
+            this.Name = "FormNoviDobavljac";
             this.Text = "Novi dobavljač";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -169,7 +171,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnOdustani;
-        private System.Windows.Forms.Button btnIzradi;
+        private System.Windows.Forms.Button btnDodaj;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tboNaziv;
         private System.Windows.Forms.TextBox tboOIB;

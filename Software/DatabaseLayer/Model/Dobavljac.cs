@@ -18,5 +18,19 @@ namespace DatabaseLayer.Model
         public string Telefon { get; set; }
         public string Email { get; set; }
         public string Adresa { get; set; }
+
+        public Dobavljac()
+        {
+
+        }
+
+        public Dobavljac(string ime, string oib, string telefon, string email, string adresa)
+        {
+            Naziv = ime;
+            Oib = oib;
+            Telefon = telefon;
+            Email = email;
+            Adresa = adresa;
+        }
     }
 }

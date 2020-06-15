@@ -1,6 +1,6 @@
 ﻿namespace PresentationLayer.DocumentsForms
 {
-    partial class PrimkaForm
+    partial class FormPrimka
     {
         /// <summary>
         /// Required designer variable.

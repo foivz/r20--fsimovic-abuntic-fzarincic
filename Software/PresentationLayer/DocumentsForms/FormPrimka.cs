@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,15 +11,30 @@ using System.Windows.Forms;
 
 namespace PresentationLayer.DocumentsForms
 {
-    public partial class PrimkaForm : Form
+    public partial class FormPrimka : Form
     {
-        public PrimkaForm()
+        private UnitOfWork unitOfWork = new UnitOfWork(new ClubbingPayDbContext());
+        public FormPrimka()
         {
             InitializeComponent();
         }
 
         private void PrimkaForm_Load(object sender, EventArgs e)
         {
+            OsvjeziDobavljece();
+            DohvatiArtikle();
+        }
+
+        private void DohvatiArtikle()
+        {
+            cmbArtikl.DataSource = unitOfWork.Artikli.GetAll();
+            cmbArtikl.DisplayMember = "Naziv";
+        }
+
+        private void OsvjeziDobavljece()
+        {
+            cboDobavljac.DataSource = unitOfWork.Dobavljaci.GetAll();
+            cboDobavljac.DisplayMember = "Naziv";
 
         }
 
@@ -34,7 +50,9 @@ namespace PresentationLayer.DocumentsForms
 
         private void btnNoviArtikl_Click(object sender, EventArgs e)
         {
-
+            FormDodajArtikl form = new FormDodajArtikl();
+            form.ShowDialog();
+            DohvatiArtikle();
         }
 
         private void btnDodajArtikl_Click(object sender, EventArgs e)
@@ -64,7 +82,9 @@ namespace PresentationLayer.DocumentsForms
 
         private void btnNoviDobavljac_Click(object sender, EventArgs e)
         {
-
+            FormNoviDobavljac form = new FormNoviDobavljac();
+            form.ShowDialog();
+            OsvjeziDobavljece();
         }
     }
 }

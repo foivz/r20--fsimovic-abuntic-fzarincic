@@ -46,23 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocumentsForms\FormDodajArtikl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForms\FormDodajArtikl.Designer.cs">
+      <DependentUpon>FormDodajArtikl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentsForms\FormKategorija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForms\FormKategorija.Designer.cs">
+      <DependentUpon>FormKategorija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentsForms\FormNoviRacun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForms\FormNoviRacun.Designer.cs">
+      <DependentUpon>FormNoviRacun.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocumentsForms\FormSviZaposlenici.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DocumentsForms\FormSviZaposlenici.Designer.cs">
       <DependentUpon>FormSviZaposlenici.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocumentsForms\NoviDobavljacForm.cs">
+    <Compile Include="DocumentsForms\FormNoviDobavljac.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DocumentsForms\NoviDobavljacForm.Designer.cs">
-      <DependentUpon>NoviDobavljacForm.cs</DependentUpon>
+    <Compile Include="DocumentsForms\FormNoviDobavljac.Designer.cs">
+      <DependentUpon>FormNoviDobavljac.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocumentsForms\PrimkaForm.cs">
+    <Compile Include="DocumentsForms\FormPrimka.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DocumentsForms\PrimkaForm.Designer.cs">
-      <DependentUpon>PrimkaForm.cs</DependentUpon>
+    <Compile Include="DocumentsForms\FormPrimka.Designer.cs">
+      <DependentUpon>FormPrimka.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHelp.cs">
       <SubType>Form</SubType>
@@ -90,12 +108,6 @@
     <Compile Include="QRForms\FormQrGenerate.Designer.cs">
       <DependentUpon>FormQrGenerate.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocumentsForms\RacunForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DocumentsForms\RacunForm.Designer.cs">
-      <DependentUpon>RacunForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="RegistrationForms\FormRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,14 +115,23 @@
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\NotificationService.cs" />
+    <EmbeddedResource Include="DocumentsForms\FormDodajArtikl.resx">
+      <DependentUpon>FormDodajArtikl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentsForms\FormKategorija.resx">
+      <DependentUpon>FormKategorija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentsForms\FormNoviRacun.resx">
+      <DependentUpon>FormNoviRacun.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormSviZaposlenici.resx">
       <DependentUpon>FormSviZaposlenici.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DocumentsForms\NoviDobavljacForm.resx">
-      <DependentUpon>NoviDobavljacForm.cs</DependentUpon>
+    <EmbeddedResource Include="DocumentsForms\FormNoviDobavljac.resx">
+      <DependentUpon>FormNoviDobavljac.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DocumentsForms\PrimkaForm.resx">
-      <DependentUpon>PrimkaForm.cs</DependentUpon>
+    <EmbeddedResource Include="DocumentsForms\FormPrimka.resx">
+      <DependentUpon>FormPrimka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHelp.resx">
       <DependentUpon>FormHelp.cs</DependentUpon>
@@ -132,9 +153,6 @@
     </Compile>
     <EmbeddedResource Include="QRForms\FormQrGenerate.resx">
       <DependentUpon>FormQrGenerate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocumentsForms\RacunForm.resx">
-      <DependentUpon>RacunForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrationForms\FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>

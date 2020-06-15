@@ -22,5 +22,16 @@ namespace DatabaseLayer.Model
         public virtual ICollection<StavkaRacuna> StavkaRacuna { get; set; }
         public virtual ICollection<StavkaNarudzbenice> StavkaNarudzbe { get; set; }
         public virtual ICollection<StavkaPrimke> StavkaPrimke { get; set; }
+
+        public Artikl(string naziv, double cijena, KategorijaArtikla kategorija)
+        {
+            Naziv = naziv;
+            Cijena = cijena;
+            Kategorija = kategorija;
+        }
+        public Artikl()
+        {
+
+        }
     }
 }

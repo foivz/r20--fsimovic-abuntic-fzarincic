@@ -42,7 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\Result.cs" />
+    <Compile Include="Interfaces\IArtiklRepository.cs" />
+    <Compile Include="Interfaces\IDobavljacRepository.cs" />
     <Compile Include="Interfaces\IGenericRepository.cs" />
+    <Compile Include="Interfaces\IKategorijaArtiklaRepository.cs" />
     <Compile Include="Interfaces\IZaposlenikRepository.cs" />
     <Compile Include="Model\Artikl.cs" />
     <Compile Include="Model\Dobavljac.cs" />
