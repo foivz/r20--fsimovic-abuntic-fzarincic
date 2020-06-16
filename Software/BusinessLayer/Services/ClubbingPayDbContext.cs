@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Services
 {
-    public class ClubbingPayDbContext : DbContext
+    public partial class ClubbingPayDbContext : DbContext
     {
+        
         public DbSet<Zaposlenik> Zaposlenici { get; set; }
         public DbSet<Racun> Racuni { get; set; }
         public DbSet<Artikl> Artikli { get; set; }
@@ -21,6 +22,8 @@ namespace BusinessLayer.Services
         public DbSet<StavkaPrimke> StavkePrimke { get; set; }
         public DbSet<StavkaRacuna> StavkaRacuna { get; set; }
         public DbSet<Uloga> Uloge { get; set; }
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

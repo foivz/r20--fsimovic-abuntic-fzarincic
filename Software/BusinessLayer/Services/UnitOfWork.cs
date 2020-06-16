@@ -16,6 +16,7 @@ namespace BusinessLayer.Services
         public IArtiklRepository Artikli { get; set; }
         public IDobavljacRepository Dobavljaci { get; set; }
         public IRacunRepository Racuni { get; set; }
+        public IStavkaRacuna StavkeRacuna { get; set; }
         public UnitOfWork(ClubbingPayDbContext dbContext)
         {
             _appDbContext = dbContext;
@@ -23,6 +24,8 @@ namespace BusinessLayer.Services
             KategorijaArtikla = new KategorijaRepository(_appDbContext);
             Artikli = new ArtiklRepository(_appDbContext);
             Dobavljaci = new DobavljacRepository(_appDbContext);
+            Racuni = new RacunRepository(_appDbContext);
+            StavkeRacuna = new StavkeRacunaRepository(_appDbContext);
         }
 
         public int Complete()

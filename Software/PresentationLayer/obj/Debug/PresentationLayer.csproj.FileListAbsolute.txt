@@ -154,7 +154,6 @@ C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\Presenta
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\AForge.Video.dll
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\BusinessLayer.dll
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\DatabaseLayer.dll
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.EntityFrameworkCore.dll
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\QRCoder.dll
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\zxing.dll
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll

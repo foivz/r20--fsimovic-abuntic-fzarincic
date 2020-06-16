@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Repositories
 {
-    public class RacunRepository : GenericRepository<Racun>, IRacunRepository
+    public class StavkeRacunaRepository : GenericRepository<StavkaRacuna>, IStavkaRacuna
     {
         private ClubbingPayDbContext _dbContext { get; set; }
 
-        public RacunRepository(ClubbingPayDbContext appDbContext) 
+        public StavkeRacunaRepository(ClubbingPayDbContext appDbContext)
             : base(appDbContext)
         {
             _dbContext = _appDbContext;

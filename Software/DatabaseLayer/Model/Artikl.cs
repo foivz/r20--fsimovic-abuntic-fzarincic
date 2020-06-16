@@ -29,9 +29,15 @@ namespace DatabaseLayer.Model
             Cijena = cijena;
             Kategorija = kategorija;
         }
+
         public Artikl()
         {
 
+        }
+
+        public override string ToString()
+        {
+            return Naziv;
         }
     }
 }
