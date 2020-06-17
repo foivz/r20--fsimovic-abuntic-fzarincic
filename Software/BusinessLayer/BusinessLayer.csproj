@@ -149,9 +149,9 @@
   <ItemGroup>
     <Compile Include="Enums\LoginResult.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
-    <Compile Include="Migrations\20200614135639_Initial.cs" />
-    <Compile Include="Migrations\20200614135639_Initial.designer.cs">
-      <DependentUpon>20200614135639_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\20200617073216_Initial.cs" />
+    <Compile Include="Migrations\20200617073216_Initial.designer.cs">
+      <DependentUpon>20200617073216_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ClubbingPayDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -163,6 +163,7 @@
     <Compile Include="Repositories\StavkeRacunaRepository.cs" />
     <Compile Include="Repositories\ZaposlenikRepository.cs" />
     <Compile Include="Services\ClubbingPayDbContext.cs" />
+    <Compile Include="Services\IzracunPorezaServices.cs" />
     <Compile Include="Services\QRService.cs" />
     <Compile Include="Services\UnitOfWork.cs" />
     <Compile Include="Services\UserManager.cs" />

@@ -11,6 +11,8 @@ using BusinessLayer.Repositories;
 using BusinessLayer.Services;
 using DatabaseLayer.Interfaces;
 using DatabaseLayer.Model;
+using BusinessLayer.Services;
+using PresentationLayer.Services;
 
 namespace PresentationLayer.DocumentsForms
 {
@@ -20,6 +22,8 @@ namespace PresentationLayer.DocumentsForms
         private ICollection<StavkaRacuna> stavkeRacuna;
         private Racun racun = new Racun();
         StavkaRacuna stavkaRacuna;
+        StavkaRacunaSCijenom stavkaSCijenom;
+        private List<StavkaRacunaSCijenom> stavkeRacunaSCijenom;
         double osnovica = 0;
         public FormNoviRacun()
         {
@@ -34,7 +38,7 @@ namespace PresentationLayer.DocumentsForms
         {
             DohvatiArtikle();
             stavkeRacuna = new List<StavkaRacuna>();
-            
+            stavkeRacunaSCijenom = new List<StavkaRacunaSCijenom>();
             unitOfWork.Racuni.Add(racun);
             unitOfWork.Complete();
         }
@@ -54,6 +58,16 @@ namespace PresentationLayer.DocumentsForms
             stavkaRacuna.ArtiklId = (cmbArtikl.SelectedItem as Artikl).Id;
             stavkaRacuna.Kolicina = int.Parse(tboKolicina.Text);
             stavkeRacuna.Add(stavkaRacuna);
+
+            stavkaSCijenom = new StavkaRacunaSCijenom();
+            stavkaSCijenom.Artikl = cmbArtikl.SelectedItem as Artikl;
+            stavkaSCijenom.Racun = racun;
+            stavkaSCijenom.RacunId = racun.Id;
+            stavkaSCijenom.ArtiklId = (cmbArtikl.SelectedItem as Artikl).Id;
+            stavkaSCijenom.Kolicina = int.Parse(tboKolicina.Text);
+            stavkaSCijenom.Cijena = (cmbArtikl.SelectedItem as Artikl).Cijena;
+            stavkeRacunaSCijenom.Add(stavkaSCijenom);
+
             OsvjeziDgv();
             OsvjeziIznose();
         }
@@ -62,36 +76,22 @@ namespace PresentationLayer.DocumentsForms
         {
             osnovica += (cmbArtikl.SelectedItem as Artikl).Cijena * int.Parse(tboKolicina.Text);
             tboOsnovica.Text = osnovica.ToString();
-            tboPorezNaPotrosnju.Text = IzracunajPorezNaPotrosnju(osnovica).ToString();
-            tboPorezNaDodanuVrijednost.Text = IzracunajPorezNaDodanuVrijednost(osnovica).ToString();
-            tboUkupno.Text = IzracunajUkupno(osnovica).ToString();
-        }
-
-        private double IzracunajUkupno(double osnovica)
-        {
-            double ukupno = osnovica + IzracunajPorezNaPotrosnju(osnovica) + IzracunajPorezNaDodanuVrijednost(osnovica);
-            return ukupno;
-        }
-
-        private double IzracunajPorezNaDodanuVrijednost(double osnovica)
-        {
-            double pdv = (0.25 * osnovica);
-            return pdv;
-        }
-
-        private double IzracunajPorezNaPotrosnju(double osnovica)
-        {
-            double pnp = (0.03 * osnovica);
-            return pnp;
+            tboPorezNaPotrosnju.Text = IzracunPorezaServices.IzracunajPorezNaPotrosnju(osnovica).ToString();
+            tboPorezNaDodanuVrijednost.Text = IzracunPorezaServices.IzracunajPorezNaDodanuVrijednost(osnovica).ToString();
+            tboUkupno.Text = IzracunPorezaServices.IzracunajUkupno(osnovica).ToString();
         }
 
         private void OsvjeziDgv()
         {
             dgvStavkeRacuna.DataSource = null;
-            dgvStavkeRacuna.DataSource = stavkeRacuna.ToList();
+            dgvStavkeRacuna.DataSource = stavkeRacunaSCijenom.ToList();
             dgvStavkeRacuna.Columns["Racun"].Visible = false;
             dgvStavkeRacuna.Columns["RacunId"].Visible = false;
-            //dgvStavkeRacuna.Columns["ArtiklId"].Visible = false;
+            dgvStavkeRacuna.Columns["ArtiklId"].Visible = false;
+            dgvStavkeRacuna.Columns["Artikl"].DisplayIndex = 0;
+            dgvStavkeRacuna.Columns["Kolicina"].DisplayIndex = 1;
+            dgvStavkeRacuna.Columns["Cijena"].DisplayIndex = 2;
+            dgvStavkeRacuna.Columns["Ukupno"].DisplayIndex = 3;
         }
 
         private void btnOdustani_Click(object sender, EventArgs e)

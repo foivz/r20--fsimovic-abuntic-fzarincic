@@ -146,6 +146,7 @@
       <DependentUpon>FormSviZaposleniciReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\NotificationService.cs" />
+    <Compile Include="Services\StavkaRacunaSCijenom.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="DocumentsForms\FormDodajArtikl.resx">
       <DependentUpon>FormDodajArtikl.cs</DependentUpon>
