@@ -196,6 +196,8 @@
     <EmbeddedResource Include="ReportForms\FormSviZaposleniciReport.resx">
       <DependentUpon>FormSviZaposleniciReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportZaposlenici.rdlc" />
+    <None Include="DatabaseLayer.Model.Zaposlenik.datasource" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

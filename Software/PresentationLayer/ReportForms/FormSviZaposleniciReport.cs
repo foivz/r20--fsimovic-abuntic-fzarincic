@@ -1,4 +1,7 @@
 ﻿
+using BusinessLayer;
+using BusinessLayer.Services;
+using DatabaseLayer.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +16,8 @@ namespace PresentationLayer.ReportForms
 {
     public partial class FormSviZaposleniciReport : Form
     {
+        private IUnitOfWork unitOfWork = new UnitOfWork(new ClubbingPayDbContext());
+
         public FormSviZaposleniciReport()
         {
             InitializeComponent();
@@ -20,7 +25,8 @@ namespace PresentationLayer.ReportForms
 
         private void FormSviZaposleniciReport_Load(object sender, EventArgs e)
         {
-            //using(var context = new ClubbingPayDbContext)
+            List<Zaposlenik> listaZaposlenika = unitOfWork.Zaposlenici.GetAll();
+            ZaposlenikBindingSource.DataSource = listaZaposlenika;
             this.reportViewer1.RefreshReport();
         }
     }

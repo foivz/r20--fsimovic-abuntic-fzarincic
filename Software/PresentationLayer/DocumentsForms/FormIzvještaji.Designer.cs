@@ -39,6 +39,7 @@
             this.btnSviZaposlenici.TabIndex = 0;
             this.btnSviZaposlenici.Text = "Svi zaposlenici";
             this.btnSviZaposlenici.UseVisualStyleBackColor = true;
+            this.btnSviZaposlenici.Click += new System.EventHandler(this.btnSviZaposlenici_Click);
             // 
             // FormIzvještaji
             // 

@@ -67,5 +67,11 @@ namespace PresentationLayer
             FormPrimka form = new FormPrimka();
             form.ShowDialog();
         }
+
+        private void btnIzvjestaji_Click(object sender, EventArgs e)
+        {
+            FormIzvještaji form = new FormIzvještaji();
+            form.ShowDialog();
+        }
     }
 }
