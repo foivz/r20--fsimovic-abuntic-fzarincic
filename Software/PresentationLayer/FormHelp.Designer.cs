@@ -35,7 +35,6 @@
             this.buttonSviZaposlenici = new System.Windows.Forms.Button();
             this.buttonDodajArtikl = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnIzvjestaji = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonQrLogin
@@ -110,22 +109,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnIzvjestaji
-            // 
-            this.btnIzvjestaji.Location = new System.Drawing.Point(47, 176);
-            this.btnIzvjestaji.Name = "btnIzvjestaji";
-            this.btnIzvjestaji.Size = new System.Drawing.Size(75, 23);
-            this.btnIzvjestaji.TabIndex = 11;
-            this.btnIzvjestaji.Text = "Izvještaji";
-            this.btnIzvjestaji.UseVisualStyleBackColor = true;
-            this.btnIzvjestaji.Click += new System.EventHandler(this.btnIzvjestaji_Click);
-            // 
             // FormHelp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(312, 221);
-            this.Controls.Add(this.btnIzvjestaji);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonDodajArtikl);
             this.Controls.Add(this.buttonSviZaposlenici);
@@ -135,6 +123,7 @@
             this.Controls.Add(this.buttonQrLogin);
             this.Name = "FormHelp";
             this.Text = "FormHelp";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormHelp_FormClosed);
             this.ResumeLayout(false);
 
         }
@@ -148,6 +137,5 @@
         private System.Windows.Forms.Button buttonSviZaposlenici;
         private System.Windows.Forms.Button buttonDodajArtikl;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnIzvjestaji;
     }
 }

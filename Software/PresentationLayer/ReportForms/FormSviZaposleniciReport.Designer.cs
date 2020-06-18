@@ -28,29 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.ZaposlenikBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.ZaposlenikBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DsZaposlenici";
-            reportDataSource1.Value = this.ZaposlenikBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "PresentationLayer.Reports.ReportZaposlenici.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(495, 348);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // ZaposlenikBindingSource
-            // 
-            this.ZaposlenikBindingSource.DataSource = typeof(DatabaseLayer.Model.Zaposlenik);
             // 
             // FormSviZaposleniciReport
             // 
@@ -61,7 +49,6 @@
             this.Name = "FormSviZaposleniciReport";
             this.Text = "Izvještaj o svim zaposlenicima";
             this.Load += new System.EventHandler(this.FormSviZaposleniciReport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ZaposlenikBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -69,6 +56,5 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource ZaposlenikBindingSource;
     }
 }

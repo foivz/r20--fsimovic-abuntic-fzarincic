@@ -11,15 +11,19 @@ namespace DatabaseLayer.Model
     /// </summary>
     public class Primka
     {
-        //[Key]
+        #region [Mapped properties]
         public int Id { get; set; }
         public DateTime Datum { get; set; }
         public int Odgoda { get; set; }
         public string Napomena { get; set; }
-        //[Required]
         public Zaposlenik Zaposlenik { get; set; }
-        //[Required]
         public Dobavljac Dobavljac { get; set; }
-        public virtual ICollection<StavkaPrimke> StavkaPrimke { get; set; }
+        public List<StavkaPrimke> StavkaPrimke { get; set; }
+        #endregion
+
+        public Primka()
+        {
+            StavkaPrimke = new List<StavkaPrimke>();
+        }
     }
 }

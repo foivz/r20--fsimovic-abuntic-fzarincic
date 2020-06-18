@@ -43,8 +43,12 @@ namespace PresentationLayer.Services
                         InactiveEmployee();
                         break;
                 }
-                
             }
+        }
+
+        public static void Notify(string message)
+        {
+            MessageBox.Show(message);
         }
     }
 }

@@ -14,9 +14,9 @@ namespace DatabaseLayer.Model
         public int Kolicina { get; set; }
         //[Key, Column(Order = 0)]
         public int PrimkaId { get; set; }
-        public virtual Primka Primka { get; set; }
+        public Primka Primka { get; set; }
         //[Key, Column(Order = 1)]
         public int ArtiklId { get; set; }
-        public virtual Artikl Artikl { get; set; }
+        public Artikl Artikl { get; set; }
     }
 }

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BusinessLayer.Migrations
 {
     [DbContext(typeof(ClubbingPayDbContext))]
-    [Migration("20200617073216_Initial")]
+    [Migration("20200614135639_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

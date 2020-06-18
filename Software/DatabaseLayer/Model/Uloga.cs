@@ -11,7 +11,14 @@ namespace DatabaseLayer.Model
     /// </summary>
     public class Uloga
     {
+        #region [Mapped properies]
         public int Id { get; set; }
         public string Naziv { get; set; }
+        #endregion
+
+        public Uloga()
+        {
+
+        }
     }
 }

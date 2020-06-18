@@ -11,14 +11,19 @@ namespace DatabaseLayer.Model
     /// </summary>
     public class KategorijaArtikla
     {
-        //[Key]
+        #region [Mapped properties]
         public int Id { get; set; }
-        public string Naziv { get; set; }
+        public string Naziv { get; set; } 
+        #endregion
 
         public KategorijaArtikla(string naziv)
         {
             Naziv = naziv;
         }
 
+        public KategorijaArtikla()
+        {
+
+        }
     }
 }

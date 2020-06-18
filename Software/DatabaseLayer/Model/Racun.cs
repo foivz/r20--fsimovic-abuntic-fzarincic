@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace DatabaseLayer.Model
 {
     /// <summary>
@@ -11,17 +11,41 @@ namespace DatabaseLayer.Model
     /// </summary>
     public class Racun
     {
-        //[Key]
+        #region [Mapped properties]
         public int Id { get; set; }
         public DateTime DatumIVrijemeIzdavanja { get; set; }
-        //[Required]
         public Zaposlenik Zaposlenik { get; set; }
-
-        public virtual ICollection<StavkaRacuna> StavkaRacuna { get; set; }
-
+        public List<StavkaRacuna> StavkaRacuna { get; set; }
+        #endregion
+        #region [Not mapped properties]
+        [NotMapped]
+        public double Ukupno
+        {
+            get
+            {
+                return StavkaRacuna.Sum(sr => sr.Artikl.Cijena * sr.Kolicina);
+            }
+        }
+        [NotMapped]
+        public double Pdv
+        {
+            get
+            {
+                return Ukupno * 0.25;
+            }
+        }
+        [NotMapped]
+        public double PorezNaPotrosnju
+        {
+            get
+            {
+                return Ukupno * 0.03;
+            }
+        }
+        #endregion
         public Racun()
         {
-
+            StavkaRacuna = new List<StavkaRacuna>();
         }
     }
 }

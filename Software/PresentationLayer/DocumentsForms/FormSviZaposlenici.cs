@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Services;
+﻿using BusinessLayer;
+using BusinessLayer.Services;
 using DatabaseLayer.Model;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace PresentationLayer.DocumentsForms
 {
     public partial class FormSviZaposlenici : Form
     {
-        private UnitOfWork unitOfWork = new UnitOfWork(new ClubbingPayDbContext());
+        private IUnitOfWork unitOfWork = new UnitOfWork(new ClubbingPayDbContext());
 
         public FormSviZaposlenici()
         {

@@ -11,17 +11,16 @@ namespace DatabaseLayer.Model
     /// </summary>
     public class Artikl
     {
-        //[Key]
+        #region [Mapped properties]
         public int Id { get; set; }
         public string Naziv { get; set; }
         public int Kolicina { get; set; }
         public double Cijena { get; set; }
-        //[Required]
         public KategorijaArtikla Kategorija { get; set; }
-
-        public virtual ICollection<StavkaRacuna> StavkaRacuna { get; set; }
-        public virtual ICollection<StavkaNarudzbenice> StavkaNarudzbe { get; set; }
-        public virtual ICollection<StavkaPrimke> StavkaPrimke { get; set; }
+        public List<StavkaRacuna> StavkaRacuna { get; set; }
+        public List<StavkaNarudzbenice> StavkaNarudzbe { get; set; }
+        public List<StavkaPrimke> StavkaPrimke { get; set; } 
+        #endregion
 
         public Artikl(string naziv, double cijena, KategorijaArtikla kategorija)
         {
@@ -32,7 +31,9 @@ namespace DatabaseLayer.Model
 
         public Artikl()
         {
-
+            StavkaRacuna = new List<StavkaRacuna>();
+            StavkaPrimke = new List<StavkaPrimke>();
+            StavkaNarudzbe = new List<StavkaNarudzbenice>();
         }
 
         public override string ToString()

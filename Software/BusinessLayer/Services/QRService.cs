@@ -25,18 +25,24 @@ namespace BusinessLayer.Services
             string user = "";
             string pass = "";
             BarcodeReader reader = new BarcodeReader { AutoRotate = true, TryInverted = true };
-            ZXing.Result result = reader.Decode(bitmap);
-            string[] decoded;
-            if (result != null)
+            try
             {
-                decoded = result.ToString().Split(' ');
-                
-                user = decoded[0];
-                pass = decoded[1];
-                
-                return UserManager.LogirajKorisnika(user, pass);
-            }
+                Result result = reader.Decode(bitmap);
+                string[] decoded;
+                if (result != null)
+                {
+                    decoded = result.ToString().Split(' ');
 
+                    user = decoded[0];
+                    pass = decoded[1];
+
+                    return UserManager.LogirajKorisnika(user, pass);
+                }
+            }
+            catch (Exception)
+            {
+                return LoginResult.Null;
+            }
             return LoginResult.Null;
         }
     }

@@ -23,7 +23,7 @@ namespace PresentationLayer
 
         private void buttonQrLogin_Click(object sender, EventArgs e)
         {
-            FormLoginQRScan form = new FormLoginQRScan();
+            FormLogin form = new FormLogin();
             form.Show();
             this.Hide();
         }
@@ -60,18 +60,25 @@ namespace PresentationLayer
         {
             FormNoviRacun form = new FormNoviRacun();
             form.ShowDialog();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             FormPrimka form = new FormPrimka();
             form.ShowDialog();
+            this.Hide();
         }
 
-        private void btnIzvjestaji_Click(object sender, EventArgs e)
+        private bool closedForm = false;
+
+        private void FormHelp_FormClosed(object sender, FormClosedEventArgs e)
         {
-            FormIzvještaji form = new FormIzvještaji();
-            form.ShowDialog();
+            if (!closedForm)
+            {
+                closedForm = true;
+                this.Close();
+            }
         }
     }
 }

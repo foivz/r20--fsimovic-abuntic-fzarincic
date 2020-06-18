@@ -11,12 +11,17 @@ namespace DatabaseLayer.Model
     /// </summary>
     public class Narudzbenica
     {
-        //[Key]
+        #region [Mapped properties]
         public int Id { get; set; }
         public DateTime DatumIVrijemeIzdavanja { get; set; }
         public Zaposlenik Zaposlenik { get; set; }
         public Dobavljac Dobavljac { get; set; }
+        public List<StavkaNarudzbenice> StavkaNarudzbe { get; set; }
+        #endregion
 
-        public virtual ICollection<StavkaNarudzbenice> StavkaNarudzbe { get; set; }
+        public Narudzbenica()
+        {
+            StavkaNarudzbe = new List<StavkaNarudzbenice>();
+        }
     }
 }

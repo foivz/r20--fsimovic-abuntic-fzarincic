@@ -26,7 +26,7 @@ namespace PresentationLayer.ReportForms
         private void FormSviZaposleniciReport_Load(object sender, EventArgs e)
         {
             List<Zaposlenik> listaZaposlenika = unitOfWork.Zaposlenici.GetAll();
-            ZaposlenikBindingSource.DataSource = listaZaposlenika;
+
             this.reportViewer1.RefreshReport();
         }
     }

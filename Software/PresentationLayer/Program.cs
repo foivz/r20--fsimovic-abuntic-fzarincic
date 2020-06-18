@@ -1,5 +1,6 @@
 ﻿using PresentationLayer.LoginForms;
 using PresentationLayer.QRForms;
+using PresentationLayer.StartForm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace PresentationLayer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormHelp());
+            Application.Run(new FormStart());
         }
     }
 }
