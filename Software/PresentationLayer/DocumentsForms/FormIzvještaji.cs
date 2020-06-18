@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PresentationLayer.ReportForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace PresentationLayer.DocumentsForms
         public FormIzvještaji()
         {
             InitializeComponent();
+        }
+
+        private void btnSviZaposlenici_Click(object sender, EventArgs e)
+        {
+            FormSviZaposleniciReport form = new FormSviZaposleniciReport();
+            form.ShowDialog();
+        }
+
+        private void btnSviDobavljaci_Click(object sender, EventArgs e)
+        {
+            FormSviDobavljaciReport form = new FormSviDobavljaciReport();
+            form.ShowDialog();
         }
     }
 }

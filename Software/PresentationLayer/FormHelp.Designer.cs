@@ -35,6 +35,7 @@
             this.buttonSviZaposlenici = new System.Windows.Forms.Button();
             this.buttonDodajArtikl = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnIzvjestaji = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonQrLogin
@@ -90,7 +91,7 @@
             // buttonDodajArtikl
             // 
             this.buttonDodajArtikl.Location = new System.Drawing.Point(186, 150);
-            this.buttonDodajArtikl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonDodajArtikl.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDodajArtikl.Name = "buttonDodajArtikl";
             this.buttonDodajArtikl.Size = new System.Drawing.Size(75, 19);
             this.buttonDodajArtikl.TabIndex = 9;
@@ -101,7 +102,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(186, 174);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 19);
             this.button1.TabIndex = 10;
@@ -109,11 +110,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnIzvjestaji
+            // 
+            this.btnIzvjestaji.Location = new System.Drawing.Point(47, 176);
+            this.btnIzvjestaji.Name = "btnIzvjestaji";
+            this.btnIzvjestaji.Size = new System.Drawing.Size(75, 23);
+            this.btnIzvjestaji.TabIndex = 11;
+            this.btnIzvjestaji.Text = "Izvještaji";
+            this.btnIzvjestaji.UseVisualStyleBackColor = true;
+            this.btnIzvjestaji.Click += new System.EventHandler(this.btnIzvjestaji_Click);
+            // 
             // FormHelp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(312, 221);
+            this.Controls.Add(this.btnIzvjestaji);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonDodajArtikl);
             this.Controls.Add(this.buttonSviZaposlenici);
@@ -137,5 +149,6 @@
         private System.Windows.Forms.Button buttonSviZaposlenici;
         private System.Windows.Forms.Button buttonDodajArtikl;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIzvjestaji;
     }
 }

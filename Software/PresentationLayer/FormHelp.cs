@@ -80,5 +80,11 @@ namespace PresentationLayer
                 this.Close();
             }
         }
+
+        private void btnIzvjestaji_Click(object sender, EventArgs e)
+        {
+            FormIzvještaji form = new FormIzvještaji();
+            form.ShowDialog();
+        }
     }
 }

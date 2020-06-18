@@ -1,5 +1,4 @@
-﻿
-using BusinessLayer;
+﻿using BusinessLayer;
 using BusinessLayer.Services;
 using DatabaseLayer.Model;
 using System;
@@ -14,19 +13,19 @@ using System.Windows.Forms;
 
 namespace PresentationLayer.ReportForms
 {
-    public partial class FormSviZaposleniciReport : Form
+    public partial class FormSviDobavljaciReport : Form
     {
         private IUnitOfWork unitOfWork = new UnitOfWork(new ClubbingPayDbContext());
 
-        public FormSviZaposleniciReport()
+        public FormSviDobavljaciReport()
         {
             InitializeComponent();
         }
 
-        private void FormSviZaposleniciReport_Load(object sender, EventArgs e)
+        private void FormSviDobavljaciReport_Load(object sender, EventArgs e)
         {
-            List<Zaposlenik> listaZaposlenika = unitOfWork.Zaposlenici.GetAll();
-            ZaposlenikBindingSource.DataSource = listaZaposlenika;
+            List<Dobavljac> listaDobavljaca = unitOfWork.Dobavljaci.GetAll();
+            DobavljacBindingSource.DataSource = listaDobavljaca;
             this.reportViewer1.RefreshReport();
         }
     }
