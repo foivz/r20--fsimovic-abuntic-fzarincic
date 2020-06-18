@@ -30,6 +30,7 @@
         {
             this.btnSviZaposlenici = new System.Windows.Forms.Button();
             this.btnSviDobavljaci = new System.Windows.Forms.Button();
+            this.btnSviArtikli = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSviZaposlenici
@@ -52,11 +53,22 @@
             this.btnSviDobavljaci.UseVisualStyleBackColor = true;
             this.btnSviDobavljaci.Click += new System.EventHandler(this.btnSviDobavljaci_Click);
             // 
+            // btnSviArtikli
+            // 
+            this.btnSviArtikli.Location = new System.Drawing.Point(38, 179);
+            this.btnSviArtikli.Name = "btnSviArtikli";
+            this.btnSviArtikli.Size = new System.Drawing.Size(97, 26);
+            this.btnSviArtikli.TabIndex = 2;
+            this.btnSviArtikli.Text = "Svi Artikli";
+            this.btnSviArtikli.UseVisualStyleBackColor = true;
+            this.btnSviArtikli.Click += new System.EventHandler(this.btnSviArtikli_Click);
+            // 
             // FormIzvještaji
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 326);
+            this.Controls.Add(this.btnSviArtikli);
             this.Controls.Add(this.btnSviDobavljaci);
             this.Controls.Add(this.btnSviZaposlenici);
             this.Name = "FormIzvještaji";
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.Button btnSviZaposlenici;
         private System.Windows.Forms.Button btnSviDobavljaci;
+        private System.Windows.Forms.Button btnSviArtikli;
     }
 }

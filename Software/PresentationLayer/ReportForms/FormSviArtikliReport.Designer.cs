@@ -1,6 +1,6 @@
 ﻿namespace PresentationLayer.ReportForms
 {
-    partial class FormSviDobavljaciReport
+    partial class FormSviArtikliReport
     {
         /// <summary>
         /// Required designer variable.
@@ -29,39 +29,39 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.DobavljacBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            ((System.ComponentModel.ISupportInitialize)(this.DobavljacBindingSource)).BeginInit();
+            this.ArtiklBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.ArtiklBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // DobavljacBindingSource
-            // 
-            this.DobavljacBindingSource.DataSource = typeof(DatabaseLayer.Model.Dobavljac);
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DsDobavljaci";
-            reportDataSource1.Value = this.DobavljacBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "PresentationLayer.Reports.ReportDobavljaci.rdlc";
+            reportDataSource2.Name = "DsArtikli";
+            reportDataSource2.Value = this.ArtiklBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "PresentationLayer.Reports.ReportArtikli.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(585, 303);
+            this.reportViewer1.Size = new System.Drawing.Size(520, 319);
             this.reportViewer1.TabIndex = 0;
             // 
-            // FormSviDobavljaciReport
+            // ArtiklBindingSource
+            // 
+            this.ArtiklBindingSource.DataSource = typeof(DatabaseLayer.Model.Artikl);
+            // 
+            // FormSviArtikliReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 303);
+            this.ClientSize = new System.Drawing.Size(520, 319);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FormSviDobavljaciReport";
-            this.Text = "Izvještaj o svim dobavljačima";
-            this.Load += new System.EventHandler(this.FormSviDobavljaciReport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DobavljacBindingSource)).EndInit();
+            this.Name = "FormSviArtikliReport";
+            this.Text = "Izvještaj o svim artiklima";
+            this.Load += new System.EventHandler(this.FormSviArtikliReport_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ArtiklBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -69,6 +69,6 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource DobavljacBindingSource;
+        private System.Windows.Forms.BindingSource ArtiklBindingSource;
     }
 }
