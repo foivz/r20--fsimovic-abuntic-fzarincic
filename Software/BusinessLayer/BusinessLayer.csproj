@@ -157,6 +157,10 @@
     <Compile Include="Migrations\20200617001306_Druga.designer.cs">
       <DependentUpon>20200617001306_Druga.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20200618120408_m1.cs" />
+    <Compile Include="Migrations\20200618120408_m1.designer.cs">
+      <DependentUpon>20200618120408_m1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\ClubbingPayDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ArtiklRepository.cs" />
@@ -185,6 +189,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+      <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    </PropertyGroup>
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>

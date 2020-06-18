@@ -19,7 +19,8 @@ namespace PresentationLayer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormStart());
+            // TODO: staviti da ide na start
+            Application.Run(new FormHelp());
         }
     }
 }
