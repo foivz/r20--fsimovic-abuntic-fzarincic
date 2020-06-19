@@ -17,6 +17,8 @@ namespace BusinessLayer.Services
         public IDobavljacRepository Dobavljaci { get; set; }
         public IRacunRepository Racuni { get; set; }
         public IStavkaRacuna StavkeRacuna { get; set; }
+        public IPrimkaRepository Primke { get; set; }
+        public IStavkaPrimke StavkePrimke { get; set; }
         public UnitOfWork(ClubbingPayDbContext dbContext)
         {
             _appDbContext = dbContext;
@@ -26,6 +28,8 @@ namespace BusinessLayer.Services
             Dobavljaci = new DobavljacRepository(_appDbContext);
             Racuni = new RacunRepository(_appDbContext);
             StavkeRacuna = new StavkeRacunaRepository(_appDbContext);
+            Primke = new PrimkaRepository(_appDbContext);
+            StavkePrimke = new StavkaPrimkeRepository(_appDbContext);
         }
 
         public int Complete()

@@ -51,7 +51,9 @@
     <Compile Include="Interfaces\IDobavljacRepository.cs" />
     <Compile Include="Interfaces\IGenericRepository.cs" />
     <Compile Include="Interfaces\IKategorijaArtiklaRepository.cs" />
+    <Compile Include="Interfaces\IPrimkaRepository.cs" />
     <Compile Include="Interfaces\IRacunRepository.cs" />
+    <Compile Include="Interfaces\IStavkaPrimke.cs" />
     <Compile Include="Interfaces\IStavkaRacuna.cs" />
     <Compile Include="Interfaces\IZaposlenikRepository.cs" />
     <Compile Include="Model\Artikl.cs" />

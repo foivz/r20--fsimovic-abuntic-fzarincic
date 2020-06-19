@@ -29,5 +29,11 @@ namespace BusinessLayer.Services
         {
             return input.Length >= lenght;
         }
+
+        public static bool IsNotNull(object test)
+        {
+            if (test != null) return true;
+            else return false;
+        }
     }
 }

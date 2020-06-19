@@ -67,7 +67,7 @@ namespace PresentationLayer
         {
             FormPrimka form = new FormPrimka();
             form.ShowDialog();
-            this.Hide();
+            //this.Hide();
         }
 
         private bool closedForm = false;

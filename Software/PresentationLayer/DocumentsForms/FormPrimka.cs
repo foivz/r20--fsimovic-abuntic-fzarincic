@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DatabaseLayer.Model;
 using PresentationLayer.Services;
+using BusinessLayer.Services;
 namespace PresentationLayer.DocumentsForms
 {
     public partial class FormPrimka : Form
@@ -61,16 +62,41 @@ namespace PresentationLayer.DocumentsForms
         {
             //TODOO
             var artikl = cmbArtikl.SelectedItem as Artikl;
-            Artikl artiklUBazi;
             if (artikl != null && ValidationService.ParseNumber(tboKolicina.Text, out int kolicina) && kolicina > 0)
             {
-                
-              //  UnitOfWork.Artikli.Update(artiklUBazi);
+                var PostojeciArtikl = NovaPrimka.StavkaPrimke.FirstOrDefault(sr => sr.Artikl.Id == artikl.Id);
+                if (PostojeciArtikl != null)
+                {
+                    PostojeciArtikl.Kolicina += kolicina;
+                }
+                else
+                {
+                    NovaPrimka.StavkaPrimke.Add(new StavkaPrimke
+                    {
+                        Artikl = artikl,
+                        Kolicina = kolicina,
+                    });
+                }
+
             }
             else
             {
                 NotificationService.InvalidInput();
             }
+            OsvjeziDgv();
+
+        }
+
+        private void OsvjeziDgv()
+        {
+            dgvStavkePrimke.DataSource = null;
+            dgvStavkePrimke.DataSource = NovaPrimka.StavkaPrimke;
+
+            dgvStavkePrimke.Columns["Artikl"].DisplayIndex = 0;
+            dgvStavkePrimke.Columns["Kolicina"].DisplayIndex = 1;
+            dgvStavkePrimke.Columns["Primka"].Visible = false;
+            dgvStavkePrimke.Columns["PrimkaId"].Visible = false;
+            dgvStavkePrimke.Columns["ArtiklId"].Visible = false;
         }
 
         private void txtKolicina_Click(object sender, EventArgs e)
@@ -102,17 +128,47 @@ namespace PresentationLayer.DocumentsForms
         private void btnIzradi_Click(object sender, EventArgs e)
         {
             NovaPrimka.Datum = dtpDatum.Value;
-            NovaPrimka.Dobavljac = cboDobavljac.SelectedItem as Dobavljac;
+
+            if (ValidationService.IsNotNull(cboDobavljac.SelectedItem as Dobavljac))
+            {
+                NovaPrimka.Dobavljac = cboDobavljac.SelectedItem as Dobavljac;
+            }
+            else
+            {
+                NotificationService.InvalidInput();
+            }
+
+            NovaPrimka.Zaposlenik = UserManager.LogiranKorisnik;
             NovaPrimka.Napomena = tboNapomena.Text;
+
             if (ValidationService.ParseNumber(tboOdgoda.Text, out int odgoda))
             {
                 NovaPrimka.Odgoda = odgoda;
             }
             else
             {
-                NotificationService.InvalidInput(); 
+                NotificationService.InvalidInput();
             }
-            string message = UnitOfWork.Complete() == 1 ? "Primka je uspješno kreirana" : "Primku nije moguće kreirati";
+           
+            // UPDATENJE STANJA NAD ARTIKLIMA
+            foreach (var item in NovaPrimka.StavkaPrimke)
+            {
+                //UnitOfWork.Artikli.GetById(item.Artikl.Id);
+                
+            }
+
+            UnitOfWork.Primke.Add(NovaPrimka);
+            string message = "";
+            if (UnitOfWork.Complete() >= 0)
+            {
+                message = "Uspješno izdana primka";
+            }
+            else
+            {
+                message = "Neuspješno izdana primkka";
+            }
+            NotificationService.Notify(message);
+            this.Close();
         }
     }
 }
