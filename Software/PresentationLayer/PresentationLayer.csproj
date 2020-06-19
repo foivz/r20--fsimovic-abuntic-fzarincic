@@ -137,6 +137,12 @@
     <Compile Include="RegistrationForms\FormRegistration.Designer.cs">
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportForms\FormSviArtikliReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\FormSviArtikliReport.Designer.cs">
+      <DependentUpon>FormSviArtikliReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportForms\FormSviDobavljaciReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,17 +205,22 @@
     <EmbeddedResource Include="RegistrationForms\FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\FormSviArtikliReport.resx">
+      <DependentUpon>FormSviArtikliReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportForms\FormSviDobavljaciReport.resx">
       <DependentUpon>FormSviDobavljaciReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportForms\FormSviZaposleniciReport.resx">
       <DependentUpon>FormSviZaposleniciReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportArtkli.rdlc" />
     <EmbeddedResource Include="Reports\ReportDobavljaci.rdlc" />
     <EmbeddedResource Include="Reports\ReportZaposlenici.rdlc" />
     <EmbeddedResource Include="StartForm\FormStart.resx">
       <DependentUpon>FormStart.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DatabaseLayer.Model.Artikl.datasource" />
     <None Include="DatabaseLayer.Model.Dobavljac.datasource" />
     <None Include="DatabaseLayer.Model.Zaposlenik.datasource" />
     <None Include="packages.config" />

@@ -770,3 +770,4 @@ C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\Pre
 C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
 C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\PresentationLayer.pdb
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.FormSviArtikliReport.resources
