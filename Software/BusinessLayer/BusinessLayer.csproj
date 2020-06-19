@@ -153,17 +153,9 @@
   <ItemGroup>
     <Compile Include="Enums\LoginResult.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
-    <Compile Include="Migrations\20200614135639_Initial.cs" />
-    <Compile Include="Migrations\20200614135639_Initial.designer.cs">
-      <DependentUpon>20200614135639_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20200617001306_Druga.cs" />
-    <Compile Include="Migrations\20200617001306_Druga.designer.cs">
-      <DependentUpon>20200617001306_Druga.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20200618120408_m1.cs" />
-    <Compile Include="Migrations\20200618120408_m1.designer.cs">
-      <DependentUpon>20200618120408_m1.cs</DependentUpon>
+    <Compile Include="Migrations\20200618163933_m1.cs" />
+    <Compile Include="Migrations\20200618163933_m1.designer.cs">
+      <DependentUpon>20200618163933_m1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ClubbingPayDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

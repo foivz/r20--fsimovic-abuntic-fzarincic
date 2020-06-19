@@ -179,7 +179,7 @@ namespace BusinessLayer.Migrations
 
                     b.HasIndex("RacunId");
 
-                    b.ToTable("StavkaRacuna");
+                    b.ToTable("StavkeRacuna");
                 });
 
             modelBuilder.Entity("DatabaseLayer.Model.Uloga", b =>

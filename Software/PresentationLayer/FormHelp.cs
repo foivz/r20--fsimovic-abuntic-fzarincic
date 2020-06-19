@@ -60,7 +60,7 @@ namespace PresentationLayer
         {
             FormNoviRacun form = new FormNoviRacun();
             form.ShowDialog();
-            this.Hide();
+            //this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)

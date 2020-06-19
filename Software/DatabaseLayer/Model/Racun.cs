@@ -42,6 +42,14 @@ namespace DatabaseLayer.Model
                 return Ukupno * 0.03;
             }
         }
+        [NotMapped]
+        public double Osnovica
+        {
+            get
+            {
+                return Ukupno - Pdv - PorezNaPotrosnju;
+            }
+        }
         #endregion
         public Racun()
         {

@@ -17,22 +17,31 @@ namespace PresentationLayer.DocumentsForms
 {
     public partial class FormNoviRacun : Form
     {
-        private readonly UnitOfWork UnitOfWork = new UnitOfWork(new ClubbingPayDbContext());
+        private UnitOfWork UnitOfWork = new UnitOfWork(new ClubbingPayDbContext());
         private Racun NoviRacun = new Racun();
-
+        List<Artikl> Artikli;
+        List<Artikl> ArtikliNaStanju = new List<Artikl>();
+        List<StavkaRacuna> StavkaRacua = new List<StavkaRacuna>();
         public FormNoviRacun()
         {
             InitializeComponent();
         }
         private void FormNoviRacun_Load(object sender, EventArgs e)
         {
+            Artikli = UnitOfWork.Artikli.GetAll();
             DohvatiArtikle();
         }
         private void DohvatiArtikle()
         {
-            //Uvjet da je količina > 0?
-            cmbArtikl.DataSource = UnitOfWork.Artikli.GetAll();
-            //To se treba na formi konfigurirati
+
+            foreach (var item in Artikli)
+            {
+                if (item.Kolicina > 0)
+                {
+                    ArtikliNaStanju.Add(item);
+                }
+            }
+            cmbArtikl.DataSource = ArtikliNaStanju;
             cmbArtikl.DisplayMember = "Naziv";
         }
         private void btnDodajArtikl_Click(object sender, EventArgs e)
@@ -40,6 +49,7 @@ namespace PresentationLayer.DocumentsForms
             var artikal = cmbArtikl.SelectedItem as Artikl;
             if (artikal != null && ValidationService.ParseNumber(tboKolicina.Text, out int kolicina) && kolicina > 0)
             {
+
                 var postojeciArtikal = NoviRacun.StavkaRacuna.FirstOrDefault(sr => sr.Artikl.Id == artikal.Id);
                 if (postojeciArtikal != null)
                 {
@@ -63,32 +73,53 @@ namespace PresentationLayer.DocumentsForms
         }
         private void OsvjeziIznose()
         {
-            double porezNaPotrosnju = NoviRacun.Ukupno * 0.03;
-            double pdv = NoviRacun.Ukupno * 0.25;
-            tboOsnovica.Text = pdv.ToString();
-            tboPorezNaDodanuVrijednost.Text = porezNaPotrosnju.ToString();
-            tboUkupno.Text = (NoviRacun.Ukupno + porezNaPotrosnju + pdv).ToString();
+            tboOsnovica.Text = NoviRacun.Osnovica.ToString();
+            tboPorezNaDodanuVrijednost.Text = NoviRacun.Pdv.ToString();
+            tboPorezNaPotrosnju.Text = NoviRacun.PorezNaPotrosnju.ToString();
+            tboUkupno.Text = NoviRacun.Ukupno.ToString();
         }
         private void OsvjeziDgv()
         {
             dgvStavkeRacuna.DataSource = null;
             dgvStavkeRacuna.DataSource = NoviRacun.StavkaRacuna;
-            //Konfigurirat na formi
+
             dgvStavkeRacuna.Columns["Racun"].Visible = false;
             dgvStavkeRacuna.Columns["RacunId"].Visible = false;
+            dgvStavkeRacuna.Columns["ArtiklId"].Visible = false;
+            dgvStavkeRacuna.Columns["Artikl"].DisplayIndex = 0;
+            dgvStavkeRacuna.Columns["Kolicina"].DisplayIndex = 1;
+            dgvStavkeRacuna.Columns["Cijena"].DisplayIndex = 2;
+            dgvStavkeRacuna.Columns["Ukupno"].DisplayIndex = 3;
         }
         private void btnIzdaj_Click(object sender, EventArgs e)
         {
+            NoviRacun.DatumIVrijemeIzdavanja = DateTime.Now;
+            NoviRacun.Zaposlenik = UserManager.LogiranKorisnik;
             UnitOfWork.Racuni.Add(NoviRacun);
-            string message = UnitOfWork.Complete() == 1 ? "Račun je uspješno kreiran" : "Račun nije moguće kreirati";
+            //Projvera zasto ne sprema u bazu
+            string message = "";
+            if (UnitOfWork.Complete() >= 0)
+            {
+                message = "Uspješno izdan račun";
+            }
+            else
+            {
+                message = "Neuspješno izdan račun";
+            }
             NotificationService.Notify(message);
+            this.Close();
         }
 
         private void FormNoviRacun_FormClosing(object sender, FormClosingEventArgs e)
         {
             UserManager.OdlogirajKorisnika();
-            if (e.CloseReason != CloseReason.FormOwnerClosing)
-                this.Owner.Close();
+
+        }
+
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            UserManager.OdlogirajKorisnika();
+            this.Close();
         }
     }
 }

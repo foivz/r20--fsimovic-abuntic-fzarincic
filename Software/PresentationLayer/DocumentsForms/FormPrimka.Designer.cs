@@ -136,6 +136,7 @@
             this.btnIzradi.TabIndex = 19;
             this.btnIzradi.Text = "Izradi primku";
             this.btnIzradi.UseVisualStyleBackColor = true;
+            this.btnIzradi.Click += new System.EventHandler(this.btnIzradi_Click);
             // 
             // dgvStavkePrimke
             // 
@@ -249,7 +250,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Stavke primke:";
             // 
-            // PrimkaForm
+            // FormPrimka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -268,7 +269,7 @@
             this.Controls.Add(this.txtZaposlenik);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnIzradi);
-            this.Name = "PrimkaForm";
+            this.Name = "FormPrimka";
             this.Text = "Nova primka";
             this.Load += new System.EventHandler(this.PrimkaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkePrimke)).EndInit();

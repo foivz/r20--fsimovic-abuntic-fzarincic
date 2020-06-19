@@ -29,11 +29,5 @@ namespace PresentationLayer.DocumentsForms
             FormSviDobavljaciReport form = new FormSviDobavljaciReport();
             form.ShowDialog();
         }
-
-        private void btnSviArtikli_Click(object sender, EventArgs e)
-        {
-            FormSviArtikliReport form = new FormSviArtikliReport();
-            form.ShowDialog();
-        }
     }
 }

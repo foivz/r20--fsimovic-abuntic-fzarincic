@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BusinessLayer.Migrations
 {
     [DbContext(typeof(ClubbingPayDbContext))]
-    [Migration("20200618120408_m1")]
+    [Migration("20200618163933_m1")]
     partial class m1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -181,7 +181,7 @@ namespace BusinessLayer.Migrations
 
                     b.HasIndex("RacunId");
 
-                    b.ToTable("StavkaRacuna");
+                    b.ToTable("StavkeRacuna");
                 });
 
             modelBuilder.Entity("DatabaseLayer.Model.Uloga", b =>

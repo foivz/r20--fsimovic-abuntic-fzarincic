@@ -30,14 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.DobavljacBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.DobavljacBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DobavljacBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // DobavljacBindingSource
-            // 
-            this.DobavljacBindingSource.DataSource = typeof(DatabaseLayer.Model.Dobavljac);
             // 
             // reportViewer1
             // 
@@ -52,6 +48,10 @@
             this.reportViewer1.Size = new System.Drawing.Size(585, 303);
             this.reportViewer1.TabIndex = 0;
             // 
+            // DobavljacBindingSource
+            // 
+            this.DobavljacBindingSource.DataSource = typeof(DatabaseLayer.Model.Dobavljac);
+            // 
             // FormSviDobavljaciReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -59,7 +59,7 @@
             this.ClientSize = new System.Drawing.Size(585, 303);
             this.Controls.Add(this.reportViewer1);
             this.Name = "FormSviDobavljaciReport";
-            this.Text = "Izvještaj o svim dobavljačima";
+            this.Text = "FormSviDobavljaciReport";
             this.Load += new System.EventHandler(this.FormSviDobavljaciReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DobavljacBindingSource)).EndInit();
             this.ResumeLayout(false);
