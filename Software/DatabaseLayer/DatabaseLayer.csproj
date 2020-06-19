@@ -55,6 +55,7 @@
     <Compile Include="Interfaces\IRacunRepository.cs" />
     <Compile Include="Interfaces\IStavkaPrimke.cs" />
     <Compile Include="Interfaces\IStavkaRacuna.cs" />
+    <Compile Include="Interfaces\IUlogaRepository.cs" />
     <Compile Include="Interfaces\IZaposlenikRepository.cs" />
     <Compile Include="Model\Artikl.cs" />
     <Compile Include="Model\Dobavljac.cs" />

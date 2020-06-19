@@ -409,14 +409,12 @@ D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Deb
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.QRForms.FormQrGenerate.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.RegistrationForms.FormRegistration.resources
-D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.FormSviZaposleniciReport.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.StartForm.FormStart.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.exe
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.pdb
-D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.EntityFrameworkCore.dll
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\netstandard.dll
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
@@ -772,3 +770,6 @@ C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\Presenta
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\System.Collections.Immutable.xml
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviArtikli.resources
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviDobavljaci.resources
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviZaposlenici.resources

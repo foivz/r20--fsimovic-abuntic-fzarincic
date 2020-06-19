@@ -44,14 +44,14 @@ namespace PresentationLayer
 
         private void buttonRegistracija_Click(object sender, EventArgs e)
         {
-            FormRegistration form = new FormRegistration();
+            FormRegistration form = new FormRegistration(this);
             form.Show();
             this.Hide();
         }
 
         private void buttonSviZaposlenici_Click(object sender, EventArgs e)
         {
-            FormSviZaposlenici form = new FormSviZaposlenici();
+            FormSviZaposlenici form = new FormSviZaposlenici(this);
             form.Show();
             this.Hide();
         }
@@ -85,6 +85,14 @@ namespace PresentationLayer
         {
             FormIzvještaji form = new FormIzvještaji();
             form.ShowDialog();
+        }
+
+        private void FormHelp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.F1)
+            {
+                HelpButton = true;
+            }
         }
     }
 }

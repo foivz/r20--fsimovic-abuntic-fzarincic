@@ -11,9 +11,9 @@ namespace DatabaseLayer.Interfaces
     {
         void Add(TEntity entity);
         void Delete(TEntity entity);
-        Task<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
+        TEntity Find(Expression<Func<TEntity, bool>> predicate);
         List<TEntity> GetAll();
-        Task<TEntity> GetById(int id);
+        TEntity GetById(int id);
         void Update(TEntity entity);
     }
 }

@@ -1,3 +1,7 @@
 
 Software/.vs/ClubbingPay/v15/.suo
 Software/.vs/ClubbingPay/v15/.suo
+*.lock
+Software/.vs/ClubbingPay/v15/Server/sqlite3/storage.ide
+Software/.vs/ClubbingPay/v15/Server/sqlite3/storage.ide-shm
+Software/.vs/ClubbingPay/v15/Server/sqlite3/storage.ide-wal

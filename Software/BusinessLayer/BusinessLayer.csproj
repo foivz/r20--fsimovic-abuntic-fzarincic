@@ -167,6 +167,7 @@
     <Compile Include="Repositories\RacunRepository.cs" />
     <Compile Include="Repositories\StavkaPrimkeRepository.cs" />
     <Compile Include="Repositories\StavkeRacunaRepository.cs" />
+    <Compile Include="Repositories\UlogaRepository.cs" />
     <Compile Include="Repositories\ZaposlenikRepository.cs" />
     <Compile Include="Services\ClubbingPayDbContext.cs" />
     <Compile Include="Services\QRService.cs" />

@@ -47,10 +47,10 @@ namespace BusinessLayer.Repositories
         /// </summary>
         /// <param name="predicate"></param>
         /// <returns></returns>
-        public async Task<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
+        public TEntity Find(Expression<Func<TEntity, bool>> predicate)
         {
             //return await _appDbContext.Set<TEntity>().FindAsync(predicate);
-            return await _appDbContext.Set<TEntity>().SingleOrDefaultAsync(predicate);
+            return _appDbContext.Set<TEntity>().SingleOrDefault(predicate);
         }
 
         /// <summary>
@@ -67,9 +67,9 @@ namespace BusinessLayer.Repositories
         /// </summary>
         /// <param name="id">id = id zapisa</param>
         /// <returns>Vraća zapis.</returns>
-        public async Task<TEntity> GetById(int id)
+        public TEntity GetById(int id)
         {
-            return await _appDbContext.Set<TEntity>().FindAsync(id);
+            return _appDbContext.Set<TEntity>().Find(id);
         }
 
         /// <summary>

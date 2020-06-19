@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Repositories;
 using DatabaseLayer.Interfaces;
+using DatabaseLayer.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,8 @@ namespace BusinessLayer.Services
         public IStavkaRacuna StavkeRacuna { get; set; }
         public IPrimkaRepository Primke { get; set; }
         public IStavkaPrimke StavkePrimke { get; set; }
+        public IUlogaRepository Uloge { get; set; }
+
         public UnitOfWork(ClubbingPayDbContext dbContext)
         {
             _appDbContext = dbContext;
@@ -30,6 +33,7 @@ namespace BusinessLayer.Services
             StavkeRacuna = new StavkeRacunaRepository(_appDbContext);
             Primke = new PrimkaRepository(_appDbContext);
             StavkePrimke = new StavkaPrimkeRepository(_appDbContext);
+            Uloge = new UlogaRepository(_appDbContext);
         }
 
         public int Complete()

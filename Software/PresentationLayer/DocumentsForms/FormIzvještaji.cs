@@ -20,19 +20,19 @@ namespace PresentationLayer.DocumentsForms
 
         private void btnSviZaposlenici_Click(object sender, EventArgs e)
         {
-            FormSviZaposleniciReport form = new FormSviZaposleniciReport();
+            ReportSviZaposlenici form = new ReportSviZaposlenici();
             form.ShowDialog();
         }
 
         private void btnSviDobavljaci_Click(object sender, EventArgs e)
         {
-            FormSviDobavljaciReport form = new FormSviDobavljaciReport();
+            ReportSviDobavljaci form = new ReportSviDobavljaci();
             form.ShowDialog();
         }
 
         private void btnSviArtikli_Click(object sender, EventArgs e)
         {
-            FormSviArtikliReport form = new FormSviArtikliReport();
+            ReportSviArtikli form = new ReportSviArtikli();
             form.ShowDialog();
         }
     }

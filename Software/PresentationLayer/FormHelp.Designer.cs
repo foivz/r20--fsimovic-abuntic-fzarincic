@@ -133,9 +133,11 @@
             this.Controls.Add(this.buttonGenQrFrom);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.buttonQrLogin);
+            this.KeyPreview = true;
             this.Name = "FormHelp";
             this.Text = "FormHelp";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormHelp_FormClosed);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormHelp_KeyPress);
             this.ResumeLayout(false);
 
         }

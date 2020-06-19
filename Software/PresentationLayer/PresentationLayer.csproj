@@ -56,6 +56,7 @@
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -137,23 +138,23 @@
     <Compile Include="RegistrationForms\FormRegistration.Designer.cs">
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportForms\FormSviArtikliReport.cs">
+    <Compile Include="ReportForms\ReportSviArtikli.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportForms\FormSviArtikliReport.Designer.cs">
-      <DependentUpon>FormSviArtikliReport.cs</DependentUpon>
+    <Compile Include="ReportForms\ReportSviArtikli.Designer.cs">
+      <DependentUpon>ReportSviArtikli.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportForms\FormSviDobavljaciReport.cs">
+    <Compile Include="ReportForms\ReportSviDobavljaci.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportForms\FormSviDobavljaciReport.Designer.cs">
-      <DependentUpon>FormSviDobavljaciReport.cs</DependentUpon>
+    <Compile Include="ReportForms\ReportSviDobavljaci.Designer.cs">
+      <DependentUpon>ReportSviDobavljaci.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReportForms\FormSviZaposleniciReport.cs">
+    <Compile Include="ReportForms\ReportSviZaposlenici.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportForms\FormSviZaposleniciReport.Designer.cs">
-      <DependentUpon>FormSviZaposleniciReport.cs</DependentUpon>
+    <Compile Include="ReportForms\ReportSviZaposlenici.Designer.cs">
+      <DependentUpon>ReportSviZaposlenici.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\NotificationService.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -205,14 +206,14 @@
     <EmbeddedResource Include="RegistrationForms\FormRegistration.resx">
       <DependentUpon>FormRegistration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportForms\FormSviArtikliReport.resx">
-      <DependentUpon>FormSviArtikliReport.cs</DependentUpon>
+    <EmbeddedResource Include="ReportForms\ReportSviArtikli.resx">
+      <DependentUpon>ReportSviArtikli.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportForms\FormSviDobavljaciReport.resx">
-      <DependentUpon>FormSviDobavljaciReport.cs</DependentUpon>
+    <EmbeddedResource Include="ReportForms\ReportSviDobavljaci.resx">
+      <DependentUpon>ReportSviDobavljaci.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportForms\FormSviZaposleniciReport.resx">
-      <DependentUpon>FormSviZaposleniciReport.cs</DependentUpon>
+    <EmbeddedResource Include="ReportForms\ReportSviZaposlenici.resx">
+      <DependentUpon>ReportSviZaposlenici.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportArtkli.rdlc" />
     <EmbeddedResource Include="Reports\ReportDobavljaci.rdlc" />

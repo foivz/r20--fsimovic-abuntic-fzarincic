@@ -90,12 +90,12 @@
             this.textBoxPrezime.Location = new System.Drawing.Point(105, 103);
             this.textBoxPrezime.Name = "textBoxPrezime";
             this.textBoxPrezime.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPrezime.TabIndex = 3;
+            this.textBoxPrezime.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(53, 163);
+            this.label4.Location = new System.Drawing.Point(53, 217);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 6;
@@ -103,15 +103,15 @@
             // 
             // textBoxTelefon
             // 
-            this.textBoxTelefon.Location = new System.Drawing.Point(105, 160);
+            this.textBoxTelefon.Location = new System.Drawing.Point(105, 214);
             this.textBoxTelefon.Name = "textBoxTelefon";
             this.textBoxTelefon.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTelefon.TabIndex = 5;
+            this.textBoxTelefon.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(283, 106);
+            this.label5.Location = new System.Drawing.Point(64, 159);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 8;
@@ -119,15 +119,15 @@
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(324, 103);
+            this.textBoxEmail.Location = new System.Drawing.Point(105, 156);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEmail.TabIndex = 7;
+            this.textBoxEmail.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(235, 163);
+            this.label6.Location = new System.Drawing.Point(235, 109);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(83, 13);
             this.label6.TabIndex = 10;
@@ -135,10 +135,10 @@
             // 
             // textBoxBrojZiroRacuna
             // 
-            this.textBoxBrojZiroRacuna.Location = new System.Drawing.Point(324, 160);
+            this.textBoxBrojZiroRacuna.Location = new System.Drawing.Point(324, 106);
             this.textBoxBrojZiroRacuna.Name = "textBoxBrojZiroRacuna";
             this.textBoxBrojZiroRacuna.Size = new System.Drawing.Size(100, 20);
-            this.textBoxBrojZiroRacuna.TabIndex = 9;
+            this.textBoxBrojZiroRacuna.TabIndex = 6;
             // 
             // label7
             // 
@@ -154,12 +154,12 @@
             this.textBoxOIB.Location = new System.Drawing.Point(324, 52);
             this.textBoxOIB.Name = "textBoxOIB";
             this.textBoxOIB.Size = new System.Drawing.Size(100, 20);
-            this.textBoxOIB.TabIndex = 11;
+            this.textBoxOIB.TabIndex = 5;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(21, 221);
+            this.label8.Location = new System.Drawing.Point(240, 162);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 13);
             this.label8.TabIndex = 14;
@@ -167,17 +167,17 @@
             // 
             // textBoxKorisnickoIme
             // 
-            this.textBoxKorisnickoIme.Location = new System.Drawing.Point(105, 218);
+            this.textBoxKorisnickoIme.Location = new System.Drawing.Point(324, 159);
             this.textBoxKorisnickoIme.Name = "textBoxKorisnickoIme";
             this.textBoxKorisnickoIme.Size = new System.Drawing.Size(100, 20);
-            this.textBoxKorisnickoIme.TabIndex = 13;
+            this.textBoxKorisnickoIme.TabIndex = 7;
             // 
             // buttonRegistriraj
             // 
             this.buttonRegistriraj.Location = new System.Drawing.Point(313, 280);
             this.buttonRegistriraj.Name = "buttonRegistriraj";
             this.buttonRegistriraj.Size = new System.Drawing.Size(75, 23);
-            this.buttonRegistriraj.TabIndex = 15;
+            this.buttonRegistriraj.TabIndex = 10;
             this.buttonRegistriraj.Text = "Registriraj";
             this.buttonRegistriraj.UseVisualStyleBackColor = true;
             this.buttonRegistriraj.Click += new System.EventHandler(this.buttonRegistriraj_Click);
@@ -196,7 +196,7 @@
             this.textBoxLozinka.Location = new System.Drawing.Point(324, 218);
             this.textBoxLozinka.Name = "textBoxLozinka";
             this.textBoxLozinka.Size = new System.Drawing.Size(100, 20);
-            this.textBoxLozinka.TabIndex = 17;
+            this.textBoxLozinka.TabIndex = 8;
             // 
             // comboBoxUloga
             // 
@@ -204,7 +204,7 @@
             this.comboBoxUloga.Location = new System.Drawing.Point(144, 280);
             this.comboBoxUloga.Name = "comboBoxUloga";
             this.comboBoxUloga.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxUloga.TabIndex = 18;
+            this.comboBoxUloga.TabIndex = 9;
             // 
             // label10
             // 
@@ -217,6 +217,7 @@
             // 
             // FormRegistration
             // 
+            this.AcceptButton = this.buttonRegistriraj;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(520, 333);
@@ -242,6 +243,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormRegistration";
             this.Text = "Registracija";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormRegistration_FormClosing);
             this.Load += new System.EventHandler(this.FormRegistration_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -256,19 +258,19 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxPrezime;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBoxTelefon;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxTelefon;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxBrojZiroRacuna;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxOIB;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBoxBrojZiroRacuna;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBoxKorisnickoIme;
-        private System.Windows.Forms.Button buttonRegistriraj;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxLozinka;
         private System.Windows.Forms.ComboBox comboBoxUloga;
+        private System.Windows.Forms.Button buttonRegistriraj;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
     }
 }

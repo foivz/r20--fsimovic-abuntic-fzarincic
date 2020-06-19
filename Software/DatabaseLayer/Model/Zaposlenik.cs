@@ -30,7 +30,7 @@ namespace DatabaseLayer.Model
 
         }
 
-        public Zaposlenik(string ime, string prezime, string telefon, string email, string brojZiroRacuna, string lozinka, string oib, string korisnickoIme)
+        public Zaposlenik(string ime, string prezime, string telefon, string email, string brojZiroRacuna, string lozinka, string oib, string korisnickoIme, Uloga uloga)
         {
             Ime = ime;
             Prezime = prezime;
@@ -41,7 +41,8 @@ namespace DatabaseLayer.Model
             Uloga = null;
             OIB = oib;
             KorisnickoIme = korisnickoIme;
-            LozinkaHash = lozinka.GetHashCode().ToString();
+            LozinkaHash = lozinka;
+            Uloga = uloga;
         }
     }
 }

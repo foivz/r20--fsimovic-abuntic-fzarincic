@@ -15,10 +15,5 @@ namespace DatabaseLayer.Model
         public int Id { get; set; }
         public string Naziv { get; set; }
         #endregion
-
-        public Uloga()
-        {
-
-        }
     }
 }

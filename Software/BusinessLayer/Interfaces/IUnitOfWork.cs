@@ -10,6 +10,7 @@ namespace BusinessLayer
         IDobavljacRepository Dobavljaci { get; set; }
         IRacunRepository Racuni { get; set; }
         IStavkaRacuna StavkeRacuna { get; set; }
+        IUlogaRepository Uloge { get; set; }
         int Complete();
     }
 }
