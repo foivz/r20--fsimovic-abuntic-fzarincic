@@ -77,6 +77,9 @@ namespace PresentationLayer.DocumentsForms
                     });
                 }
 
+                Artikl ArtiklUBazi = UnitOfWork.Artikli.GetById(artikl.Id);
+                ArtiklUBazi.Kolicina += kolicina;
+
             }
             else
             {
@@ -147,13 +150,6 @@ namespace PresentationLayer.DocumentsForms
             else
             {
                 NotificationService.InvalidInput();
-            }
-           
-            // UPDATENJE STANJA NAD ARTIKLIMA
-            foreach (var item in NovaPrimka.StavkaPrimke)
-            {
-                //UnitOfWork.Artikli.GetById(item.Artikl.Id);
-                
             }
 
             UnitOfWork.Primke.Add(NovaPrimka);
