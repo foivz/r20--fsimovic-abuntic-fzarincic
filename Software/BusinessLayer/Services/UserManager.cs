@@ -52,5 +52,7 @@ namespace BusinessLayer.Services
         {
             LogiranKorisnik = null;
         }
+
+        
     }
 }

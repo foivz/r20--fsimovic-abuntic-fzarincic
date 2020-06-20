@@ -10,18 +10,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DatabaseLayer.Model;
 using PresentationLayer.Services;
+
 namespace PresentationLayer.DocumentsForms
 {
-    public partial class FormPrimka : Form
+    public partial class FormNovaNarudzbenica : Form
     {
         private UnitOfWork UnitOfWork = new UnitOfWork(new ClubbingPayDbContext());
-        private Primka NovaPrimka = new Primka();
-        public FormPrimka()
+        private Narudzbenica NovaNarudzbenica = new Narudzbenica();
+        public FormNovaNarudzbenica()
         {
             InitializeComponent();
         }
 
-        private void PrimkaForm_Load(object sender, EventArgs e)
+        private void FormNovaNarudzbenica_Load(object sender, EventArgs e)
         {
             OsvjeziDobavljece();
             DohvatiArtikle();
@@ -41,12 +42,27 @@ namespace PresentationLayer.DocumentsForms
 
         }
 
-        private void btnOdustani_Click(object sender, EventArgs e)
+        private void txtNapomena_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
 
         private void tboNapomena_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tboOdgoda_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtOdgoda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
@@ -60,26 +76,24 @@ namespace PresentationLayer.DocumentsForms
 
         private void btnDodajArtikl_Click(object sender, EventArgs e)
         {
-            
             var artikl = cmbArtikl.SelectedItem as Artikl;
             if (artikl != null && ValidationService.ParseNumber(tboKolicina.Text, out int kolicina) && kolicina > 0)
             {
-                var PostojeciArtikl = NovaPrimka.StavkaPrimke.FirstOrDefault(sr => sr.Artikl.Id == artikl.Id);
+                var PostojeciArtikl = NovaNarudzbenica.StavkaNarudzbe.FirstOrDefault(sr => sr.Artikl.Id == artikl.Id);
                 if (PostojeciArtikl != null)
                 {
                     PostojeciArtikl.Kolicina += kolicina;
                 }
                 else
                 {
-                    NovaPrimka.StavkaPrimke.Add(new StavkaPrimke
+                    NovaNarudzbenica.StavkaNarudzbe.Add(new StavkaNarudzbenice
                     {
                         Artikl = artikl,
                         Kolicina = kolicina,
                     });
                 }
 
-                Artikl ArtiklUBazi = UnitOfWork.Artikli.GetById(artikl.Id);
-                ArtiklUBazi.Kolicina += kolicina;
+                
 
             }
             else
@@ -87,38 +101,18 @@ namespace PresentationLayer.DocumentsForms
                 NotificationService.InvalidInput();
             }
             OsvjeziDgv();
-
         }
 
         private void OsvjeziDgv()
         {
-            dgvStavkePrimke.DataSource = null;
-            dgvStavkePrimke.DataSource = NovaPrimka.StavkaPrimke;
+            dgvStavkeNarudzbenice.DataSource = null;
+            dgvStavkeNarudzbenice.DataSource = NovaNarudzbenica.StavkaNarudzbe;
 
-            dgvStavkePrimke.Columns["Artikl"].DisplayIndex = 0;
-            dgvStavkePrimke.Columns["Kolicina"].DisplayIndex = 1;
-            dgvStavkePrimke.Columns["Primka"].Visible = false;
-            dgvStavkePrimke.Columns["PrimkaId"].Visible = false;
-            dgvStavkePrimke.Columns["ArtiklId"].Visible = false;
-        }
-
-        private void txtKolicina_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void tboKolicina_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtArtikl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbArtikl_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            dgvStavkeNarudzbenice.Columns["Artikl"].DisplayIndex = 0;
+            dgvStavkeNarudzbenice.Columns["Kolicina"].DisplayIndex = 1;
+            dgvStavkeNarudzbenice.Columns["Narudzbenica"].Visible = false;
+            dgvStavkeNarudzbenice.Columns["NarudzbenicaId"].Visible = false;
+            dgvStavkeNarudzbenice.Columns["ArtiklId"].Visible = false;
         }
 
         private void btnNoviDobavljac_Click(object sender, EventArgs e)
@@ -128,42 +122,35 @@ namespace PresentationLayer.DocumentsForms
             OsvjeziDobavljece();
         }
 
+        private void btnOdustani_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void btnIzradi_Click(object sender, EventArgs e)
         {
-            NovaPrimka.Datum = dtpDatum.Value;
             bool izdaj = true;
+            NovaNarudzbenica.DatumIVrijemeIzdavanja = dtpDatum.Value;
             if (ValidationService.IsNotNull(cboDobavljac.SelectedItem as Dobavljac))
             {
-                NovaPrimka.Dobavljac = cboDobavljac.SelectedItem as Dobavljac;
+                NovaNarudzbenica.Dobavljac = cboDobavljac.SelectedItem as Dobavljac;
             }
             else
             {
                 NotificationService.InvalidInput();
                 izdaj = false;
             }
+            NovaNarudzbenica.Zaposlenik = UserManager.LogiranKorisnik;
 
-            NovaPrimka.Zaposlenik = UserManager.LogiranKorisnik;
-            NovaPrimka.Napomena = tboNapomena.Text;
-
-            if (ValidationService.ParseNumber(tboOdgoda.Text, out int odgoda))
-            {
-                NovaPrimka.Odgoda = odgoda;
-            }
-            else
-            {
-                NotificationService.InvalidInput();
-                izdaj = false;
-            }
-
-            UnitOfWork.Primke.Add(NovaPrimka);
+            UnitOfWork.Narudzbenica.Add(NovaNarudzbenica);
             string message = "";
             if (UnitOfWork.Complete() >= 0 && izdaj)
             {
-                message = "Uspješno izdana primka";
+                message = "Uspješno izdana narudzbenica";
             }
             else
             {
-                message = "Neuspješno izdana primkka";
+                message = "Neuspješno izdana narudzbenica";
             }
             NotificationService.Notify(message);
             this.Close();

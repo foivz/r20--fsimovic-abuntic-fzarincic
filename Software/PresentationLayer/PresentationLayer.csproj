@@ -88,6 +88,12 @@
     <Compile Include="DocumentsForms\FormKategorija.Designer.cs">
       <DependentUpon>FormKategorija.cs</DependentUpon>
     </Compile>
+    <Compile Include="DocumentsForms\FormNovaNarudzbenica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForms\FormNovaNarudzbenica.Designer.cs">
+      <DependentUpon>FormNovaNarudzbenica.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocumentsForms\FormNoviRacun.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormKategorija.resx">
       <DependentUpon>FormKategorija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentsForms\FormNovaNarudzbenica.resx">
+      <DependentUpon>FormNovaNarudzbenica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormNoviRacun.resx">
       <DependentUpon>FormNoviRacun.cs</DependentUpon>
