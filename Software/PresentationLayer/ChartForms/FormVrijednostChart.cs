@@ -13,28 +13,28 @@ using System.Windows.Forms;
 
 namespace PresentationLayer.ChartForms
 {
-    public partial class FormArtikliChart : Form
+    public partial class FormVrijednostZaliha : Form
     {
-        private UnitOfWork unitOfWork = new UnitOfWork(new ClubbingPayDbContext());
+        private IUnitOfWork unitOfWork = new UnitOfWork(new ClubbingPayDbContext());
         List<Artikl> listArtikla = new List<Artikl>();
 
-        public FormArtikliChart()
+        public FormVrijednostZaliha()
         {
             InitializeComponent();
             listArtikla = unitOfWork.Artikli.GetAll();
         }
-        
-        private void FormArtikliChart_Load(object sender, EventArgs e)
+
+        private void FormVrijednostZaliha_Load(object sender, EventArgs e)
         {
-            chartArtikli.ChartAreas[0].AxisX.LabelStyle.Interval = 1;
+            chartVrijednostStanjaZaliha.ChartAreas[0].AxisX.LabelStyle.Interval = 1;
 
             foreach (var item in listArtikla)
             {
-                chartArtikli.Series["Artikli"].Points.AddXY(item.Naziv, item.Kolicina);
+                chartVrijednostStanjaZaliha.Series["Kune"].Points.AddXY(item.Naziv, item.Cijena * item.Kolicina);
             }
         }
 
-        private void FormArtikliChart_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormVrijednostZaliha_FormClosing(object sender, FormClosingEventArgs e)
         {
             Owner.Owner.Visible = true;
             Owner.Dispose();

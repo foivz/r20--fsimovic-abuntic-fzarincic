@@ -79,7 +79,7 @@ namespace PresentationLayer.MainForm
 
         private void buttonArtiklChart_Click(object sender, EventArgs e)
         {
-            FormArtikliChart form = new FormArtikliChart() { Owner = this };
+            FormChartSelect form = new FormChartSelect() { Owner = this };
             Hide();
             form.Show();
         }

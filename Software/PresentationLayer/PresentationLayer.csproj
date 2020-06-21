@@ -77,6 +77,18 @@
     <Compile Include="ChartForms\FormArtikliChart.Designer.cs">
       <DependentUpon>FormArtikliChart.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChartForms\FormChartSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChartForms\FormChartSelect.Designer.cs">
+      <DependentUpon>FormChartSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChartForms\FormVrijednostChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChartForms\FormVrijednostChart.Designer.cs">
+      <DependentUpon>FormVrijednostChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocumentsForms\FormAzurirajArtikl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +204,12 @@
     <EmbeddedResource Include="ChartForms\FormArtikliChart.resx">
       <DependentUpon>FormArtikliChart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChartForms\FormChartSelect.resx">
+      <DependentUpon>FormChartSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartForms\FormVrijednostChart.resx">
+      <DependentUpon>FormVrijednostChart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormAzurirajArtikl.resx">
       <DependentUpon>FormAzurirajArtikl.cs</DependentUpon>
     </EmbeddedResource>
@@ -300,6 +318,9 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

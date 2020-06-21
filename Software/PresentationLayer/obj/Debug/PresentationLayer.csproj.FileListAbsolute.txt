@@ -777,3 +777,12 @@ C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\Presenta
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNovaPrimka.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.MainForm.FormMain.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.RegistrationForms.FormRegistrationOrEdit.resources
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\netstandard.dll
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.EntityFrameworkCore.xml
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\System.Collections.Immutable.xml
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ChartForms.FormVrijednostZaliha.resources
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ChartForms.FormChartSelect.resources
