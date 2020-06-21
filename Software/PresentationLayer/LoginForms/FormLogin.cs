@@ -38,8 +38,7 @@ namespace PresentationLayer.LoginForms
         private void FormLoginQRScan_FormClosing(object sender, FormClosingEventArgs e)
         {
             video.UgaisKameru();
-
-            this.Owner.Show();
+            
         }
 
         private void Image_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -56,20 +55,20 @@ namespace PresentationLayer.LoginForms
             {
                 if (QRService.ProcitajQR(video.Picture) == LoginResult.Succesful)
                 {
-                    FormNoviRacun form = new FormNoviRacun
+                    FormNoviRacun form = new FormNoviRacun()
                     {
                         Owner = this
                     };
 
                     video.UgaisKameru();
 
-                    form.Show();
-                    this.Hide();
-                    //if (IsHandleCreated)
-                    //{
-                    //    Invoke((Action)(() => { form.Show(); }));
-                    //    Invoke((Action)(() => { this.Hide(); }));
-                    //}
+                    //form.Show();
+                    //this.Hide();
+                    if (IsHandleCreated)
+                    {
+                        Invoke((Action)(() => { form.Show(); }));
+                        Invoke((Action)(() => { this.Hide(); }));
+                    }
                 }
                 else
                 {
@@ -91,7 +90,7 @@ namespace PresentationLayer.LoginForms
             }
             else
             {
-                FormNoviRacun form = new FormNoviRacun
+                FormNoviRacun form = new FormNoviRacun()
                 {
                     Owner = this
                 };
@@ -103,6 +102,11 @@ namespace PresentationLayer.LoginForms
                 textBoxUsername.Clear();
                 textBoxPassword.Clear();
             }
+        }
+
+        private void FormLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Owner.Visible = true;
         }
     }
 }

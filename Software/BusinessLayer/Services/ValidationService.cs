@@ -30,15 +30,37 @@ namespace BusinessLayer.Services
             }
         }
 
+        public static bool AssertLargerThanZero(string number)
+        {
+            if (!ParseNumber(number, out int parsedNumber))
+            {
+                return false;
+            }
+            else
+            {
+                return parsedNumber >= 1 ? true : false;
+            }
+        }
+
         public static bool AssertStringLenght(string input, int lenght)
         {
             return input.Length >= lenght;
+        }
+
+        public static bool AssertEmail(string input)
+        {
+            return input.Contains("@") ? true : false;
         }
 
         public static bool IsNotNull(object test)
         {
             if (test != null) return true;
             else return false;
+        }
+
+        public static bool IsNotEmpty(string input)
+        {
+            return input != "" ? true : false;
         }
     }
 }

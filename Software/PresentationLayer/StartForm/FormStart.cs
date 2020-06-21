@@ -20,7 +20,7 @@ namespace PresentationLayer.StartForm
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            FormLogin form = new FormLogin
+            FormLogin form = new FormLogin()
             {
                 Owner = this
             };

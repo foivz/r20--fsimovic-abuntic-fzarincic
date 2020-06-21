@@ -13,6 +13,7 @@ namespace DatabaseLayer.Interfaces
         void Delete(TEntity entity);
         TEntity Find(Expression<Func<TEntity, bool>> predicate);
         List<TEntity> GetAll();
+        List<TEntity> GetAll(TEntity entity);
         TEntity GetById(int id);
         void Update(TEntity entity);
     }

@@ -18,7 +18,7 @@ namespace PresentationLayer.Services
         /// </summary>
         public static void InvalidInput()
         {
-            MessageBox.Show("Unijeli ste neispravne podatke!");
+            MessageBox.Show("Sva polja trebaju biti ispunjena!");
         }
 
         public static void QrError()
@@ -49,6 +49,16 @@ namespace PresentationLayer.Services
         public static void Notify(string message)
         {
             MessageBox.Show(message);
+        }
+
+        public static void EmployeeCheck(string message)
+        {
+            MessageBox.Show(message);
+        }
+
+        public static void NumberField(string field)
+        {
+            MessageBox.Show($"{field} - isključivo unos brojeva!");
         }
     }
 }

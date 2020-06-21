@@ -62,6 +62,11 @@ namespace BusinessLayer.Repositories
             return _appDbContext.Set<TEntity>().ToList() as List<TEntity>;
         }
 
+        public List<TEntity> GetAll(TEntity entity)
+        {
+            return _appDbContext.Set<TEntity>().ToList() as List<TEntity>;
+        }
+
         /// <summary>
         /// Metoda GetById dohvaća zapis po id-u.
         /// </summary>

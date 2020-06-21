@@ -32,5 +32,30 @@ namespace BusinessLayer.Repositories
         {
             return _dbContext.Zaposlenici.FirstOrDefault(z => z.KorisnickoIme == user && z.LozinkaHash == password);
         }
+
+        /// <summary>
+        /// Metoda UsporediOIB traži postoji li taj korisnik u bazi prema prosljeđenom oibu iz forme za registraciju.
+        /// </summary>
+        /// <param name="oib">prosljeđeni oib sa forme</param>
+        /// <returns>ture/false</returns>
+        public bool UsporediOIB(string oib)
+        {
+            return _dbContext.Zaposlenici.Select(x => x.OIB).Contains(oib) ? true : false;
+        }
+
+        /// <summary>
+        /// Metoda UsporediKorisnickoIme gleda je li korisničko ime već zauzeto.
+        /// </summary>
+        /// <param name="korisnickoIme">prosljeđeno korisničko ime s forme za registraciju</param>
+        /// <returns>true/false</returns>
+        public bool UsporediKorisnickoIme(string korisnickoIme)
+        {
+            return _dbContext.Zaposlenici.Select(x => x.KorisnickoIme).Contains(korisnickoIme) ? true : false;
+        }
+
+        public int DohvatiIdKorisnika(string oib)
+        {
+            return _dbContext.Zaposlenici.Where(w => w.OIB == oib).Select(s => s.Id).FirstOrDefault();
+        }
     }
 }

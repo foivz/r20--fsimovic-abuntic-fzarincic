@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Services;
+using DatabaseLayer.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,22 +14,17 @@ namespace PresentationLayer.QRForms
 {
     public partial class FormQrGenerate : Form
     {
-        public FormQrGenerate()
+        private Zaposlenik zaposlenik;
+
+        public FormQrGenerate(Zaposlenik _zaposlenik)
         {
             InitializeComponent();
-        }
-
-        private void buttonGenerateQR_Click(object sender, EventArgs e)
-        {
-            string user = textBoxUsername.Text;
-            string pass = textBoxPassword.Text;
-            
-            pictureBoxQR.Image = QRService.GenerirajQR(user, pass);
+            zaposlenik = _zaposlenik;
         }
 
         private void FormQrGenerate_Load(object sender, EventArgs e)
         {
-            textBoxPassword.UseSystemPasswordChar = true;
+            pictureBoxQR.Image = QRService.GenerirajQR(zaposlenik.KorisnickoIme, zaposlenik.LozinkaHash);
         }
     }
 }
