@@ -29,5 +29,11 @@ namespace PresentationLayer.ReportForms
             ZaposlenikBindingSource.DataSource = listaZaposlenika;
             this.reportViewer1.RefreshReport();
         }
+
+        private void ReportSviZaposlenici_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Owner.Visible = true;
+            Owner.Dispose();
+        }
     }
 }

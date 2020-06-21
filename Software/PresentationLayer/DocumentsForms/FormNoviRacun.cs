@@ -31,6 +31,7 @@ namespace PresentationLayer.DocumentsForms
         {
             Artikli = UnitOfWork.Artikli.GetAll();
             DohvatiArtikle();
+            textBoxZaposlenik.Name = UserManager.LogiranKorisnik.KorisnickoIme;
             //tboZaposlenik.Text = UserManager.LogiranKorisnik.ToString();
         }
         private void DohvatiArtikle()
@@ -118,14 +119,11 @@ namespace PresentationLayer.DocumentsForms
 
         private void FormNoviRacun_FormClosing(object sender, FormClosingEventArgs e)
         {
-            UserManager.OdlogirajKorisnika();
-            this.Owner.Owner.Visible = true;
-            this.Owner.Dispose();
+            this.Owner.Visible = true;
         }
 
         private void btnOdustani_Click(object sender, EventArgs e)
         {
-            this.Owner.Owner.Visible = true;
             this.Close();
         }
     }

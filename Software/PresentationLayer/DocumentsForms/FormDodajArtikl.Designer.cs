@@ -42,59 +42,64 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 24);
+            this.label1.Location = new System.Drawing.Point(9, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Naziv:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxNaziv
             // 
-            this.textBoxNaziv.Location = new System.Drawing.Point(89, 21);
+            this.textBoxNaziv.Location = new System.Drawing.Point(67, 17);
+            this.textBoxNaziv.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNaziv.Name = "textBoxNaziv";
-            this.textBoxNaziv.Size = new System.Drawing.Size(121, 22);
+            this.textBoxNaziv.Size = new System.Drawing.Size(117, 20);
             this.textBoxNaziv.TabIndex = 1;
-            this.textBoxNaziv.TextChanged += new System.EventHandler(this.textBoxNaziv_TextChanged);
             // 
             // textBoxCijena
             // 
-            this.textBoxCijena.Location = new System.Drawing.Point(89, 53);
+            this.textBoxCijena.Location = new System.Drawing.Point(67, 43);
+            this.textBoxCijena.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCijena.Name = "textBoxCijena";
-            this.textBoxCijena.Size = new System.Drawing.Size(121, 22);
+            this.textBoxCijena.Size = new System.Drawing.Size(117, 20);
             this.textBoxCijena.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 56);
+            this.label3.Location = new System.Drawing.Point(9, 46);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 17);
+            this.label3.Size = new System.Drawing.Size(39, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Cijena:";
             // 
             // comboBoxKategorija
             // 
             this.comboBoxKategorija.FormattingEnabled = true;
-            this.comboBoxKategorija.Location = new System.Drawing.Point(89, 82);
+            this.comboBoxKategorija.Location = new System.Drawing.Point(67, 67);
+            this.comboBoxKategorija.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxKategorija.Name = "comboBoxKategorija";
-            this.comboBoxKategorija.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxKategorija.Size = new System.Drawing.Size(117, 21);
             this.comboBoxKategorija.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 85);
+            this.label4.Location = new System.Drawing.Point(9, 71);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 17);
+            this.label4.Size = new System.Drawing.Size(57, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Kategorija:";
             // 
             // buttonNovaKategorija
             // 
-            this.buttonNovaKategorija.Location = new System.Drawing.Point(15, 115);
+            this.buttonNovaKategorija.Location = new System.Drawing.Point(11, 93);
+            this.buttonNovaKategorija.Margin = new System.Windows.Forms.Padding(2);
             this.buttonNovaKategorija.Name = "buttonNovaKategorija";
-            this.buttonNovaKategorija.Size = new System.Drawing.Size(195, 23);
+            this.buttonNovaKategorija.Size = new System.Drawing.Size(173, 33);
             this.buttonNovaKategorija.TabIndex = 8;
             this.buttonNovaKategorija.Text = "Nova kategorija";
             this.buttonNovaKategorija.UseVisualStyleBackColor = true;
@@ -102,9 +107,10 @@
             // 
             // buttonDodaj
             // 
-            this.buttonDodaj.Location = new System.Drawing.Point(15, 145);
+            this.buttonDodaj.Location = new System.Drawing.Point(102, 130);
+            this.buttonDodaj.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDodaj.Name = "buttonDodaj";
-            this.buttonDodaj.Size = new System.Drawing.Size(75, 23);
+            this.buttonDodaj.Size = new System.Drawing.Size(82, 41);
             this.buttonDodaj.TabIndex = 9;
             this.buttonDodaj.Text = "Dodaj";
             this.buttonDodaj.UseVisualStyleBackColor = true;
@@ -112,9 +118,10 @@
             // 
             // buttonOdustani
             // 
-            this.buttonOdustani.Location = new System.Drawing.Point(118, 145);
+            this.buttonOdustani.Location = new System.Drawing.Point(12, 130);
+            this.buttonOdustani.Margin = new System.Windows.Forms.Padding(2);
             this.buttonOdustani.Name = "buttonOdustani";
-            this.buttonOdustani.Size = new System.Drawing.Size(92, 23);
+            this.buttonOdustani.Size = new System.Drawing.Size(86, 41);
             this.buttonOdustani.TabIndex = 10;
             this.buttonOdustani.Text = "Odustani";
             this.buttonOdustani.UseVisualStyleBackColor = true;
@@ -122,9 +129,10 @@
             // 
             // FormDodajArtikl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(235, 207);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(195, 177);
             this.Controls.Add(this.buttonOdustani);
             this.Controls.Add(this.buttonDodaj);
             this.Controls.Add(this.buttonNovaKategorija);
@@ -134,8 +142,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxNaziv);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDodajArtikl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodaj artikl";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormDodajArtikl_FormClosing);
             this.Load += new System.EventHandler(this.FormDodajArtikl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

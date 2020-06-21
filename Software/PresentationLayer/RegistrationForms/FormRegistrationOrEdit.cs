@@ -15,12 +15,12 @@ using System.Windows.Forms;
 
 namespace PresentationLayer.RegistrationForms
 {
-    public partial class FormRegistration : Form
+    public partial class FormRegistrationOrEdit : Form
     {
         private IUnitOfWork UnitOfWork = new UnitOfWork(new ClubbingPayDbContext());
         private Zaposlenik dohvaceniZaposlenik;
 
-        public FormRegistration()
+        public FormRegistrationOrEdit()
         {
             InitializeComponent();
 
@@ -35,7 +35,7 @@ namespace PresentationLayer.RegistrationForms
             #endregion
         }
 
-        public FormRegistration(Zaposlenik zaposlenik)
+        public FormRegistrationOrEdit(Zaposlenik zaposlenik)
         {
             InitializeComponent();
             dohvaceniZaposlenik = zaposlenik;

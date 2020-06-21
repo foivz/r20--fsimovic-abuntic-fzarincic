@@ -55,8 +55,13 @@ namespace PresentationLayer.DocumentsForms
             }
             catch (Exception)
             {
-                NotificationService.InvalidInput();
+                NotificationService.Notify("Dogodila se greška prilikom unosa!");
             }
+        }
+
+        private void FormAzurirajArtikl_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Visible = true;
         }
     }
 }

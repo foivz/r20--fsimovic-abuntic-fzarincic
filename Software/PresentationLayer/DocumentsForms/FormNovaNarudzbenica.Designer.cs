@@ -52,9 +52,10 @@
             // tboZaposlenik
             // 
             this.tboZaposlenik.Enabled = false;
-            this.tboZaposlenik.Location = new System.Drawing.Point(667, 31);
+            this.tboZaposlenik.Location = new System.Drawing.Point(500, 25);
+            this.tboZaposlenik.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tboZaposlenik.Name = "tboZaposlenik";
-            this.tboZaposlenik.Size = new System.Drawing.Size(100, 22);
+            this.tboZaposlenik.Size = new System.Drawing.Size(76, 20);
             this.tboZaposlenik.TabIndex = 61;
             // 
             // groupBox1
@@ -66,61 +67,68 @@
             this.groupBox1.Controls.Add(this.txtKolicina);
             this.groupBox1.Controls.Add(this.btnDodajArtikl);
             this.groupBox1.Controls.Add(this.btnNoviArtikl);
-            this.groupBox1.Location = new System.Drawing.Point(3, 144);
+            this.groupBox1.Location = new System.Drawing.Point(2, 117);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(798, 366);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(598, 297);
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Stavke narudzbenice:";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtArtikl
             // 
             this.txtArtikl.AutoSize = true;
-            this.txtArtikl.Location = new System.Drawing.Point(17, 29);
+            this.txtArtikl.Location = new System.Drawing.Point(13, 24);
+            this.txtArtikl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtArtikl.Name = "txtArtikl";
-            this.txtArtikl.Size = new System.Drawing.Size(43, 17);
+            this.txtArtikl.Size = new System.Drawing.Size(33, 13);
             this.txtArtikl.TabIndex = 30;
             this.txtArtikl.Text = "Artikl:";
             // 
             // dgvStavkeNarudzbenice
             // 
             this.dgvStavkeNarudzbenice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStavkeNarudzbenice.Location = new System.Drawing.Point(14, 93);
+            this.dgvStavkeNarudzbenice.Location = new System.Drawing.Point(10, 76);
+            this.dgvStavkeNarudzbenice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvStavkeNarudzbenice.Name = "dgvStavkeNarudzbenice";
             this.dgvStavkeNarudzbenice.RowTemplate.Height = 24;
-            this.dgvStavkeNarudzbenice.Size = new System.Drawing.Size(776, 260);
+            this.dgvStavkeNarudzbenice.Size = new System.Drawing.Size(582, 211);
             this.dgvStavkeNarudzbenice.TabIndex = 18;
             // 
             // cmbArtikl
             // 
             this.cmbArtikl.FormattingEnabled = true;
-            this.cmbArtikl.Location = new System.Drawing.Point(17, 52);
+            this.cmbArtikl.Location = new System.Drawing.Point(13, 42);
+            this.cmbArtikl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbArtikl.Name = "cmbArtikl";
-            this.cmbArtikl.Size = new System.Drawing.Size(121, 24);
+            this.cmbArtikl.Size = new System.Drawing.Size(92, 21);
             this.cmbArtikl.TabIndex = 29;
             // 
             // tboKolicina
             // 
-            this.tboKolicina.Location = new System.Drawing.Point(161, 52);
+            this.tboKolicina.Location = new System.Drawing.Point(121, 42);
+            this.tboKolicina.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tboKolicina.Name = "tboKolicina";
-            this.tboKolicina.Size = new System.Drawing.Size(100, 22);
+            this.tboKolicina.Size = new System.Drawing.Size(76, 20);
             this.tboKolicina.TabIndex = 31;
             // 
             // txtKolicina
             // 
             this.txtKolicina.AutoSize = true;
-            this.txtKolicina.Location = new System.Drawing.Point(162, 31);
+            this.txtKolicina.Location = new System.Drawing.Point(122, 25);
+            this.txtKolicina.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtKolicina.Name = "txtKolicina";
-            this.txtKolicina.Size = new System.Drawing.Size(57, 17);
+            this.txtKolicina.Size = new System.Drawing.Size(44, 13);
             this.txtKolicina.TabIndex = 32;
             this.txtKolicina.Text = "Kolicina";
             // 
             // btnDodajArtikl
             // 
-            this.btnDodajArtikl.Location = new System.Drawing.Point(270, 36);
+            this.btnDodajArtikl.Location = new System.Drawing.Point(202, 29);
+            this.btnDodajArtikl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDodajArtikl.Name = "btnDodajArtikl";
-            this.btnDodajArtikl.Size = new System.Drawing.Size(105, 48);
+            this.btnDodajArtikl.Size = new System.Drawing.Size(79, 39);
             this.btnDodajArtikl.TabIndex = 33;
             this.btnDodajArtikl.Text = "Dodaj artikl";
             this.btnDodajArtikl.UseVisualStyleBackColor = true;
@@ -128,9 +136,10 @@
             // 
             // btnNoviArtikl
             // 
-            this.btnNoviArtikl.Location = new System.Drawing.Point(392, 36);
+            this.btnNoviArtikl.Location = new System.Drawing.Point(294, 29);
+            this.btnNoviArtikl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNoviArtikl.Name = "btnNoviArtikl";
-            this.btnNoviArtikl.Size = new System.Drawing.Size(105, 48);
+            this.btnNoviArtikl.Size = new System.Drawing.Size(79, 39);
             this.btnNoviArtikl.TabIndex = 36;
             this.btnNoviArtikl.Text = "Dodaj novi artikl";
             this.btnNoviArtikl.UseVisualStyleBackColor = true;
@@ -138,9 +147,10 @@
             // 
             // btnNoviDobavljac
             // 
-            this.btnNoviDobavljac.Location = new System.Drawing.Point(589, 100);
+            this.btnNoviDobavljac.Location = new System.Drawing.Point(442, 81);
+            this.btnNoviDobavljac.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNoviDobavljac.Name = "btnNoviDobavljac";
-            this.btnNoviDobavljac.Size = new System.Drawing.Size(199, 34);
+            this.btnNoviDobavljac.Size = new System.Drawing.Size(149, 28);
             this.btnNoviDobavljac.TabIndex = 59;
             this.btnNoviDobavljac.Text = "Novi dobavljac";
             this.btnNoviDobavljac.UseVisualStyleBackColor = true;
@@ -149,51 +159,57 @@
             // cboDobavljac
             // 
             this.cboDobavljac.FormattingEnabled = true;
-            this.cboDobavljac.Location = new System.Drawing.Point(667, 60);
+            this.cboDobavljac.Location = new System.Drawing.Point(500, 49);
+            this.cboDobavljac.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboDobavljac.Name = "cboDobavljac";
-            this.cboDobavljac.Size = new System.Drawing.Size(121, 24);
+            this.cboDobavljac.Size = new System.Drawing.Size(92, 21);
             this.cboDobavljac.TabIndex = 58;
             // 
             // txtDobavljac
             // 
             this.txtDobavljac.AutoSize = true;
-            this.txtDobavljac.Location = new System.Drawing.Point(586, 60);
+            this.txtDobavljac.Location = new System.Drawing.Point(440, 49);
+            this.txtDobavljac.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtDobavljac.Name = "txtDobavljac";
-            this.txtDobavljac.Size = new System.Drawing.Size(74, 17);
+            this.txtDobavljac.Size = new System.Drawing.Size(58, 13);
             this.txtDobavljac.TabIndex = 57;
             this.txtDobavljac.Text = "Dobavljač:";
             // 
             // txtDatum
             // 
             this.txtDatum.AutoSize = true;
-            this.txtDatum.Location = new System.Drawing.Point(55, 31);
+            this.txtDatum.Location = new System.Drawing.Point(41, 25);
+            this.txtDatum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtDatum.Name = "txtDatum";
-            this.txtDatum.Size = new System.Drawing.Size(53, 17);
+            this.txtDatum.Size = new System.Drawing.Size(41, 13);
             this.txtDatum.TabIndex = 52;
             this.txtDatum.Text = "Datum:";
             // 
             // dtpDatum
             // 
-            this.dtpDatum.Location = new System.Drawing.Point(58, 48);
+            this.dtpDatum.Location = new System.Drawing.Point(44, 39);
+            this.dtpDatum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpDatum.Name = "dtpDatum";
-            this.dtpDatum.Size = new System.Drawing.Size(222, 22);
+            this.dtpDatum.Size = new System.Drawing.Size(168, 20);
             this.dtpDatum.TabIndex = 51;
             // 
             // txtZaposlenik
             // 
             this.txtZaposlenik.AutoSize = true;
-            this.txtZaposlenik.Location = new System.Drawing.Point(585, 31);
+            this.txtZaposlenik.Location = new System.Drawing.Point(439, 25);
+            this.txtZaposlenik.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtZaposlenik.Name = "txtZaposlenik";
-            this.txtZaposlenik.Size = new System.Drawing.Size(81, 17);
+            this.txtZaposlenik.Size = new System.Drawing.Size(62, 13);
             this.txtZaposlenik.TabIndex = 50;
             this.txtZaposlenik.Text = "Zaposlenik:";
             // 
             // btnOdustani
             // 
             this.btnOdustani.AllowDrop = true;
-            this.btnOdustani.Location = new System.Drawing.Point(671, 516);
+            this.btnOdustani.Location = new System.Drawing.Point(503, 419);
+            this.btnOdustani.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(105, 48);
+            this.btnOdustani.Size = new System.Drawing.Size(79, 39);
             this.btnOdustani.TabIndex = 49;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
@@ -201,9 +217,10 @@
             // 
             // btnIzradi
             // 
-            this.btnIzradi.Location = new System.Drawing.Point(549, 516);
+            this.btnIzradi.Location = new System.Drawing.Point(412, 419);
+            this.btnIzradi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIzradi.Name = "btnIzradi";
-            this.btnIzradi.Size = new System.Drawing.Size(105, 48);
+            this.btnIzradi.Size = new System.Drawing.Size(79, 39);
             this.btnIzradi.TabIndex = 48;
             this.btnIzradi.Text = "Izradi narudžbenicu";
             this.btnIzradi.UseVisualStyleBackColor = true;
@@ -211,9 +228,10 @@
             // 
             // FormNovaNarudzbenica
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 592);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(600, 465);
             this.Controls.Add(this.tboZaposlenik);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnNoviDobavljac);
@@ -224,8 +242,11 @@
             this.Controls.Add(this.txtZaposlenik);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnIzradi);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormNovaNarudzbenica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nova narudžbenica";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormNovaNarudzbenica_FormClosing);
             this.Load += new System.EventHandler(this.FormNovaNarudzbenica_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -12,11 +12,11 @@ using DatabaseLayer.Model;
 using PresentationLayer.Services;
 namespace PresentationLayer.DocumentsForms
 {
-    public partial class FormPrimka : Form
+    public partial class FormNovaPrimka : Form
     {
         private UnitOfWork UnitOfWork = new UnitOfWork(new ClubbingPayDbContext());
         private Primka NovaPrimka = new Primka();
-        public FormPrimka()
+        public FormNovaPrimka()
         {
             InitializeComponent();
         }
@@ -46,14 +46,10 @@ namespace PresentationLayer.DocumentsForms
             this.Close();
         }
 
-        private void tboNapomena_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNoviArtikl_Click(object sender, EventArgs e)
         {
-            FormDodajArtikl form = new FormDodajArtikl();
+            FormDodajArtikl form = new FormDodajArtikl() { Owner = this };
+            Hide();
             form.ShowDialog();
             DohvatiArtikle();
         }
@@ -102,28 +98,10 @@ namespace PresentationLayer.DocumentsForms
             dgvStavkePrimke.Columns["ArtiklId"].Visible = false;
         }
 
-        private void txtKolicina_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void tboKolicina_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtArtikl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbArtikl_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNoviDobavljac_Click(object sender, EventArgs e)
         {
-            FormNoviDobavljac form = new FormNoviDobavljac();
+            FormNoviDobavljac form = new FormNoviDobavljac() { Owner = this };
+            Hide();
             form.ShowDialog();
             OsvjeziDobavljece();
         }
@@ -172,7 +150,8 @@ namespace PresentationLayer.DocumentsForms
         private void btnAzuriraj_Click(object sender, EventArgs e)
         {
             Artikl artikl = cmbArtikl.SelectedItem as Artikl;
-            FormAzurirajArtikl form = new FormAzurirajArtikl(artikl);
+            FormAzurirajArtikl form = new FormAzurirajArtikl(artikl) { Owner = this };
+            Hide();
             form.ShowDialog();
             DohvatiArtikle();
         }
@@ -196,9 +175,15 @@ namespace PresentationLayer.DocumentsForms
         private void btnAzurirajDobavljaca_Click(object sender, EventArgs e)
         {
             Dobavljac dobavljac = cboDobavljac.SelectedItem as Dobavljac;
-            FormAzurirajDobavljaca form = new FormAzurirajDobavljaca(dobavljac);
+            FormAzurirajDobavljaca form = new FormAzurirajDobavljaca(dobavljac) { Owner = this };
+            Hide();
             form.ShowDialog();
             OsvjeziDobavljece();
+        }
+
+        private void FormNovaPrimka_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Visible = true;
         }
     }
 }

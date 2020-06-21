@@ -23,11 +23,6 @@ namespace PresentationLayer.DocumentsForms
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnOdustani_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -54,6 +49,11 @@ namespace PresentationLayer.DocumentsForms
             {
                 NotificationService.InvalidInput();
             }
+        }
+
+        private void FormNoviDobavljac_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Visible = true;
         }
     }
 }

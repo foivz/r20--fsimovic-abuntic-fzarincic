@@ -16,11 +16,11 @@ using System.Windows.Forms;
 
 namespace PresentationLayer.DocumentsForms
 {
-    public partial class FormKategorija : Form
+    public partial class FormNovaKategorija : Form
     {
         private UnitOfWork unitOfWork = new UnitOfWork(new ClubbingPayDbContext());
 
-        public FormKategorija()
+        public FormNovaKategorija()
         {
             InitializeComponent();
         }
@@ -43,8 +43,13 @@ namespace PresentationLayer.DocumentsForms
             catch (Exception)
             {
 
-                NotificationService.InvalidInput();
+                NotificationService.Notify("Dogodila se greška prilokom unosa!");
             }
+        }
+
+        private void FormNovaKategorija_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Visible = true;
         }
     }
 }

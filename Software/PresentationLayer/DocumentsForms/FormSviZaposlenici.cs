@@ -41,11 +41,14 @@ namespace PresentationLayer.DocumentsForms
         private void buttonIzbrisi_Click(object sender, EventArgs e)
         {
             //TODO
-            foreach (DataGridViewRow row in dataGridViewZaposlenici.SelectedRows)
-            {
-                unitOfWork.Zaposlenici.Delete(row.DataBoundItem as Zaposlenik);
-            }
+            var selectedZaposlenik = dataGridViewZaposlenici.CurrentRow.DataBoundItem as Zaposlenik;
 
+            if (selectedZaposlenik == null)
+            {
+                NotificationService.Notify("Morate odabrati redak u tablici!");
+                return;
+            }
+            unitOfWork.Zaposlenici.Delete(selectedZaposlenik);
             unitOfWork.Complete();
 
             RefreshDataGridView();
@@ -71,7 +74,7 @@ namespace PresentationLayer.DocumentsForms
                 return;
             }
 
-            using (FormRegistration form = new FormRegistration(selectedZaposlenik) { Owner = this })
+            using (FormRegistrationOrEdit form = new FormRegistrationOrEdit(selectedZaposlenik) { Owner = this })
             {
                 form.FormClosed += FormUrediZatvorena;
                 form.ShowDialog();
@@ -85,14 +88,17 @@ namespace PresentationLayer.DocumentsForms
 
         private void buttonGenQr_Click(object sender, EventArgs e)
         {
-            Zaposlenik selectedZaposlenik;
+            var selectedZaposlenik = dataGridViewZaposlenici.CurrentRow.DataBoundItem as Zaposlenik;
 
-            if (dataGridViewZaposlenici.SelectedRows.Count != 0)
+            if (selectedZaposlenik == null)
             {
-                selectedZaposlenik = (Zaposlenik)dataGridViewZaposlenici.CurrentRow.DataBoundItem;
-                FormQrGenerate form = new FormQrGenerate(selectedZaposlenik);
-                form.ShowDialog();
+                NotificationService.Notify("Morate odabrati redak u tablici!");
+                return;
             }
+
+            FormQrGenerate form = new FormQrGenerate(selectedZaposlenik) { Owner = this };
+            Hide();
+            form.ShowDialog();
         }
 
         private void FormUrediZatvorena(object sender, FormClosedEventArgs args)

@@ -30,10 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.ZaposlenikBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.ZaposlenikBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ZaposlenikBindingSource
+            // 
+            this.ZaposlenikBindingSource.DataSource = typeof(DatabaseLayer.Model.Zaposlenik);
             // 
             // reportViewer1
             // 
@@ -48,18 +52,17 @@
             this.reportViewer1.Size = new System.Drawing.Size(711, 351);
             this.reportViewer1.TabIndex = 0;
             // 
-            // ZaposlenikBindingSource
-            // 
-            this.ZaposlenikBindingSource.DataSource = typeof(DatabaseLayer.Model.Zaposlenik);
-            // 
-            // FormSviZaposleniciReport
+            // ReportSviZaposlenici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(711, 351);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FormSviZaposleniciReport";
+            this.Name = "ReportSviZaposlenici";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Izvještaj o svim zaposlenicima";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ReportSviZaposlenici_FormClosing);
             this.Load += new System.EventHandler(this.FormSviZaposleniciReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ZaposlenikBindingSource)).EndInit();
             this.ResumeLayout(false);

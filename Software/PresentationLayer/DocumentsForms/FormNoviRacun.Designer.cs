@@ -47,6 +47,7 @@
             this.btnOdustani = new System.Windows.Forms.Button();
             this.btnIzdaj = new System.Windows.Forms.Button();
             this.dgvStavkeRacuna = new System.Windows.Forms.DataGridView();
+            this.textBoxZaposlenik = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkeRacuna)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,11 +125,12 @@
             this.cmbArtikl.Location = new System.Drawing.Point(9, 45);
             this.cmbArtikl.Margin = new System.Windows.Forms.Padding(2);
             this.cmbArtikl.Name = "cmbArtikl";
-            this.cmbArtikl.Size = new System.Drawing.Size(92, 21);
+            this.cmbArtikl.Size = new System.Drawing.Size(104, 21);
             this.cmbArtikl.TabIndex = 30;
             // 
             // tboUkupno
             // 
+            this.tboUkupno.Enabled = false;
             this.tboUkupno.Location = new System.Drawing.Point(248, 326);
             this.tboUkupno.Margin = new System.Windows.Forms.Padding(2);
             this.tboUkupno.Name = "tboUkupno";
@@ -147,6 +149,7 @@
             // 
             // tboPorezNaDodanuVrijednost
             // 
+            this.tboPorezNaDodanuVrijednost.Enabled = false;
             this.tboPorezNaDodanuVrijednost.Location = new System.Drawing.Point(168, 326);
             this.tboPorezNaDodanuVrijednost.Margin = new System.Windows.Forms.Padding(2);
             this.tboPorezNaDodanuVrijednost.Name = "tboPorezNaDodanuVrijednost";
@@ -165,6 +168,7 @@
             // 
             // tboPorezNaPotrosnju
             // 
+            this.tboPorezNaPotrosnju.Enabled = false;
             this.tboPorezNaPotrosnju.Location = new System.Drawing.Point(88, 326);
             this.tboPorezNaPotrosnju.Margin = new System.Windows.Forms.Padding(2);
             this.tboPorezNaPotrosnju.Name = "tboPorezNaPotrosnju";
@@ -183,6 +187,7 @@
             // 
             // tboOsnovica
             // 
+            this.tboOsnovica.Enabled = false;
             this.tboOsnovica.Location = new System.Drawing.Point(9, 326);
             this.tboOsnovica.Margin = new System.Windows.Forms.Padding(2);
             this.tboOsnovica.Name = "tboOsnovica";
@@ -232,11 +237,21 @@
             this.dgvStavkeRacuna.Size = new System.Drawing.Size(582, 211);
             this.dgvStavkeRacuna.TabIndex = 19;
             // 
+            // textBoxZaposlenik
+            // 
+            this.textBoxZaposlenik.Enabled = false;
+            this.textBoxZaposlenik.Location = new System.Drawing.Point(477, 11);
+            this.textBoxZaposlenik.Name = "textBoxZaposlenik";
+            this.textBoxZaposlenik.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZaposlenik.TabIndex = 38;
+            // 
             // FormNoviRacun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.textBoxZaposlenik);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtZaposlenikIme);
             this.Controls.Add(this.txtZaposlenik);
@@ -258,6 +273,7 @@
             this.Controls.Add(this.dgvStavkeRacuna);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormNoviRacun";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Novi racun";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormNoviRacun_FormClosing);
             this.Load += new System.EventHandler(this.FormNoviRacun_Load);
@@ -288,5 +304,6 @@
         private System.Windows.Forms.Button btnOdustani;
         private System.Windows.Forms.Button btnIzdaj;
         private System.Windows.Forms.DataGridView dgvStavkeRacuna;
+        private System.Windows.Forms.TextBox textBoxZaposlenik;
     }
 }

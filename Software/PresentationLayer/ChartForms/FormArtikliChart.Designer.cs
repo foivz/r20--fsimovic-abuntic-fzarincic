@@ -57,8 +57,10 @@
             this.chartArtikli.Size = new System.Drawing.Size(638, 514);
             this.chartArtikli.TabIndex = 0;
             this.chartArtikli.Text = "Artikli na stanju";
+            title1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDotDot;
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             title1.Name = "chart_Artkili";
-            title1.Text = "Artili diagram";
+            title1.Text = "Stanje Zaliha";
             this.chartArtikli.Titles.Add(title1);
             // 
             // artiklBindingSource
@@ -75,6 +77,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stanje zaliha";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormArtikliChart_FormClosing);
             this.Load += new System.EventHandler(this.FormArtikliChart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartArtikli)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.artiklBindingSource)).EndInit();

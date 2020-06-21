@@ -28,5 +28,11 @@ namespace PresentationLayer.ReportForms
             DobavljacBindingSource.DataSource = listaDobavljaca;
             this.reportViewer1.RefreshReport();
         }
+
+        private void ReportSviDobavljaci_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Owner.Visible = true;
+            Owner.Dispose();
+        }
     }
 }

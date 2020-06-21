@@ -30,10 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.ArtiklBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.ArtiklBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ArtiklBindingSource
+            // 
+            this.ArtiklBindingSource.DataSource = typeof(DatabaseLayer.Model.Artikl);
             // 
             // reportViewer1
             // 
@@ -48,18 +52,17 @@
             this.reportViewer1.Size = new System.Drawing.Size(510, 298);
             this.reportViewer1.TabIndex = 0;
             // 
-            // ArtiklBindingSource
-            // 
-            this.ArtiklBindingSource.DataSource = typeof(DatabaseLayer.Model.Artikl);
-            // 
-            // FormSviArtikliReport
+            // ReportSviArtikli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 298);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FormSviArtikliReport";
+            this.MaximizeBox = false;
+            this.Name = "ReportSviArtikli";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Izvještaj o svim artiklima";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ReportSviArtikli_FormClosing);
             this.Load += new System.EventHandler(this.FormSviArtikliReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ArtiklBindingSource)).EndInit();
             this.ResumeLayout(false);

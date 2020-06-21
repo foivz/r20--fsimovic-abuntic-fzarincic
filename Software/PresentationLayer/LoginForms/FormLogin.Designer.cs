@@ -68,26 +68,29 @@
             this.textBoxUsername.Location = new System.Drawing.Point(16, 30);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(100, 20);
-            this.textBoxUsername.TabIndex = 7;
+            this.textBoxUsername.TabIndex = 1;
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(16, 86);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPassword.TabIndex = 8;
+            this.textBoxPassword.TabIndex = 2;
             // 
             // FormLogin
             // 
+            this.AcceptButton = this.buttonStart;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 132);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(282, 132);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonStart);
             this.Name = "FormLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijava";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLoginQRScan_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLogin_FormClosed);

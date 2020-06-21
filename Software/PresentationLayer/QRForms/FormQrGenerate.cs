@@ -26,5 +26,10 @@ namespace PresentationLayer.QRForms
         {
             pictureBoxQR.Image = QRService.GenerirajQR(zaposlenik.KorisnickoIme, zaposlenik.LozinkaHash);
         }
+
+        private void FormQrGenerate_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Visible = true;
+        }
     }
 }

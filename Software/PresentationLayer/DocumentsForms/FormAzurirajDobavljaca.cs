@@ -62,5 +62,10 @@ namespace PresentationLayer.DocumentsForms
                 NotificationService.InvalidInput();
             }
         }
+
+        private void FormAzurirajDobavljaca_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Visible = true;
+        }
     }
 }

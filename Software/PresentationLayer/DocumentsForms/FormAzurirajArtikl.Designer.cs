@@ -40,9 +40,10 @@
             // 
             // buttonOdustani
             // 
-            this.buttonOdustani.Location = new System.Drawing.Point(130, 113);
+            this.buttonOdustani.Location = new System.Drawing.Point(11, 92);
+            this.buttonOdustani.Margin = new System.Windows.Forms.Padding(2);
             this.buttonOdustani.Name = "buttonOdustani";
-            this.buttonOdustani.Size = new System.Drawing.Size(92, 23);
+            this.buttonOdustani.Size = new System.Drawing.Size(83, 36);
             this.buttonOdustani.TabIndex = 19;
             this.buttonOdustani.Text = "Odustani";
             this.buttonOdustani.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
             // 
             // buttonDodaj
             // 
-            this.buttonDodaj.Location = new System.Drawing.Point(27, 113);
+            this.buttonDodaj.Location = new System.Drawing.Point(99, 92);
+            this.buttonDodaj.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDodaj.Name = "buttonDodaj";
-            this.buttonDodaj.Size = new System.Drawing.Size(75, 23);
+            this.buttonDodaj.Size = new System.Drawing.Size(93, 36);
             this.buttonDodaj.TabIndex = 18;
             this.buttonDodaj.Text = "Azuriraj";
             this.buttonDodaj.UseVisualStyleBackColor = true;
@@ -61,57 +63,64 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 76);
+            this.label4.Location = new System.Drawing.Point(18, 62);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 17);
+            this.label4.Size = new System.Drawing.Size(57, 13);
             this.label4.TabIndex = 16;
             this.label4.Text = "Kategorija:";
             // 
             // comboBoxKategorija
             // 
             this.comboBoxKategorija.FormattingEnabled = true;
-            this.comboBoxKategorija.Location = new System.Drawing.Point(101, 73);
+            this.comboBoxKategorija.Location = new System.Drawing.Point(76, 59);
+            this.comboBoxKategorija.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxKategorija.Name = "comboBoxKategorija";
-            this.comboBoxKategorija.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxKategorija.Size = new System.Drawing.Size(116, 21);
             this.comboBoxKategorija.TabIndex = 15;
             // 
             // textBoxCijena
             // 
-            this.textBoxCijena.Location = new System.Drawing.Point(101, 44);
+            this.textBoxCijena.Location = new System.Drawing.Point(76, 36);
+            this.textBoxCijena.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCijena.Name = "textBoxCijena";
-            this.textBoxCijena.Size = new System.Drawing.Size(121, 22);
+            this.textBoxCijena.Size = new System.Drawing.Size(116, 20);
             this.textBoxCijena.TabIndex = 14;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 47);
+            this.label3.Location = new System.Drawing.Point(18, 38);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 17);
+            this.label3.Size = new System.Drawing.Size(39, 13);
             this.label3.TabIndex = 13;
             this.label3.Text = "Cijena:";
             // 
             // textBoxNaziv
             // 
-            this.textBoxNaziv.Location = new System.Drawing.Point(101, 12);
+            this.textBoxNaziv.Location = new System.Drawing.Point(76, 10);
+            this.textBoxNaziv.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNaziv.Name = "textBoxNaziv";
-            this.textBoxNaziv.Size = new System.Drawing.Size(121, 22);
+            this.textBoxNaziv.Size = new System.Drawing.Size(116, 20);
             this.textBoxNaziv.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 15);
+            this.label1.Location = new System.Drawing.Point(18, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "Naziv:";
             // 
             // FormAzurirajArtikl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(236, 160);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(203, 130);
             this.Controls.Add(this.buttonOdustani);
             this.Controls.Add(this.buttonDodaj);
             this.Controls.Add(this.label4);
@@ -120,8 +129,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxNaziv);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAzurirajArtikl";
             this.Text = "Azuriraj artikl";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAzurirajArtikl_FormClosing);
             this.Load += new System.EventHandler(this.FormAzurirajArtikl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

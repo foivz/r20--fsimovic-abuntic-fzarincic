@@ -36,13 +36,8 @@ namespace PresentationLayer.DocumentsForms
             }
             catch (Exception)
             {
-                NotificationService.InvalidInput();
+                NotificationService.Notify("Dogodila se greška prilikom unosa!");
             }
-        }
-
-        private void textBoxNaziv_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonOdustani_Click(object sender, EventArgs e)
@@ -50,14 +45,10 @@ namespace PresentationLayer.DocumentsForms
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonNovaKategorija_Click(object sender, EventArgs e)
         {
-            FormKategorija form = new FormKategorija();
+            FormNovaKategorija form = new FormNovaKategorija() { Owner = this };
+            Hide();
             form.ShowDialog();
             OsvjeziKategorije();
         }
@@ -71,6 +62,11 @@ namespace PresentationLayer.DocumentsForms
         private void FormDodajArtikl_Load(object sender, EventArgs e)
         {
             OsvjeziKategorije();
+        }
+
+        private void FormDodajArtikl_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Visible = true;
         }
     }
 }

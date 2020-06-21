@@ -399,16 +399,13 @@ D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Deb
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.csprojAssemblyReference.cache
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormDodajArtikl.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormIzvještaji.resources
-D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormKategorija.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNoviRacun.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormSviZaposlenici.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNoviDobavljac.resources
-D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormPrimka.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.FormHelp.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.LoginForms.FormLogin.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.QRForms.FormQrGenerate.resources
-D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.RegistrationForms.FormRegistration.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.StartForm.FormStart.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
@@ -788,3 +785,8 @@ D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Deb
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\System.Collections.Immutable.xml
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormAzurirajDobavljaca.resources
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNovaKategorija.resources
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNovaPrimka.resources
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.MainForm.FormMain.resources
+D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.RegistrationForms.FormRegistrationOrEdit.resources

@@ -2,6 +2,7 @@
 using BusinessLayer.Enums;
 using BusinessLayer.Services;
 using PresentationLayer.DocumentsForms;
+using PresentationLayer.MainForm;
 using PresentationLayer.Services;
 using System;
 using System.Collections.Generic;
@@ -55,7 +56,7 @@ namespace PresentationLayer.LoginForms
             {
                 if (QRService.ProcitajQR(video.Picture) == LoginResult.Succesful)
                 {
-                    FormNoviRacun form = new FormNoviRacun()
+                    FormMain form = new FormMain()
                     {
                         Owner = this
                     };
@@ -91,7 +92,7 @@ namespace PresentationLayer.LoginForms
             }
             else
             {
-                FormNoviRacun form = new FormNoviRacun()
+                FormMain form = new FormMain()
                 {
                     Owner = this
                 };

@@ -44,90 +44,101 @@
             // 
             // tboAdresa
             // 
-            this.tboAdresa.Location = new System.Drawing.Point(75, 124);
+            this.tboAdresa.Location = new System.Drawing.Point(56, 101);
+            this.tboAdresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tboAdresa.Name = "tboAdresa";
-            this.tboAdresa.Size = new System.Drawing.Size(164, 22);
+            this.tboAdresa.Size = new System.Drawing.Size(124, 20);
             this.tboAdresa.TabIndex = 44;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 124);
+            this.label5.Location = new System.Drawing.Point(9, 101);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 17);
+            this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 43;
             this.label5.Text = "Adresa:";
             // 
             // tboEmail
             // 
-            this.tboEmail.Location = new System.Drawing.Point(75, 96);
+            this.tboEmail.Location = new System.Drawing.Point(56, 78);
+            this.tboEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tboEmail.Name = "tboEmail";
-            this.tboEmail.Size = new System.Drawing.Size(164, 22);
+            this.tboEmail.Size = new System.Drawing.Size(124, 20);
             this.tboEmail.TabIndex = 42;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 96);
+            this.label4.Location = new System.Drawing.Point(9, 78);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
+            this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 41;
             this.label4.Text = "Email:";
             // 
             // tboTelefon
             // 
-            this.tboTelefon.Location = new System.Drawing.Point(75, 68);
+            this.tboTelefon.Location = new System.Drawing.Point(56, 55);
+            this.tboTelefon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tboTelefon.Name = "tboTelefon";
-            this.tboTelefon.Size = new System.Drawing.Size(164, 22);
+            this.tboTelefon.Size = new System.Drawing.Size(124, 20);
             this.tboTelefon.TabIndex = 40;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 68);
+            this.label3.Location = new System.Drawing.Point(9, 55);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 17);
+            this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 39;
             this.label3.Text = "Telefon:";
             // 
             // tboOIB
             // 
-            this.tboOIB.Location = new System.Drawing.Point(75, 37);
+            this.tboOIB.Location = new System.Drawing.Point(56, 30);
+            this.tboOIB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tboOIB.Name = "tboOIB";
-            this.tboOIB.Size = new System.Drawing.Size(164, 22);
+            this.tboOIB.Size = new System.Drawing.Size(124, 20);
             this.tboOIB.TabIndex = 38;
             // 
             // A
             // 
             this.A.AutoSize = true;
-            this.A.Location = new System.Drawing.Point(12, 37);
+            this.A.Location = new System.Drawing.Point(9, 30);
+            this.A.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.A.Name = "A";
-            this.A.Size = new System.Drawing.Size(35, 17);
+            this.A.Size = new System.Drawing.Size(28, 13);
             this.A.TabIndex = 37;
             this.A.Text = "OIB:";
             // 
             // tboNaziv
             // 
-            this.tboNaziv.Location = new System.Drawing.Point(75, 9);
+            this.tboNaziv.Location = new System.Drawing.Point(56, 7);
+            this.tboNaziv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tboNaziv.Name = "tboNaziv";
-            this.tboNaziv.Size = new System.Drawing.Size(164, 22);
+            this.tboNaziv.Size = new System.Drawing.Size(124, 20);
             this.tboNaziv.TabIndex = 36;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(9, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 17);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 35;
             this.label1.Text = "Naziv:";
             // 
             // btnOdustani
             // 
             this.btnOdustani.AllowDrop = true;
-            this.btnOdustani.Location = new System.Drawing.Point(134, 152);
+            this.btnOdustani.Location = new System.Drawing.Point(100, 124);
+            this.btnOdustani.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(105, 48);
+            this.btnOdustani.Size = new System.Drawing.Size(79, 39);
             this.btnOdustani.TabIndex = 34;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
@@ -135,9 +146,10 @@
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(12, 152);
+            this.btnDodaj.Location = new System.Drawing.Point(9, 124);
+            this.btnDodaj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDodaj.Name = "btnDodaj";
-            this.btnDodaj.Size = new System.Drawing.Size(105, 48);
+            this.btnDodaj.Size = new System.Drawing.Size(79, 39);
             this.btnDodaj.TabIndex = 33;
             this.btnDodaj.Text = "Azuriraj dobavljaca";
             this.btnDodaj.UseVisualStyleBackColor = true;
@@ -145,9 +157,10 @@
             // 
             // FormAzurirajDobavljaca
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(263, 218);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(235, 177);
             this.Controls.Add(this.tboAdresa);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tboEmail);
@@ -160,8 +173,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormAzurirajDobavljaca";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Azuriraj dobavljaca";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAzurirajDobavljaca_FormClosing);
             this.Load += new System.EventHandler(this.FormAzurirajDobavljaca_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

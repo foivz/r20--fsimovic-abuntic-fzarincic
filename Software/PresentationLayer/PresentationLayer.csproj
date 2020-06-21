@@ -101,11 +101,11 @@
     <Compile Include="DocumentsForms\FormIzvještaji.Designer.cs">
       <DependentUpon>FormIzvještaji.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocumentsForms\FormKategorija.cs">
+    <Compile Include="DocumentsForms\FormNovaKategorija.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DocumentsForms\FormKategorija.Designer.cs">
-      <DependentUpon>FormKategorija.cs</DependentUpon>
+    <Compile Include="DocumentsForms\FormNovaKategorija.Designer.cs">
+      <DependentUpon>FormNovaKategorija.cs</DependentUpon>
     </Compile>
     <Compile Include="DocumentsForms\FormNovaNarudzbenica.cs">
       <SubType>Form</SubType>
@@ -131,23 +131,23 @@
     <Compile Include="DocumentsForms\FormNoviDobavljac.Designer.cs">
       <DependentUpon>FormNoviDobavljac.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocumentsForms\FormPrimka.cs">
+    <Compile Include="DocumentsForms\FormNovaPrimka.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DocumentsForms\FormPrimka.Designer.cs">
-      <DependentUpon>FormPrimka.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormHelp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormHelp.Designer.cs">
-      <DependentUpon>FormHelp.cs</DependentUpon>
+    <Compile Include="DocumentsForms\FormNovaPrimka.Designer.cs">
+      <DependentUpon>FormNovaPrimka.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -157,11 +157,11 @@
     <Compile Include="QRForms\FormQrGenerate.Designer.cs">
       <DependentUpon>FormQrGenerate.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrationForms\FormRegistration.cs">
+    <Compile Include="RegistrationForms\FormRegistrationOrEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrationForms\FormRegistration.Designer.cs">
-      <DependentUpon>FormRegistration.cs</DependentUpon>
+    <Compile Include="RegistrationForms\FormRegistrationOrEdit.Designer.cs">
+      <DependentUpon>FormRegistrationOrEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="ReportForms\ReportSviArtikli.cs">
       <SubType>Form</SubType>
@@ -204,8 +204,8 @@
     <EmbeddedResource Include="DocumentsForms\FormIzvještaji.resx">
       <DependentUpon>FormIzvještaji.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DocumentsForms\FormKategorija.resx">
-      <DependentUpon>FormKategorija.cs</DependentUpon>
+    <EmbeddedResource Include="DocumentsForms\FormNovaKategorija.resx">
+      <DependentUpon>FormNovaKategorija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormNovaNarudzbenica.resx">
       <DependentUpon>FormNovaNarudzbenica.cs</DependentUpon>
@@ -219,14 +219,14 @@
     <EmbeddedResource Include="DocumentsForms\FormNoviDobavljac.resx">
       <DependentUpon>FormNoviDobavljac.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DocumentsForms\FormPrimka.resx">
-      <DependentUpon>FormPrimka.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormHelp.resx">
-      <DependentUpon>FormHelp.cs</DependentUpon>
+    <EmbeddedResource Include="DocumentsForms\FormNovaPrimka.resx">
+      <DependentUpon>FormNovaPrimka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -240,8 +240,8 @@
     <EmbeddedResource Include="QRForms\FormQrGenerate.resx">
       <DependentUpon>FormQrGenerate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrationForms\FormRegistration.resx">
-      <DependentUpon>FormRegistration.cs</DependentUpon>
+    <EmbeddedResource Include="RegistrationForms\FormRegistrationOrEdit.resx">
+      <DependentUpon>FormRegistrationOrEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportForms\ReportSviArtikli.resx">
       <DependentUpon>ReportSviArtikli.cs</DependentUpon>

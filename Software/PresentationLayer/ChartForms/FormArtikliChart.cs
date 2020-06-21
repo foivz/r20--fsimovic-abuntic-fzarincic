@@ -33,5 +33,10 @@ namespace PresentationLayer.ChartForms
                 chartArtikli.Series["Artikli"].Points.AddXY(item.Naziv, item.Kolicina);
             }
         }
+
+        private void FormArtikliChart_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Visible = true;
+        }
     }
 }

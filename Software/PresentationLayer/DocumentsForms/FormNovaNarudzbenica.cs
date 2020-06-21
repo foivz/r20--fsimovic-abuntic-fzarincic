@@ -42,34 +42,10 @@ namespace PresentationLayer.DocumentsForms
 
         }
 
-        private void txtNapomena_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tboNapomena_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tboOdgoda_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtOdgoda_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNoviArtikl_Click(object sender, EventArgs e)
         {
-            FormDodajArtikl form = new FormDodajArtikl();
+            FormDodajArtikl form = new FormDodajArtikl() { Owner = this };
+            Hide();
             form.ShowDialog();
             DohvatiArtikle();
         }
@@ -92,9 +68,6 @@ namespace PresentationLayer.DocumentsForms
                         Kolicina = kolicina,
                     });
                 }
-
-                
-
             }
             else
             {
@@ -117,7 +90,8 @@ namespace PresentationLayer.DocumentsForms
 
         private void btnNoviDobavljac_Click(object sender, EventArgs e)
         {
-            FormNoviDobavljac form = new FormNoviDobavljac();
+            FormNoviDobavljac form = new FormNoviDobavljac() { Owner = this };
+            Hide();
             form.ShowDialog();
             OsvjeziDobavljece();
         }
@@ -154,6 +128,11 @@ namespace PresentationLayer.DocumentsForms
             }
             NotificationService.Notify(message);
             this.Close();
+        }
+
+        private void FormNovaNarudzbenica_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Visible = true;
         }
     }
 }

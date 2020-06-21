@@ -47,12 +47,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(508, 421);
             this.Controls.Add(this.pictureBoxQR);
             this.MaximizeBox = false;
             this.Name = "FormQrGenerate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QR kod";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormQrGenerate_FormClosing);
             this.Load += new System.EventHandler(this.FormQrGenerate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQR)).EndInit();
             this.ResumeLayout(false);

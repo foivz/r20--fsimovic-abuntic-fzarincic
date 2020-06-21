@@ -29,5 +29,11 @@ namespace PresentationLayer.ReportForms
             ArtiklBindingSource.DataSource = listaArtikala;
             this.reportViewer1.RefreshReport();
         }
+
+        private void ReportSviArtikli_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Owner.Owner.Visible = true;
+            Owner.Dispose();
+        }
     }
 }

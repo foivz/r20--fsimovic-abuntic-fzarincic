@@ -30,10 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.DobavljacBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.DobavljacBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // DobavljacBindingSource
+            // 
+            this.DobavljacBindingSource.DataSource = typeof(DatabaseLayer.Model.Dobavljac);
             // 
             // reportViewer1
             // 
@@ -48,18 +52,18 @@
             this.reportViewer1.Size = new System.Drawing.Size(585, 303);
             this.reportViewer1.TabIndex = 0;
             // 
-            // DobavljacBindingSource
-            // 
-            this.DobavljacBindingSource.DataSource = typeof(DatabaseLayer.Model.Dobavljac);
-            // 
-            // FormSviDobavljaciReport
+            // ReportSviDobavljaci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(585, 303);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FormSviDobavljaciReport";
+            this.MaximizeBox = false;
+            this.Name = "ReportSviDobavljaci";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormSviDobavljaciReport";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ReportSviDobavljaci_FormClosing);
             this.Load += new System.EventHandler(this.FormSviDobavljaciReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DobavljacBindingSource)).EndInit();
             this.ResumeLayout(false);

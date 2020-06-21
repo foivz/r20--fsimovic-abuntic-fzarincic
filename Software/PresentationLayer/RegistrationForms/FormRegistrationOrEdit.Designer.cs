@@ -1,6 +1,6 @@
 ﻿namespace PresentationLayer.RegistrationForms
 {
-    partial class FormRegistration
+    partial class FormRegistrationOrEdit
     {
         /// <summary>
         /// Required designer variable.
@@ -250,11 +250,12 @@
             this.radioButtonInactive.Text = "Naktivan";
             this.radioButtonInactive.UseVisualStyleBackColor = true;
             // 
-            // FormRegistration
+            // FormRegistrationOrEdit
             // 
             this.AcceptButton = this.buttonRegistriraj;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(520, 353);
             this.Controls.Add(this.radioButtonInactive);
             this.Controls.Add(this.radioButtonActive);
@@ -279,7 +280,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxIme);
             this.Controls.Add(this.labelRegistracijaIliUredivanje);
-            this.Name = "FormRegistration";
+            this.Name = "FormRegistrationOrEdit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registracija";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormRegistration_FormClosing);
             this.Load += new System.EventHandler(this.FormRegistration_Load);
