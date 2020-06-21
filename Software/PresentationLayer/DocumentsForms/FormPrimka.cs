@@ -168,5 +168,13 @@ namespace PresentationLayer.DocumentsForms
             NotificationService.Notify(message);
             this.Close();
         }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Artikl artikl = cmbArtikl.SelectedItem as Artikl;
+            FormAzurirajArtikl form = new FormAzurirajArtikl(artikl);
+            form.ShowDialog();
+            DohvatiArtikle();
+        }
     }
 }

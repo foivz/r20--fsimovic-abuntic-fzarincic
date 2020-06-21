@@ -2,6 +2,7 @@
 using BusinessLayer.Services;
 using DatabaseLayer.Interfaces;
 using DatabaseLayer.Model;
+using PresentationLayer.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,6 +34,7 @@ namespace PresentationLayer.DocumentsForms
         {
             try
             {
+                if (ValidationService.AssertStringLenght(textBoxNaziv.Text, 1) == false) throw new Exception();
                 KategorijaArtikla kategorija = new KategorijaArtikla(textBoxNaziv.Text);
                 unitOfWork.KategorijaArtikla.Add(kategorija);
                 unitOfWork.Complete();
@@ -41,7 +43,7 @@ namespace PresentationLayer.DocumentsForms
             catch (Exception)
             {
 
-                throw;
+                NotificationService.InvalidInput();
             }
         }
     }

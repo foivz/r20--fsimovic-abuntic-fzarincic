@@ -774,3 +774,4 @@ C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\Presenta
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviDobavljaci.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviZaposlenici.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNovaNarudzbenica.resources
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormAzurirajArtikl.resources

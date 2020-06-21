@@ -19,7 +19,7 @@ namespace DatabaseLayer.Model
         public KategorijaArtikla Kategorija { get; set; }
         public List<StavkaRacuna> StavkaRacuna { get; set; }
         public List<StavkaNarudzbenice> StavkaNarudzbe { get; set; }
-        public List<StavkaPrimke> StavkaPrimke { get; set; } 
+        public List<StavkaPrimke> StavkaPrimke { get; set; }
         #endregion
 
         public Artikl(string naziv, double cijena, KategorijaArtikla kategorija)

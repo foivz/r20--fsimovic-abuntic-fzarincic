@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocumentsForms\FormAzurirajArtikl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForms\FormAzurirajArtikl.Designer.cs">
+      <DependentUpon>FormAzurirajArtikl.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocumentsForms\FormDodajArtikl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     <Compile Include="StartForm\FormStart.Designer.cs">
       <DependentUpon>FormStart.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DocumentsForms\FormAzurirajArtikl.resx">
+      <DependentUpon>FormAzurirajArtikl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormDodajArtikl.resx">
       <DependentUpon>FormDodajArtikl.cs</DependentUpon>
     </EmbeddedResource>

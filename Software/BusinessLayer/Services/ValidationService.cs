@@ -13,6 +13,11 @@ namespace BusinessLayer.Services
             return int.TryParse(number, out parsedNumber);
         }
 
+        public static bool ParseDoubleNumber(string number, out double parsedNumber)
+        {
+            return double.TryParse(number, out parsedNumber);
+        }
+
         public static bool AssertPositive(string number)
         {
             if (!ParseNumber(number, out int parsedNumber))

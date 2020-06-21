@@ -62,6 +62,7 @@ namespace BusinessLayer.Services
                .WithMany(x => x.StavkaRacuna)
                .HasForeignKey(x => x.RacunId)
                .OnDelete(DeleteBehavior.Cascade);
+           
             
 
             base.OnModelCreating(modelBuilder);
