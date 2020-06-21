@@ -41,6 +41,7 @@
             // 
             // reportViewer1
             // 
+            this.reportViewer1.AutoSize = true;
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DsDobavljaci";
             reportDataSource1.Value = this.DobavljacBindingSource;
@@ -49,7 +50,7 @@
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(585, 303);
+            this.reportViewer1.Size = new System.Drawing.Size(640, 303);
             this.reportViewer1.TabIndex = 0;
             // 
             // ReportSviDobavljaci
@@ -57,7 +58,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(585, 303);
+            this.ClientSize = new System.Drawing.Size(640, 303);
             this.Controls.Add(this.reportViewer1);
             this.MaximizeBox = false;
             this.Name = "ReportSviDobavljaci";
@@ -67,6 +68,7 @@
             this.Load += new System.EventHandler(this.FormSviDobavljaciReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DobavljacBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

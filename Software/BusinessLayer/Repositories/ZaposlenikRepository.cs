@@ -39,7 +39,7 @@ namespace BusinessLayer.Repositories
         /// </summary>
         /// <param name="oib">prosljeđeni oib sa forme</param>
         /// <returns>ture/false</returns>
-        public bool UsporediOIB(string oib)
+        public bool ProvjeriPostojanostOIBa(string oib)
         {
             return _dbContext.Zaposlenici.FirstOrDefault(z => z.OIB == oib) != null ? true : false;
         }
@@ -49,7 +49,7 @@ namespace BusinessLayer.Repositories
         /// </summary>
         /// <param name="korisnickoIme">prosljeđeno korisničko ime s forme za registraciju</param>
         /// <returns>true/false</returns>
-        public bool UsporediKorisnickoIme(string korisnickoIme)
+        public bool ProvjeriZauzetostKorisnickogImena(string korisnickoIme)
         {
             //return _dbContext.Zaposlenici.Select(x => x.KorisnickoIme).Contains(korisnickoIme) ? true : false;
             return _dbContext.Zaposlenici.FirstOrDefault(z => z.KorisnickoIme == korisnickoIme) != null ? true : false; 

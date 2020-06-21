@@ -30,7 +30,7 @@ namespace BusinessLayer.Services
             }
         }
 
-        public static bool AssertLargerThanZero(string number)
+        public static bool AssertLargerThan(string number, int min)
         {
             if (!ParseNumber(number, out int parsedNumber))
             {
@@ -38,7 +38,7 @@ namespace BusinessLayer.Services
             }
             else
             {
-                return parsedNumber >= 1 ? true : false;
+                return parsedNumber >= min ? true : false;
             }
         }
 
@@ -49,7 +49,8 @@ namespace BusinessLayer.Services
 
         public static bool AssertEmail(string input)
         {
-            return input.Contains("@") ? true : false;
+            if (input.Contains("@") && (input.Contains(".com") || input.Contains(".hr"))) return true;
+            else return false;
         }
 
         public static bool IsNotNull(object test)
@@ -61,6 +62,32 @@ namespace BusinessLayer.Services
         public static bool IsNotEmpty(string input)
         {
             return input != "" ? true : false;
+        }
+
+        public static bool IsOIBValid(string number)
+        {
+            IsInputNumber(number);
+            if (number.Length != 11) return false;
+            else return true;
+        }
+
+        public static bool IsPhoneNumberValid(string phone)
+        {
+            IsInputNumber(phone);
+            if (phone.Length >= 6 && phone.Length <= 10) return true;
+            else return false;
+        }
+
+        public static bool IsInputNumber(string input)
+        {
+            foreach (var item in input)
+            {
+                if (item < '0' || item > '9')
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

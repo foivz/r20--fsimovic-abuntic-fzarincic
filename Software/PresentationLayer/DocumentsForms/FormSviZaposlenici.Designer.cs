@@ -30,12 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridViewZaposlenici = new System.Windows.Forms.DataGridView();
-            this.zaposlenikBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonZatvori = new System.Windows.Forms.Button();
-            this.buttonIzbrisi = new System.Windows.Forms.Button();
-            this.buttonUredi = new System.Windows.Forms.Button();
-            this.buttonRefreshDGV = new System.Windows.Forms.Button();
-            this.buttonGenQr = new System.Windows.Forms.Button();
             this.imeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prezimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +39,12 @@
             this.korisnickoImeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ulogaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aktivanDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.zaposlenikBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonZatvori = new System.Windows.Forms.Button();
+            this.buttonIzbrisi = new System.Windows.Forms.Button();
+            this.buttonUredi = new System.Windows.Forms.Button();
+            this.buttonRefreshDGV = new System.Windows.Forms.Button();
+            this.buttonGenQr = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZaposlenici)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zaposlenikBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -71,64 +71,8 @@
             this.dataGridViewZaposlenici.MultiSelect = false;
             this.dataGridViewZaposlenici.Name = "dataGridViewZaposlenici";
             this.dataGridViewZaposlenici.ReadOnly = true;
-            this.dataGridViewZaposlenici.Size = new System.Drawing.Size(757, 401);
+            this.dataGridViewZaposlenici.Size = new System.Drawing.Size(954, 401);
             this.dataGridViewZaposlenici.TabIndex = 0;
-            // 
-            // zaposlenikBindingSource
-            // 
-            this.zaposlenikBindingSource.DataSource = typeof(DatabaseLayer.Model.Zaposlenik);
-            // 
-            // buttonZatvori
-            // 
-            this.buttonZatvori.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonZatvori.Location = new System.Drawing.Point(643, 401);
-            this.buttonZatvori.Name = "buttonZatvori";
-            this.buttonZatvori.Size = new System.Drawing.Size(114, 66);
-            this.buttonZatvori.TabIndex = 1;
-            this.buttonZatvori.Text = "Zatvori";
-            this.buttonZatvori.UseVisualStyleBackColor = true;
-            this.buttonZatvori.Click += new System.EventHandler(this.buttonZatvori_Click);
-            // 
-            // buttonIzbrisi
-            // 
-            this.buttonIzbrisi.Location = new System.Drawing.Point(140, 410);
-            this.buttonIzbrisi.Name = "buttonIzbrisi";
-            this.buttonIzbrisi.Size = new System.Drawing.Size(86, 49);
-            this.buttonIzbrisi.TabIndex = 3;
-            this.buttonIzbrisi.Text = "Izbriši";
-            this.buttonIzbrisi.UseVisualStyleBackColor = true;
-            this.buttonIzbrisi.Click += new System.EventHandler(this.buttonIzbrisi_Click);
-            // 
-            // buttonUredi
-            // 
-            this.buttonUredi.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonUredi.Location = new System.Drawing.Point(0, 401);
-            this.buttonUredi.Name = "buttonUredi";
-            this.buttonUredi.Size = new System.Drawing.Size(111, 66);
-            this.buttonUredi.TabIndex = 2;
-            this.buttonUredi.Text = "Uredi";
-            this.buttonUredi.UseVisualStyleBackColor = true;
-            this.buttonUredi.Click += new System.EventHandler(this.buttonUredi_Click);
-            // 
-            // buttonRefreshDGV
-            // 
-            this.buttonRefreshDGV.Location = new System.Drawing.Point(527, 410);
-            this.buttonRefreshDGV.Name = "buttonRefreshDGV";
-            this.buttonRefreshDGV.Size = new System.Drawing.Size(86, 49);
-            this.buttonRefreshDGV.TabIndex = 4;
-            this.buttonRefreshDGV.Text = "Osvježi zapise";
-            this.buttonRefreshDGV.UseVisualStyleBackColor = true;
-            this.buttonRefreshDGV.Click += new System.EventHandler(this.buttonRefreshDGV_Click);
-            // 
-            // buttonGenQr
-            // 
-            this.buttonGenQr.Location = new System.Drawing.Point(333, 410);
-            this.buttonGenQr.Name = "buttonGenQr";
-            this.buttonGenQr.Size = new System.Drawing.Size(86, 47);
-            this.buttonGenQr.TabIndex = 5;
-            this.buttonGenQr.Text = "Generiraj QR";
-            this.buttonGenQr.UseVisualStyleBackColor = true;
-            this.buttonGenQr.Click += new System.EventHandler(this.buttonGenQr_Click);
             // 
             // imeDataGridViewTextBoxColumn
             // 
@@ -202,12 +146,68 @@
             this.aktivanDataGridViewCheckBoxColumn.Name = "aktivanDataGridViewCheckBoxColumn";
             this.aktivanDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
+            // zaposlenikBindingSource
+            // 
+            this.zaposlenikBindingSource.DataSource = typeof(DatabaseLayer.Model.Zaposlenik);
+            // 
+            // buttonZatvori
+            // 
+            this.buttonZatvori.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonZatvori.Location = new System.Drawing.Point(840, 401);
+            this.buttonZatvori.Name = "buttonZatvori";
+            this.buttonZatvori.Size = new System.Drawing.Size(114, 66);
+            this.buttonZatvori.TabIndex = 1;
+            this.buttonZatvori.Text = "Zatvori";
+            this.buttonZatvori.UseVisualStyleBackColor = true;
+            this.buttonZatvori.Click += new System.EventHandler(this.buttonZatvori_Click);
+            // 
+            // buttonIzbrisi
+            // 
+            this.buttonIzbrisi.Location = new System.Drawing.Point(140, 410);
+            this.buttonIzbrisi.Name = "buttonIzbrisi";
+            this.buttonIzbrisi.Size = new System.Drawing.Size(86, 49);
+            this.buttonIzbrisi.TabIndex = 3;
+            this.buttonIzbrisi.Text = "Izbriši";
+            this.buttonIzbrisi.UseVisualStyleBackColor = true;
+            this.buttonIzbrisi.Click += new System.EventHandler(this.buttonIzbrisi_Click);
+            // 
+            // buttonUredi
+            // 
+            this.buttonUredi.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonUredi.Location = new System.Drawing.Point(0, 401);
+            this.buttonUredi.Name = "buttonUredi";
+            this.buttonUredi.Size = new System.Drawing.Size(111, 66);
+            this.buttonUredi.TabIndex = 2;
+            this.buttonUredi.Text = "Uredi";
+            this.buttonUredi.UseVisualStyleBackColor = true;
+            this.buttonUredi.Click += new System.EventHandler(this.buttonUredi_Click);
+            // 
+            // buttonRefreshDGV
+            // 
+            this.buttonRefreshDGV.Location = new System.Drawing.Point(726, 410);
+            this.buttonRefreshDGV.Name = "buttonRefreshDGV";
+            this.buttonRefreshDGV.Size = new System.Drawing.Size(86, 49);
+            this.buttonRefreshDGV.TabIndex = 4;
+            this.buttonRefreshDGV.Text = "Osvježi zapise";
+            this.buttonRefreshDGV.UseVisualStyleBackColor = true;
+            this.buttonRefreshDGV.Click += new System.EventHandler(this.buttonRefreshDGV_Click);
+            // 
+            // buttonGenQr
+            // 
+            this.buttonGenQr.Location = new System.Drawing.Point(442, 411);
+            this.buttonGenQr.Name = "buttonGenQr";
+            this.buttonGenQr.Size = new System.Drawing.Size(86, 47);
+            this.buttonGenQr.TabIndex = 5;
+            this.buttonGenQr.Text = "Generiraj QR";
+            this.buttonGenQr.UseVisualStyleBackColor = true;
+            this.buttonGenQr.Click += new System.EventHandler(this.buttonGenQr_Click);
+            // 
             // FormSviZaposlenici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(757, 467);
+            this.ClientSize = new System.Drawing.Size(954, 467);
             this.Controls.Add(this.buttonGenQr);
             this.Controls.Add(this.buttonRefreshDGV);
             this.Controls.Add(this.buttonUredi);

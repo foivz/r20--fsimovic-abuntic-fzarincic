@@ -41,6 +41,7 @@
             // 
             // reportViewer1
             // 
+            this.reportViewer1.AutoSize = true;
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DsArtikli";
             reportDataSource1.Value = this.ArtiklBindingSource;
@@ -49,14 +50,14 @@
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(510, 298);
+            this.reportViewer1.Size = new System.Drawing.Size(548, 619);
             this.reportViewer1.TabIndex = 0;
             // 
             // ReportSviArtikli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 298);
+            this.ClientSize = new System.Drawing.Size(548, 619);
             this.Controls.Add(this.reportViewer1);
             this.MaximizeBox = false;
             this.Name = "ReportSviArtikli";
@@ -66,6 +67,7 @@
             this.Load += new System.EventHandler(this.FormSviArtikliReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ArtiklBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

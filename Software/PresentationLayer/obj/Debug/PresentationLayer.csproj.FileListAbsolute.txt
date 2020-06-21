@@ -402,7 +402,6 @@ D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Deb
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNoviRacun.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormSviZaposlenici.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNoviDobavljac.resources
-D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.FormHelp.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.LoginForms.FormLogin.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.QRForms.FormQrGenerate.resources

@@ -82,11 +82,15 @@ namespace PresentationLayer.RegistrationForms
                 ProvjeraPredznaka();
                 if (!ValidationService.AssertEmail(textBoxEmail.Text))
                 {
-                    NotificationService.Notify($"Email nije ispravnog formata!");
+                    NotificationService.Notify($"Email nije ispravnog formata!\nPrimjer: imeprezime@mail.com");
                 }
-                else if (!ValidationService.AssertPositive(textBoxTelefon.Text))
+                else if (!ValidationService.IsPhoneNumberValid(textBoxTelefon.Text))
                 {
-                    NotificationService.NumberField("Polja: Telefon");
+                    NotificationService.Notify("Telefonski broj mora biti u rasponu od 6 do 10 brojeva!");
+                }
+                else if (!ValidationService.IsOIBValid(textBoxOIB.Text))
+                {
+                    NotificationService.Notify("OIB se sastoji od 11 brojeva!");
                 }
                 else if (!ValidationService.AssertStringLenght(textBoxKorisnickoIme.Text, 6) || !ValidationService.AssertStringLenght(textBoxLozinka.Text, 6))
                 {
@@ -124,21 +128,25 @@ namespace PresentationLayer.RegistrationForms
 
             if (ProvjeriPopunjenost())
             {
-                if (UnitOfWork.Zaposlenici.UsporediOIB(textBoxOIB.Text))
+                if (UnitOfWork.Zaposlenici.ProvjeriPostojanostOIBa(textBoxOIB.Text))
                 {
                     NotificationService.EmployeeCheck("Korisnik postoji u bazi!");
                 }
-                else if (UnitOfWork.Zaposlenici.UsporediKorisnickoIme(textBoxKorisnickoIme.Text))
+                else if (UnitOfWork.Zaposlenici.ProvjeriZauzetostKorisnickogImena(textBoxKorisnickoIme.Text))
                 {
                     NotificationService.Notify($"Korisničko ime: {textBoxKorisnickoIme.Text} je zauzeto!");
                 }
                 else if (!ValidationService.AssertEmail(textBoxEmail.Text))
                 {
-                    NotificationService.Notify($"Email nije ispravnog formata!");
+                    NotificationService.Notify($"Email nije ispravnog formata!\nPrimjer: imeprezime@mail.com");
                 }
-                else if (!ValidationService.AssertPositive(textBoxTelefon.Text) || !ValidationService.AssertPositive(textBoxOIB.Text))
+                else if (!ValidationService.IsPhoneNumberValid(textBoxTelefon.Text))
                 {
-                    NotificationService.NumberField("Polja: Telefon i OIB");
+                    NotificationService.Notify("Telefonski broj mora biti u rasponu od 6 do 10 brojeva!");
+                }
+                else if (!ValidationService.IsOIBValid(textBoxOIB.Text))
+                {
+                    NotificationService.Notify("OIB se sastoji od 11 brojeva!");
                 }
                 else if (!ValidationService.AssertStringLenght(textBoxKorisnickoIme.Text, 6) || !ValidationService.AssertStringLenght(textBoxLozinka.Text, 6))
                 {
@@ -181,12 +189,7 @@ namespace PresentationLayer.RegistrationForms
         {
             return ValidationService.IsNotEmpty(textBoxIme.Text) &&
                    ValidationService.IsNotEmpty(textBoxPrezime.Text) &&
-                   ValidationService.IsNotEmpty(textBoxTelefon.Text) &&
-                   ValidationService.IsNotEmpty(textBoxEmail.Text) &&
-                   ValidationService.IsNotEmpty(textBoxOIB.Text) &&
-                   ValidationService.IsNotEmpty(textBoxBrojZiroRacuna.Text) &&
-                   ValidationService.IsNotEmpty(textBoxKorisnickoIme.Text) &&
-                   ValidationService.IsNotEmpty(textBoxLozinka.Text);
+                   ValidationService.IsNotEmpty(textBoxBrojZiroRacuna.Text);
         }
 
         private void FormRegistration_FormClosing(object sender, FormClosingEventArgs e)

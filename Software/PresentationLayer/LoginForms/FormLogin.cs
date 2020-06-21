@@ -81,28 +81,37 @@ namespace PresentationLayer.LoginForms
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
+            var result = LoginResult.Null;
             string username = textBoxUsername.Text;
             string password = textBoxPassword.Text;
-            var result = UserManager.LogirajKorisnika(username, password);
 
-            if (result != LoginResult.Succesful)
+            if (ValidationService.IsNotEmpty(username) || ValidationService.IsNotEmpty(password))
             {
-                NotificationService.NotifyLoginResult(result);
-                textBoxPassword.Clear();
+                result = UserManager.LogirajKorisnika(username, password);
+
+                if (result != LoginResult.Succesful)
+                {
+                    NotificationService.NotifyLoginResult(result);
+                    textBoxPassword.Clear();
+                }
+                else
+                {
+                    FormMain form = new FormMain()
+                    {
+                        Owner = this
+                    };
+                    video.UgaisKameru();
+
+                    form.Show();
+                    this.Hide();
+
+                    textBoxUsername.Clear();
+                    textBoxPassword.Clear();
+                }
             }
             else
             {
-                FormMain form = new FormMain()
-                {
-                    Owner = this
-                };
-                video.UgaisKameru();
-
-                form.Show();
-                this.Hide();
-
-                textBoxUsername.Clear();
-                textBoxPassword.Clear();
+                NotificationService.InvalidInput();
             }
         }
 

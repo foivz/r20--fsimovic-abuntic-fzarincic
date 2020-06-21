@@ -44,8 +44,8 @@
             // 
             // tboAdresa
             // 
-            this.tboAdresa.Location = new System.Drawing.Point(56, 101);
-            this.tboAdresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tboAdresa.Location = new System.Drawing.Point(77, 100);
+            this.tboAdresa.Margin = new System.Windows.Forms.Padding(2);
             this.tboAdresa.Name = "tboAdresa";
             this.tboAdresa.Size = new System.Drawing.Size(124, 20);
             this.tboAdresa.TabIndex = 44;
@@ -53,7 +53,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 101);
+            this.label5.Location = new System.Drawing.Point(20, 101);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
@@ -62,8 +62,8 @@
             // 
             // tboEmail
             // 
-            this.tboEmail.Location = new System.Drawing.Point(56, 78);
-            this.tboEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tboEmail.Location = new System.Drawing.Point(77, 77);
+            this.tboEmail.Margin = new System.Windows.Forms.Padding(2);
             this.tboEmail.Name = "tboEmail";
             this.tboEmail.Size = new System.Drawing.Size(124, 20);
             this.tboEmail.TabIndex = 42;
@@ -71,7 +71,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 78);
+            this.label4.Location = new System.Drawing.Point(20, 78);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
@@ -80,8 +80,8 @@
             // 
             // tboTelefon
             // 
-            this.tboTelefon.Location = new System.Drawing.Point(56, 55);
-            this.tboTelefon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tboTelefon.Location = new System.Drawing.Point(77, 54);
+            this.tboTelefon.Margin = new System.Windows.Forms.Padding(2);
             this.tboTelefon.Name = "tboTelefon";
             this.tboTelefon.Size = new System.Drawing.Size(124, 20);
             this.tboTelefon.TabIndex = 40;
@@ -89,7 +89,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 55);
+            this.label3.Location = new System.Drawing.Point(20, 55);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
@@ -98,8 +98,8 @@
             // 
             // tboOIB
             // 
-            this.tboOIB.Location = new System.Drawing.Point(56, 30);
-            this.tboOIB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tboOIB.Location = new System.Drawing.Point(77, 29);
+            this.tboOIB.Margin = new System.Windows.Forms.Padding(2);
             this.tboOIB.Name = "tboOIB";
             this.tboOIB.Size = new System.Drawing.Size(124, 20);
             this.tboOIB.TabIndex = 38;
@@ -107,7 +107,7 @@
             // A
             // 
             this.A.AutoSize = true;
-            this.A.Location = new System.Drawing.Point(9, 30);
+            this.A.Location = new System.Drawing.Point(20, 30);
             this.A.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.A.Name = "A";
             this.A.Size = new System.Drawing.Size(28, 13);
@@ -116,8 +116,8 @@
             // 
             // tboNaziv
             // 
-            this.tboNaziv.Location = new System.Drawing.Point(56, 7);
-            this.tboNaziv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tboNaziv.Location = new System.Drawing.Point(77, 6);
+            this.tboNaziv.Margin = new System.Windows.Forms.Padding(2);
             this.tboNaziv.Name = "tboNaziv";
             this.tboNaziv.Size = new System.Drawing.Size(124, 20);
             this.tboNaziv.TabIndex = 36;
@@ -125,7 +125,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 7);
+            this.label1.Location = new System.Drawing.Point(20, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
@@ -135,8 +135,8 @@
             // btnOdustani
             // 
             this.btnOdustani.AllowDrop = true;
-            this.btnOdustani.Location = new System.Drawing.Point(100, 124);
-            this.btnOdustani.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOdustani.Location = new System.Drawing.Point(121, 123);
+            this.btnOdustani.Margin = new System.Windows.Forms.Padding(2);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(79, 39);
             this.btnOdustani.TabIndex = 34;
@@ -146,8 +146,8 @@
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(9, 124);
-            this.btnDodaj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDodaj.Location = new System.Drawing.Point(20, 124);
+            this.btnDodaj.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(79, 39);
             this.btnDodaj.TabIndex = 33;
@@ -173,7 +173,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnDodaj);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAzurirajDobavljaca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Azuriraj dobavljaca";
