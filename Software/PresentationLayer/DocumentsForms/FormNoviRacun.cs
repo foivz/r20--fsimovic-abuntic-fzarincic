@@ -126,5 +126,15 @@ namespace PresentationLayer.DocumentsForms
         {
             this.Close();
         }
+
+        private void btnPomoc_Click(object sender, EventArgs e)
+        {
+            btnPomoc.Capture = false;
+            SendMessage(this.Handle, WM_SYSCOMMAND, (IntPtr)SC_CONTEXTHELP, IntPtr.Zero);
+        }
+        private const int WM_SYSCOMMAND = 0x112;
+        private const int SC_CONTEXTHELP = 0xf180;
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern IntPtr SendMessage(IntPtr hWnd, int msg, IntPtr wp, IntPtr lp);
     }
 }

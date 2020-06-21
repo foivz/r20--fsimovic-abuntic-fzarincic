@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="helpProvider7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="$this.HelpString" xml:space="preserve">
+    <value>Klikom na odabir datum birate datum izdavanja narudzbenice, te u padajucem izborniku dodajete dobavljaca od kojeg narucujete robu (ako dobavljac ne postoji mozete ga dodati klikom na gumb Novi dobavljac), artikl se dodaje birajuci iz padajuceg izbornika te unosom kolicine (ako artikl koji narucujete ne postoji mozete ga dodati pomocu gumba Dodaj novi artikl). Stavke narudzbenice se prikazuju u tablici</value>
+  </data>
 </root>
