@@ -48,9 +48,11 @@ namespace BusinessLayer.Services
 
         public void UgaisKameru()
         {
-            if (finalVideo.IsRunning == true || finalVideo.Source == null)
+            if (finalVideo != null)
             {
-                finalVideo.Stop();
+                finalVideo.NewFrame -= new NewFrameEventHandler(FinalVideo_NewFrame);
+                finalVideo.SignalToStop();
+                finalVideo = null;
             }
         }
 

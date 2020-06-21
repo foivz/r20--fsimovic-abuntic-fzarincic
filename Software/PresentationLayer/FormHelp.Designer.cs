@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonQrLogin = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.buttonGenQrFrom = new System.Windows.Forms.Button();
             this.buttonRegistracija = new System.Windows.Forms.Button();
@@ -37,16 +36,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnIzvjestaji = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // buttonQrLogin
-            // 
-            this.buttonQrLogin.Location = new System.Drawing.Point(47, 103);
-            this.buttonQrLogin.Name = "buttonQrLogin";
-            this.buttonQrLogin.Size = new System.Drawing.Size(75, 23);
-            this.buttonQrLogin.TabIndex = 4;
-            this.buttonQrLogin.Text = "Logiraj s QR";
-            this.buttonQrLogin.UseVisualStyleBackColor = true;
-            this.buttonQrLogin.Click += new System.EventHandler(this.buttonQrLogin_Click);
             // 
             // buttonLogin
             // 
@@ -66,7 +55,6 @@
             this.buttonGenQrFrom.TabIndex = 6;
             this.buttonGenQrFrom.Text = "Gen QR";
             this.buttonGenQrFrom.UseVisualStyleBackColor = true;
-            this.buttonGenQrFrom.Click += new System.EventHandler(this.buttonGenQrFrom_Click);
             // 
             // buttonRegistracija
             // 
@@ -132,7 +120,6 @@
             this.Controls.Add(this.buttonRegistracija);
             this.Controls.Add(this.buttonGenQrFrom);
             this.Controls.Add(this.buttonLogin);
-            this.Controls.Add(this.buttonQrLogin);
             this.KeyPreview = true;
             this.Name = "FormHelp";
             this.Text = "FormHelp";
@@ -143,8 +130,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonQrLogin;
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Button buttonGenQrFrom;
         private System.Windows.Forms.Button buttonRegistracija;

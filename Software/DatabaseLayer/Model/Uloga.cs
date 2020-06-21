@@ -15,5 +15,10 @@ namespace DatabaseLayer.Model
         public int Id { get; set; }
         public string Naziv { get; set; }
         #endregion
+
+        public override string ToString()
+        {
+            return Naziv;
+        }
     }
 }

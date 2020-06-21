@@ -90,6 +90,7 @@
             this.Name = "FormLogin";
             this.Text = "Prijava";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLoginQRScan_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLogin_FormClosed);
             this.Load += new System.EventHandler(this.FormLoginQRScan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

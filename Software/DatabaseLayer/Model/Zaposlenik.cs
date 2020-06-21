@@ -38,7 +38,21 @@ namespace DatabaseLayer.Model
             Email = email;
             BrojZIroRacuna = brojZiroRacuna;
             Aktivan = true;
-            Uloga = null;
+            OIB = oib;
+            KorisnickoIme = korisnickoIme;
+            LozinkaHash = lozinka;
+            Uloga = uloga;
+        }
+
+        public Zaposlenik(int id, string ime, string prezime, string telefon, string email, string brojZiroRacuna, string lozinka, string oib, string korisnickoIme, Uloga uloga)
+        {
+            Id = id;
+            Ime = ime;
+            Prezime = prezime;
+            Telefon = telefon;
+            Email = email;
+            BrojZIroRacuna = brojZiroRacuna;
+            Aktivan = true;
             OIB = oib;
             KorisnickoIme = korisnickoIme;
             LozinkaHash = lozinka;

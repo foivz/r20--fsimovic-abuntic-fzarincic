@@ -22,6 +22,7 @@ namespace PresentationLayer.DocumentsForms
         List<Artikl> Artikli;
         List<Artikl> ArtikliNaStanju = new List<Artikl>();
         List<StavkaRacuna> StavkaRacua = new List<StavkaRacuna>();
+
         public FormNoviRacun()
         {
             InitializeComponent();
@@ -113,12 +114,13 @@ namespace PresentationLayer.DocumentsForms
         private void FormNoviRacun_FormClosing(object sender, FormClosingEventArgs e)
         {
             UserManager.OdlogirajKorisnika();
-
+            this.Owner.Owner.Visible = true;
+            this.Owner.Dispose();
         }
 
         private void btnOdustani_Click(object sender, EventArgs e)
         {
-            UserManager.OdlogirajKorisnika();
+            this.Owner.Owner.Visible = true;
             this.Close();
         }
     }

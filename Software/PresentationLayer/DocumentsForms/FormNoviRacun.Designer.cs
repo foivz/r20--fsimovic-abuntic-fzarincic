@@ -82,7 +82,7 @@
             // btnDodajArtikl
             // 
             this.btnDodajArtikl.Location = new System.Drawing.Point(199, 32);
-            this.btnDodajArtikl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDodajArtikl.Margin = new System.Windows.Forms.Padding(2);
             this.btnDodajArtikl.Name = "btnDodajArtikl";
             this.btnDodajArtikl.Size = new System.Drawing.Size(79, 39);
             this.btnDodajArtikl.TabIndex = 34;
@@ -103,7 +103,7 @@
             // tboKolicina
             // 
             this.tboKolicina.Location = new System.Drawing.Point(117, 45);
-            this.tboKolicina.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tboKolicina.Margin = new System.Windows.Forms.Padding(2);
             this.tboKolicina.Name = "tboKolicina";
             this.tboKolicina.Size = new System.Drawing.Size(76, 20);
             this.tboKolicina.TabIndex = 32;
@@ -122,7 +122,7 @@
             // 
             this.cmbArtikl.FormattingEnabled = true;
             this.cmbArtikl.Location = new System.Drawing.Point(9, 45);
-            this.cmbArtikl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbArtikl.Margin = new System.Windows.Forms.Padding(2);
             this.cmbArtikl.Name = "cmbArtikl";
             this.cmbArtikl.Size = new System.Drawing.Size(92, 21);
             this.cmbArtikl.TabIndex = 30;
@@ -130,7 +130,7 @@
             // tboUkupno
             // 
             this.tboUkupno.Location = new System.Drawing.Point(248, 326);
-            this.tboUkupno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tboUkupno.Margin = new System.Windows.Forms.Padding(2);
             this.tboUkupno.Name = "tboUkupno";
             this.tboUkupno.Size = new System.Drawing.Size(76, 20);
             this.tboUkupno.TabIndex = 29;
@@ -148,7 +148,7 @@
             // tboPorezNaDodanuVrijednost
             // 
             this.tboPorezNaDodanuVrijednost.Location = new System.Drawing.Point(168, 326);
-            this.tboPorezNaDodanuVrijednost.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tboPorezNaDodanuVrijednost.Margin = new System.Windows.Forms.Padding(2);
             this.tboPorezNaDodanuVrijednost.Name = "tboPorezNaDodanuVrijednost";
             this.tboPorezNaDodanuVrijednost.Size = new System.Drawing.Size(76, 20);
             this.tboPorezNaDodanuVrijednost.TabIndex = 27;
@@ -166,7 +166,7 @@
             // tboPorezNaPotrosnju
             // 
             this.tboPorezNaPotrosnju.Location = new System.Drawing.Point(88, 326);
-            this.tboPorezNaPotrosnju.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tboPorezNaPotrosnju.Margin = new System.Windows.Forms.Padding(2);
             this.tboPorezNaPotrosnju.Name = "tboPorezNaPotrosnju";
             this.tboPorezNaPotrosnju.Size = new System.Drawing.Size(76, 20);
             this.tboPorezNaPotrosnju.TabIndex = 25;
@@ -184,7 +184,7 @@
             // tboOsnovica
             // 
             this.tboOsnovica.Location = new System.Drawing.Point(9, 326);
-            this.tboOsnovica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tboOsnovica.Margin = new System.Windows.Forms.Padding(2);
             this.tboOsnovica.Name = "tboOsnovica";
             this.tboOsnovica.Size = new System.Drawing.Size(76, 20);
             this.tboOsnovica.TabIndex = 23;
@@ -203,7 +203,7 @@
             // 
             this.btnOdustani.AllowDrop = true;
             this.btnOdustani.Location = new System.Drawing.Point(512, 317);
-            this.btnOdustani.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOdustani.Margin = new System.Windows.Forms.Padding(2);
             this.btnOdustani.Name = "btnOdustani";
             this.btnOdustani.Size = new System.Drawing.Size(79, 39);
             this.btnOdustani.TabIndex = 21;
@@ -214,7 +214,7 @@
             // btnIzdaj
             // 
             this.btnIzdaj.Location = new System.Drawing.Point(421, 317);
-            this.btnIzdaj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIzdaj.Margin = new System.Windows.Forms.Padding(2);
             this.btnIzdaj.Name = "btnIzdaj";
             this.btnIzdaj.Size = new System.Drawing.Size(79, 39);
             this.btnIzdaj.TabIndex = 20;
@@ -226,7 +226,7 @@
             // 
             this.dgvStavkeRacuna.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStavkeRacuna.Location = new System.Drawing.Point(9, 92);
-            this.dgvStavkeRacuna.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvStavkeRacuna.Margin = new System.Windows.Forms.Padding(2);
             this.dgvStavkeRacuna.Name = "dgvStavkeRacuna";
             this.dgvStavkeRacuna.RowTemplate.Height = 24;
             this.dgvStavkeRacuna.Size = new System.Drawing.Size(582, 211);
@@ -256,7 +256,7 @@
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnIzdaj);
             this.Controls.Add(this.dgvStavkeRacuna);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormNoviRacun";
             this.Text = "Novi racun";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormNoviRacun_FormClosing);

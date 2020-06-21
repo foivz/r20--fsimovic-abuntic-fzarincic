@@ -10,5 +10,8 @@ namespace DatabaseLayer.Interfaces
     public interface IZaposlenikRepository : IGenericRepository<Zaposlenik>
     {
         Zaposlenik PronadiZaposlenika(string user, string password);
+        bool UsporediOIB(string oib);
+        bool UsporediKorisnickoIme(string korisnickoIme);
+        int DohvatiIdKorisnika(string oib);
     }
 }

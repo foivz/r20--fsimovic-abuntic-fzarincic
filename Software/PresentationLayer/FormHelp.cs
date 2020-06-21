@@ -2,6 +2,7 @@
 using PresentationLayer.LoginForms;
 using PresentationLayer.QRForms;
 using PresentationLayer.RegistrationForms;
+using BusinessLayer.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,13 +22,6 @@ namespace PresentationLayer
             InitializeComponent();
         }
 
-        private void buttonQrLogin_Click(object sender, EventArgs e)
-        {
-            FormLogin form = new FormLogin();
-            form.Show();
-            this.Hide();
-        }
-
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             FormLogin form = new FormLogin();
@@ -35,23 +29,22 @@ namespace PresentationLayer
             this.Hide();
         }
 
-        private void buttonGenQrFrom_Click(object sender, EventArgs e)
-        {
-            FormQrGenerate form = new FormQrGenerate();
-            form.Show();
-            this.Hide();
-        }
-
         private void buttonRegistracija_Click(object sender, EventArgs e)
         {
-            FormRegistration form = new FormRegistration(this);
+            FormRegistration form = new FormRegistration()
+            {
+                Owner = this
+            };
             form.Show();
             this.Hide();
         }
 
         private void buttonSviZaposlenici_Click(object sender, EventArgs e)
         {
-            FormSviZaposlenici form = new FormSviZaposlenici(this);
+            FormSviZaposlenici form = new FormSviZaposlenici()
+            {
+                Owner = this
+            };
             form.Show();
             this.Hide();
         }
