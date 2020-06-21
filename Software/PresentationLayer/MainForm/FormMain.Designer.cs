@@ -43,11 +43,10 @@
             // 
             this.buttonRacun.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.helpProviderPomoc.SetHelpString(this.buttonRacun, "Klikom na ovaj gumb otvarate formu za izdavanje novog racuna");
-            this.buttonRacun.Location = new System.Drawing.Point(23, 16);
-            this.buttonRacun.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonRacun.Location = new System.Drawing.Point(17, 13);
             this.buttonRacun.Name = "buttonRacun";
             this.helpProviderPomoc.SetShowHelp(this.buttonRacun, true);
-            this.buttonRacun.Size = new System.Drawing.Size(249, 142);
+            this.buttonRacun.Size = new System.Drawing.Size(187, 115);
             this.buttonRacun.TabIndex = 0;
             this.buttonRacun.Text = "Izdaj novi račun";
             this.buttonRacun.UseVisualStyleBackColor = true;
@@ -57,11 +56,10 @@
             // 
             this.buttonnarudzbenica.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.helpProviderPomoc.SetHelpString(this.buttonnarudzbenica, "Klikom na ovaj gumb otvarate formu za izdavanje nove narudžbenice");
-            this.buttonnarudzbenica.Location = new System.Drawing.Point(23, 165);
-            this.buttonnarudzbenica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonnarudzbenica.Location = new System.Drawing.Point(17, 134);
             this.buttonnarudzbenica.Name = "buttonnarudzbenica";
             this.helpProviderPomoc.SetShowHelp(this.buttonnarudzbenica, true);
-            this.buttonnarudzbenica.Size = new System.Drawing.Size(249, 142);
+            this.buttonnarudzbenica.Size = new System.Drawing.Size(187, 115);
             this.buttonnarudzbenica.TabIndex = 1;
             this.buttonnarudzbenica.Text = "Izdaj novu narudžbenicu";
             this.buttonnarudzbenica.UseVisualStyleBackColor = true;
@@ -71,11 +69,10 @@
             // 
             this.buttonPrimka.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.helpProviderPomoc.SetHelpString(this.buttonPrimka, "Klikom na ovaj gumb otvarate formu za izdavanje nove primke");
-            this.buttonPrimka.Location = new System.Drawing.Point(23, 314);
-            this.buttonPrimka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPrimka.Location = new System.Drawing.Point(17, 255);
             this.buttonPrimka.Name = "buttonPrimka";
             this.helpProviderPomoc.SetShowHelp(this.buttonPrimka, true);
-            this.buttonPrimka.Size = new System.Drawing.Size(249, 142);
+            this.buttonPrimka.Size = new System.Drawing.Size(187, 115);
             this.buttonPrimka.TabIndex = 2;
             this.buttonPrimka.Text = "Izdaj novu primku";
             this.buttonPrimka.UseVisualStyleBackColor = true;
@@ -85,11 +82,10 @@
             // 
             this.buttonIzvještaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.helpProviderPomoc.SetHelpString(this.buttonIzvještaj, "Klikom na gumb prikazuju se izvještaji");
-            this.buttonIzvještaj.Location = new System.Drawing.Point(340, 16);
-            this.buttonIzvještaj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonIzvještaj.Location = new System.Drawing.Point(255, 13);
             this.buttonIzvještaj.Name = "buttonIzvještaj";
             this.helpProviderPomoc.SetShowHelp(this.buttonIzvještaj, true);
-            this.buttonIzvještaj.Size = new System.Drawing.Size(249, 142);
+            this.buttonIzvještaj.Size = new System.Drawing.Size(187, 115);
             this.buttonIzvještaj.TabIndex = 3;
             this.buttonIzvještaj.Text = "Izvještaji";
             this.buttonIzvještaj.UseVisualStyleBackColor = true;
@@ -99,11 +95,10 @@
             // 
             this.buttonRegistriraj.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.helpProviderPomoc.SetHelpString(this.buttonRegistriraj, "Klikom na gumb otvara se forma za registraciju novog zaposlenika");
-            this.buttonRegistriraj.Location = new System.Drawing.Point(340, 165);
-            this.buttonRegistriraj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonRegistriraj.Location = new System.Drawing.Point(255, 134);
             this.buttonRegistriraj.Name = "buttonRegistriraj";
             this.helpProviderPomoc.SetShowHelp(this.buttonRegistriraj, true);
-            this.buttonRegistriraj.Size = new System.Drawing.Size(249, 142);
+            this.buttonRegistriraj.Size = new System.Drawing.Size(187, 115);
             this.buttonRegistriraj.TabIndex = 4;
             this.buttonRegistriraj.Text = "Registriraj novog zaposlenika";
             this.buttonRegistriraj.UseVisualStyleBackColor = true;
@@ -113,11 +108,10 @@
             // 
             this.buttonZaposlenici.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.helpProviderPomoc.SetHelpString(this.buttonZaposlenici, "Klikom na gumb otvarate popis zaposlenika");
-            this.buttonZaposlenici.Location = new System.Drawing.Point(340, 314);
-            this.buttonZaposlenici.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonZaposlenici.Location = new System.Drawing.Point(255, 255);
             this.buttonZaposlenici.Name = "buttonZaposlenici";
             this.helpProviderPomoc.SetShowHelp(this.buttonZaposlenici, true);
-            this.buttonZaposlenici.Size = new System.Drawing.Size(249, 142);
+            this.buttonZaposlenici.Size = new System.Drawing.Size(187, 115);
             this.buttonZaposlenici.TabIndex = 5;
             this.buttonZaposlenici.Text = "Popis svih zaposlenih";
             this.buttonZaposlenici.UseVisualStyleBackColor = true;
@@ -127,11 +121,10 @@
             // 
             this.buttonArtiklChart.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.helpProviderPomoc.SetHelpString(this.buttonArtiklChart, "Klikom na gumb prikazuje vam se stanje zaliha");
-            this.buttonArtiklChart.Location = new System.Drawing.Point(340, 463);
-            this.buttonArtiklChart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonArtiklChart.Location = new System.Drawing.Point(17, 376);
             this.buttonArtiklChart.Name = "buttonArtiklChart";
             this.helpProviderPomoc.SetShowHelp(this.buttonArtiklChart, true);
-            this.buttonArtiklChart.Size = new System.Drawing.Size(249, 142);
+            this.buttonArtiklChart.Size = new System.Drawing.Size(187, 115);
             this.buttonArtiklChart.TabIndex = 6;
             this.buttonArtiklChart.Text = "Stanje zaliha";
             this.buttonArtiklChart.UseVisualStyleBackColor = true;
@@ -142,11 +135,10 @@
             this.btnPomoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnPomoc.ForeColor = System.Drawing.Color.Red;
             this.helpProviderPomoc.SetHelpString(this.btnPomoc, "-");
-            this.btnPomoc.Location = new System.Drawing.Point(23, 464);
-            this.btnPomoc.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPomoc.Location = new System.Drawing.Point(255, 376);
             this.btnPomoc.Name = "btnPomoc";
             this.helpProviderPomoc.SetShowHelp(this.btnPomoc, true);
-            this.btnPomoc.Size = new System.Drawing.Size(249, 142);
+            this.btnPomoc.Size = new System.Drawing.Size(187, 115);
             this.btnPomoc.TabIndex = 7;
             this.btnPomoc.Text = "Pomoć";
             this.btnPomoc.UseVisualStyleBackColor = true;
@@ -154,9 +146,9 @@
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(611, 619);
+            this.ClientSize = new System.Drawing.Size(458, 503);
             this.Controls.Add(this.btnPomoc);
             this.Controls.Add(this.buttonArtiklChart);
             this.Controls.Add(this.buttonZaposlenici);
@@ -165,7 +157,6 @@
             this.Controls.Add(this.buttonPrimka);
             this.Controls.Add(this.buttonnarudzbenica);
             this.Controls.Add(this.buttonRacun);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

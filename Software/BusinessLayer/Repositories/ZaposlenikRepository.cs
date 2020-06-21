@@ -31,7 +31,7 @@ namespace BusinessLayer.Repositories
         /// <returns>Vraća pronađenog zaposlenika.</returns>
         public Zaposlenik PronadiZaposlenika(string user, string password)
         {
-            return _dbContext.Zaposlenici.FirstOrDefault(z => z.KorisnickoIme == user && z.LozinkaHash == password);
+            return _dbContext.Zaposlenici.Include(z => z.Uloga).FirstOrDefault(z => z.KorisnickoIme == user && z.LozinkaHash == password);
         }
 
         /// <summary>

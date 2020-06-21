@@ -1,4 +1,5 @@
-﻿using PresentationLayer.ChartForms;
+﻿using BusinessLayer.Services;
+using PresentationLayer.ChartForms;
 using PresentationLayer.DocumentsForms;
 using PresentationLayer.RegistrationForms;
 using System;
@@ -18,6 +19,15 @@ namespace PresentationLayer.MainForm
         public FormMain()
         {
             InitializeComponent();
+            if (UserManager.LogiranKorisnik.Uloga.Naziv == "Konobar")
+            {
+                buttonRegistriraj.Visible = false;
+                buttonZaposlenici.Visible = false;
+                buttonIzvještaj.Visible = false;
+                buttonRegistriraj.Enabled = false;
+                buttonZaposlenici.Enabled = false;
+                buttonIzvještaj.Enabled = false;
+            }
         }
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
