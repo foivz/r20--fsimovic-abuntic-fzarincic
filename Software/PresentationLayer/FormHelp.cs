@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PresentationLayer.ChartForms;
 
 namespace PresentationLayer
 {
@@ -92,6 +93,16 @@ namespace PresentationLayer
         {
             FormNovaNarudzbenica form = new FormNovaNarudzbenica();
             form.ShowDialog();
+        }
+
+        private void buttonChartArtikl_Click(object sender, EventArgs e)
+        {
+            FormArtikliChart form = new FormArtikliChart()
+            {
+                Owner = this
+            };
+            this.Hide();
+            form.Show();
         }
     }
 }

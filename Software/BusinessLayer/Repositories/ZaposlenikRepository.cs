@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLayer.Repositories
 {
@@ -40,7 +41,7 @@ namespace BusinessLayer.Repositories
         /// <returns>ture/false</returns>
         public bool UsporediOIB(string oib)
         {
-            return _dbContext.Zaposlenici.Select(x => x.OIB).Contains(oib) ? true : false;
+            return _dbContext.Zaposlenici.FirstOrDefault(z => z.OIB == oib) != null ? true : false;
         }
 
         /// <summary>
@@ -50,12 +51,18 @@ namespace BusinessLayer.Repositories
         /// <returns>true/false</returns>
         public bool UsporediKorisnickoIme(string korisnickoIme)
         {
-            return _dbContext.Zaposlenici.Select(x => x.KorisnickoIme).Contains(korisnickoIme) ? true : false;
+            //return _dbContext.Zaposlenici.Select(x => x.KorisnickoIme).Contains(korisnickoIme) ? true : false;
+            return _dbContext.Zaposlenici.FirstOrDefault(z => z.KorisnickoIme == korisnickoIme) != null ? true : false; 
         }
 
-        public int DohvatiIdKorisnika(string oib)
+        public Zaposlenik DohvatiZaposlenikaSUlogom(string oib)
         {
-            return _dbContext.Zaposlenici.Where(w => w.OIB == oib).Select(s => s.Id).FirstOrDefault();
+            return _dbContext.Zaposlenici.Include(z => z.Uloga).FirstOrDefault(z => z.OIB == oib);
+        }
+
+        public List<Zaposlenik> DohvatiSveZaposlenikSUlogom()
+        {
+            return _dbContext.Zaposlenici.Include(z => z.Uloga).ToList();
         }
     }
 }

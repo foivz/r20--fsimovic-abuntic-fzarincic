@@ -28,20 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridViewZaposlenici = new System.Windows.Forms.DataGridView();
             this.buttonZatvori = new System.Windows.Forms.Button();
             this.buttonIzbrisi = new System.Windows.Forms.Button();
             this.buttonUredi = new System.Windows.Forms.Button();
             this.buttonRefreshDGV = new System.Windows.Forms.Button();
             this.buttonGenQr = new System.Windows.Forms.Button();
+            this.zaposlenikBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.imeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prezimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.brojZIroRacunaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aktivanDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ulogaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.oIBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.korisnickoImeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZaposlenici)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zaposlenikBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewZaposlenici
             // 
             this.dataGridViewZaposlenici.AllowUserToAddRows = false;
+            this.dataGridViewZaposlenici.AutoGenerateColumns = false;
             this.dataGridViewZaposlenici.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridViewZaposlenici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewZaposlenici.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.imeDataGridViewTextBoxColumn,
+            this.prezimeDataGridViewTextBoxColumn,
+            this.telefonDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.brojZIroRacunaDataGridViewTextBoxColumn,
+            this.aktivanDataGridViewCheckBoxColumn,
+            this.ulogaDataGridViewTextBoxColumn,
+            this.oIBDataGridViewTextBoxColumn,
+            this.korisnickoImeDataGridViewTextBoxColumn});
+            this.dataGridViewZaposlenici.DataSource = this.zaposlenikBindingSource;
             this.dataGridViewZaposlenici.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridViewZaposlenici.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewZaposlenici.MultiSelect = false;
@@ -102,6 +126,82 @@
             this.buttonGenQr.UseVisualStyleBackColor = true;
             this.buttonGenQr.Click += new System.EventHandler(this.buttonGenQr_Click);
             // 
+            // zaposlenikBindingSource
+            // 
+            this.zaposlenikBindingSource.DataSource = typeof(DatabaseLayer.Model.Zaposlenik);
+            // 
+            // imeDataGridViewTextBoxColumn
+            // 
+            this.imeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.imeDataGridViewTextBoxColumn.DataPropertyName = "Ime";
+            this.imeDataGridViewTextBoxColumn.HeaderText = "Ime";
+            this.imeDataGridViewTextBoxColumn.Name = "imeDataGridViewTextBoxColumn";
+            this.imeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // prezimeDataGridViewTextBoxColumn
+            // 
+            this.prezimeDataGridViewTextBoxColumn.DataPropertyName = "Prezime";
+            this.prezimeDataGridViewTextBoxColumn.HeaderText = "Prezime";
+            this.prezimeDataGridViewTextBoxColumn.Name = "prezimeDataGridViewTextBoxColumn";
+            this.prezimeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.prezimeDataGridViewTextBoxColumn.Width = 69;
+            // 
+            // telefonDataGridViewTextBoxColumn
+            // 
+            this.telefonDataGridViewTextBoxColumn.DataPropertyName = "Telefon";
+            this.telefonDataGridViewTextBoxColumn.HeaderText = "Telefon";
+            this.telefonDataGridViewTextBoxColumn.Name = "telefonDataGridViewTextBoxColumn";
+            this.telefonDataGridViewTextBoxColumn.ReadOnly = true;
+            this.telefonDataGridViewTextBoxColumn.Width = 68;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            this.emailDataGridViewTextBoxColumn.Width = 57;
+            // 
+            // brojZIroRacunaDataGridViewTextBoxColumn
+            // 
+            this.brojZIroRacunaDataGridViewTextBoxColumn.DataPropertyName = "BrojZIroRacuna";
+            this.brojZIroRacunaDataGridViewTextBoxColumn.HeaderText = "BrojZIroRacuna";
+            this.brojZIroRacunaDataGridViewTextBoxColumn.Name = "brojZIroRacunaDataGridViewTextBoxColumn";
+            this.brojZIroRacunaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.brojZIroRacunaDataGridViewTextBoxColumn.Width = 107;
+            // 
+            // aktivanDataGridViewCheckBoxColumn
+            // 
+            this.aktivanDataGridViewCheckBoxColumn.DataPropertyName = "Aktivan";
+            this.aktivanDataGridViewCheckBoxColumn.HeaderText = "Aktivan";
+            this.aktivanDataGridViewCheckBoxColumn.Name = "aktivanDataGridViewCheckBoxColumn";
+            this.aktivanDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.aktivanDataGridViewCheckBoxColumn.Width = 49;
+            // 
+            // ulogaDataGridViewTextBoxColumn
+            // 
+            this.ulogaDataGridViewTextBoxColumn.DataPropertyName = "Uloga";
+            this.ulogaDataGridViewTextBoxColumn.HeaderText = "Uloga";
+            this.ulogaDataGridViewTextBoxColumn.Name = "ulogaDataGridViewTextBoxColumn";
+            this.ulogaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ulogaDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // oIBDataGridViewTextBoxColumn
+            // 
+            this.oIBDataGridViewTextBoxColumn.DataPropertyName = "OIB";
+            this.oIBDataGridViewTextBoxColumn.HeaderText = "OIB";
+            this.oIBDataGridViewTextBoxColumn.Name = "oIBDataGridViewTextBoxColumn";
+            this.oIBDataGridViewTextBoxColumn.ReadOnly = true;
+            this.oIBDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // korisnickoImeDataGridViewTextBoxColumn
+            // 
+            this.korisnickoImeDataGridViewTextBoxColumn.DataPropertyName = "KorisnickoIme";
+            this.korisnickoImeDataGridViewTextBoxColumn.HeaderText = "KorisnickoIme";
+            this.korisnickoImeDataGridViewTextBoxColumn.Name = "korisnickoImeDataGridViewTextBoxColumn";
+            this.korisnickoImeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.korisnickoImeDataGridViewTextBoxColumn.Width = 98;
+            // 
             // FormSviZaposlenici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,6 +220,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormSviZaposlenici_FormClosing);
             this.Load += new System.EventHandler(this.FormSviZaposlenici_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewZaposlenici)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zaposlenikBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -132,5 +233,15 @@
         private System.Windows.Forms.Button buttonUredi;
         private System.Windows.Forms.Button buttonRefreshDGV;
         private System.Windows.Forms.Button buttonGenQr;
+        private System.Windows.Forms.BindingSource zaposlenikBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prezimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn brojZIroRacunaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn aktivanDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ulogaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn oIBDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn korisnickoImeDataGridViewTextBoxColumn;
     }
 }

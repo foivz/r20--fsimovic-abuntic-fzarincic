@@ -35,6 +35,7 @@
             this.buttonDodajArtikl = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnIzvjestaji = new System.Windows.Forms.Button();
+            this.buttonChartArtikl = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonLogin
@@ -108,11 +109,22 @@
             this.btnIzvjestaji.UseVisualStyleBackColor = true;
             this.btnIzvjestaji.Click += new System.EventHandler(this.btnIzvjestaji_Click);
             // 
+            // buttonChartArtikl
+            // 
+            this.buttonChartArtikl.Location = new System.Drawing.Point(47, 103);
+            this.buttonChartArtikl.Name = "buttonChartArtikl";
+            this.buttonChartArtikl.Size = new System.Drawing.Size(75, 23);
+            this.buttonChartArtikl.TabIndex = 12;
+            this.buttonChartArtikl.Text = "Artikl chart";
+            this.buttonChartArtikl.UseVisualStyleBackColor = true;
+            this.buttonChartArtikl.Click += new System.EventHandler(this.buttonChartArtikl_Click);
+            // 
             // FormHelp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(312, 221);
+            this.Controls.Add(this.buttonChartArtikl);
             this.Controls.Add(this.btnIzvjestaji);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonDodajArtikl);
@@ -137,5 +149,6 @@
         private System.Windows.Forms.Button buttonDodajArtikl;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnIzvjestaji;
+        private System.Windows.Forms.Button buttonChartArtikl;
     }
 }

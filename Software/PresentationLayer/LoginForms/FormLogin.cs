@@ -82,10 +82,11 @@ namespace PresentationLayer.LoginForms
         {
             string username = textBoxUsername.Text;
             string password = textBoxPassword.Text;
+            var result = UserManager.LogirajKorisnika(username, password);
 
-            if (UserManager.LogirajKorisnika(username, password) != LoginResult.Succesful)
+            if (result != LoginResult.Succesful)
             {
-                NotificationService.InvalidInput();
+                NotificationService.NotifyLoginResult(result);
                 textBoxPassword.Clear();
             }
             else

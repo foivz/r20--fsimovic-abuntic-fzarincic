@@ -32,27 +32,18 @@ namespace PresentationLayer.DocumentsForms
 
         private void RefreshDataGridView()
         {
+            unitOfWork = new UnitOfWork(new ClubbingPayDbContext());
             dataGridViewZaposlenici.DataSource = null;
-            dataGridViewZaposlenici.DataSource = unitOfWork.Zaposlenici.GetAll(new Zaposlenik());
-
-            dataGridViewZaposlenici.Columns["Id"].Visible = false;
-            dataGridViewZaposlenici.Columns["LozinkaHash"].Visible = false;
-
-            dataGridViewZaposlenici.Columns["OIB"].DisplayIndex = 6;
-            dataGridViewZaposlenici.Columns[10].DisplayIndex = 7;
-            dataGridViewZaposlenici.Columns["Aktivan"].DisplayIndex = 10;
-
-            dataGridViewZaposlenici.Columns["Email"].HeaderText = "E-mail adresa";
-            dataGridViewZaposlenici.Columns["BrojZIroRacuna"].HeaderText = "Broj bankovnog računa";
-            dataGridViewZaposlenici.Columns["KorisnickoIme"].HeaderText = "Korisničko  ime";
+            dataGridViewZaposlenici.DataSource = unitOfWork.Zaposlenici.DohvatiSveZaposlenikSUlogom();
+            
         }
 
         private void buttonIzbrisi_Click(object sender, EventArgs e)
         {
+            //TODO
             foreach (DataGridViewRow row in dataGridViewZaposlenici.SelectedRows)
             {
-                var cellValue = row.Cells["Id"].Value;
-                unitOfWork.Zaposlenici.Delete(unitOfWork.Zaposlenici.GetById(int.Parse(cellValue.ToString())));
+                unitOfWork.Zaposlenici.Delete(row.DataBoundItem as Zaposlenik);
             }
 
             unitOfWork.Complete();
@@ -72,22 +63,18 @@ namespace PresentationLayer.DocumentsForms
 
         private void buttonUredi_Click(object sender, EventArgs e)
         {
-            Zaposlenik currentObject;
+            var selectedZaposlenik = dataGridViewZaposlenici.CurrentRow.DataBoundItem as Zaposlenik;
 
-            if (dataGridViewZaposlenici.SelectedRows.Count != 0)
-            {
-                currentObject = (Zaposlenik)dataGridViewZaposlenici.CurrentRow.DataBoundItem;
-                FormRegistration form = new FormRegistration(currentObject)
-                {
-                    Owner = this
-                };
-
-                this.Hide();
-                form.ShowDialog();
-            }
-            else
+            if (selectedZaposlenik == null)
             {
                 NotificationService.Notify("Morate odabrati redak u tablici!");
+                return;
+            }
+
+            using (FormRegistration form = new FormRegistration(selectedZaposlenik) { Owner = this })
+            {
+                form.FormClosed += FormUrediZatvorena;
+                form.ShowDialog();
             }
         }
 
@@ -99,7 +86,7 @@ namespace PresentationLayer.DocumentsForms
         private void buttonGenQr_Click(object sender, EventArgs e)
         {
             Zaposlenik selectedZaposlenik;
-            
+
             if (dataGridViewZaposlenici.SelectedRows.Count != 0)
             {
                 selectedZaposlenik = (Zaposlenik)dataGridViewZaposlenici.CurrentRow.DataBoundItem;
@@ -107,5 +94,11 @@ namespace PresentationLayer.DocumentsForms
                 form.ShowDialog();
             }
         }
+
+        private void FormUrediZatvorena(object sender, FormClosedEventArgs args)
+        {
+            RefreshDataGridView();
+        }
     }
 }
+

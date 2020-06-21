@@ -59,6 +59,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChartForms\FormArtikliChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChartForms\FormArtikliChart.Designer.cs">
+      <DependentUpon>FormArtikliChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocumentsForms\FormAzurirajArtikl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +183,9 @@
     <Compile Include="StartForm\FormStart.Designer.cs">
       <DependentUpon>FormStart.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChartForms\FormArtikliChart.resx">
+      <DependentUpon>FormArtikliChart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormAzurirajArtikl.resx">
       <DependentUpon>FormAzurirajArtikl.cs</DependentUpon>
     </EmbeddedResource>

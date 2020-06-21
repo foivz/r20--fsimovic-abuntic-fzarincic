@@ -12,6 +12,7 @@ namespace DatabaseLayer.Interfaces
         Zaposlenik PronadiZaposlenika(string user, string password);
         bool UsporediOIB(string oib);
         bool UsporediKorisnickoIme(string korisnickoIme);
-        int DohvatiIdKorisnika(string oib);
+        Zaposlenik DohvatiZaposlenikaSUlogom(string oib);
+        List<Zaposlenik> DohvatiSveZaposlenikSUlogom();
     }
 }

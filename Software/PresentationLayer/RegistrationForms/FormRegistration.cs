@@ -18,7 +18,7 @@ namespace PresentationLayer.RegistrationForms
     public partial class FormRegistration : Form
     {
         private IUnitOfWork UnitOfWork = new UnitOfWork(new ClubbingPayDbContext());
-        private Zaposlenik dohvaceniZaposlenik = new Zaposlenik();
+        private Zaposlenik dohvaceniZaposlenik;
 
         public FormRegistration()
         {
@@ -60,7 +60,6 @@ namespace PresentationLayer.RegistrationForms
             buttonRegistriraj.Visible = false;
             radioButtonActive.Checked = true;
             #endregion
-
         }
 
         private void FormRegistration_Load(object sender, EventArgs e)
