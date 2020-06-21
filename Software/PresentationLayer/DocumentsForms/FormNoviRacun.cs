@@ -29,9 +29,9 @@ namespace PresentationLayer.DocumentsForms
         }
         private void FormNoviRacun_Load(object sender, EventArgs e)
         {
+            textBoxZaposlenik.Text = UserManager.LogiranKorisnik.KorisnickoIme;
             Artikli = UnitOfWork.Artikli.GetAll();
             DohvatiArtikle();
-            textBoxZaposlenik.Name = UserManager.LogiranKorisnik.KorisnickoIme;
             //tboZaposlenik.Text = UserManager.LogiranKorisnik.ToString();
         }
         private void DohvatiArtikle()

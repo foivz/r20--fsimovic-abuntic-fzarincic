@@ -25,7 +25,7 @@ namespace PresentationLayer.DocumentsForms
         {
             OsvjeziDobavljece();
             DohvatiArtikle();
-            //tboZaposlenik.Text = UserManager.LogiranKorisnik.Ime.ToString();
+            tboZaposlenik.Text = UserManager.LogiranKorisnik.KorisnickoIme;
         }
 
         private void DohvatiArtikle()

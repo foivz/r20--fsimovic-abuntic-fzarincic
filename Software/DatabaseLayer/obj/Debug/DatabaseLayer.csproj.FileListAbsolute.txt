@@ -26,4 +26,3 @@ D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarinci
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.dll
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.pdb
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.csprojAssemblyReference.cache
-D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\DatabaseLayer\obj\Debug\DatabaseLayer.csprojAssemblyReference.cache
