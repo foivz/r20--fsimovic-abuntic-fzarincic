@@ -51,6 +51,8 @@
             this.btnIzbrisi = new System.Windows.Forms.Button();
             this.btnAzuriraj = new System.Windows.Forms.Button();
             this.tboZaposlenik = new System.Windows.Forms.TextBox();
+            this.btnBrisiDobavljaca = new System.Windows.Forms.Button();
+            this.btnAzurirajDobavljaca = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkePrimke)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -220,9 +222,9 @@
             // 
             // btnNoviDobavljac
             // 
-            this.btnNoviDobavljac.Location = new System.Drawing.Point(667, 78);
+            this.btnNoviDobavljac.Location = new System.Drawing.Point(725, 68);
             this.btnNoviDobavljac.Name = "btnNoviDobavljac";
-            this.btnNoviDobavljac.Size = new System.Drawing.Size(121, 34);
+            this.btnNoviDobavljac.Size = new System.Drawing.Size(81, 48);
             this.btnNoviDobavljac.TabIndex = 45;
             this.btnNoviDobavljac.Text = "Novi dobavljac";
             this.btnNoviDobavljac.UseVisualStyleBackColor = true;
@@ -250,7 +252,7 @@
             // 
             this.btnIzbrisi.Location = new System.Drawing.Point(632, 36);
             this.btnIzbrisi.Name = "btnIzbrisi";
-            this.btnIzbrisi.Size = new System.Drawing.Size(106, 48);
+            this.btnIzbrisi.Size = new System.Drawing.Size(123, 48);
             this.btnIzbrisi.TabIndex = 38;
             this.btnIzbrisi.Text = "Izbrisi odabrani artikl";
             this.btnIzbrisi.UseVisualStyleBackColor = true;
@@ -274,11 +276,33 @@
             this.tboZaposlenik.Size = new System.Drawing.Size(100, 22);
             this.tboZaposlenik.TabIndex = 47;
             // 
+            // btnBrisiDobavljaca
+            // 
+            this.btnBrisiDobavljaca.Location = new System.Drawing.Point(543, 68);
+            this.btnBrisiDobavljaca.Name = "btnBrisiDobavljaca";
+            this.btnBrisiDobavljaca.Size = new System.Drawing.Size(81, 48);
+            this.btnBrisiDobavljaca.TabIndex = 48;
+            this.btnBrisiDobavljaca.Text = "Brisi dobavljaca";
+            this.btnBrisiDobavljaca.UseVisualStyleBackColor = true;
+            this.btnBrisiDobavljaca.Click += new System.EventHandler(this.btnBrisiDobavljaca_Click);
+            // 
+            // btnAzurirajDobavljaca
+            // 
+            this.btnAzurirajDobavljaca.Location = new System.Drawing.Point(630, 68);
+            this.btnAzurirajDobavljaca.Name = "btnAzurirajDobavljaca";
+            this.btnAzurirajDobavljaca.Size = new System.Drawing.Size(89, 48);
+            this.btnAzurirajDobavljaca.TabIndex = 49;
+            this.btnAzurirajDobavljaca.Text = "Azuriraj dobavljaca";
+            this.btnAzurirajDobavljaca.UseVisualStyleBackColor = true;
+            this.btnAzurirajDobavljaca.Click += new System.EventHandler(this.btnAzurirajDobavljaca_Click);
+            // 
             // FormPrimka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(818, 550);
+            this.Controls.Add(this.btnAzurirajDobavljaca);
+            this.Controls.Add(this.btnBrisiDobavljaca);
             this.Controls.Add(this.tboZaposlenik);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnNoviDobavljac);
@@ -328,5 +352,7 @@
         private System.Windows.Forms.TextBox tboZaposlenik;
         private System.Windows.Forms.Button btnIzbrisi;
         private System.Windows.Forms.Button btnAzuriraj;
+        private System.Windows.Forms.Button btnBrisiDobavljaca;
+        private System.Windows.Forms.Button btnAzurirajDobavljaca;
     }
 }

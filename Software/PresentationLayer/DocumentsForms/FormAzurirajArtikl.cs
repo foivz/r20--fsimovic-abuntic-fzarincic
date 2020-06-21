@@ -36,7 +36,6 @@ namespace PresentationLayer.DocumentsForms
             comboBoxKategorija.DataSource = null;
             comboBoxKategorija.DataSource = UnitOfWork.KategorijaArtikla.GetAll();
             comboBoxKategorija.DisplayMember = "Naziv";
-            //comboBoxKategorija.SelectedItem = Artikl.KategorijaId;
             //comboBoxKategorija.SelectedItem = UnitOfWork.KategorijaArtikla.GetById(Artikl.Kategorija.Id) as KategorijaArtikla;
         }
 

@@ -184,5 +184,21 @@ namespace PresentationLayer.DocumentsForms
             UnitOfWork.Complete();
             DohvatiArtikle();
         }
+
+        private void btnBrisiDobavljaca_Click(object sender, EventArgs e)
+        {
+            Dobavljac dobavljac = cboDobavljac.SelectedItem as Dobavljac;
+            UnitOfWork.Dobavljaci.Delete(dobavljac);
+            UnitOfWork.Complete();
+            OsvjeziDobavljece();
+        }
+
+        private void btnAzurirajDobavljaca_Click(object sender, EventArgs e)
+        {
+            Dobavljac dobavljac = cboDobavljac.SelectedItem as Dobavljac;
+            FormAzurirajDobavljaca form = new FormAzurirajDobavljaca(dobavljac);
+            form.ShowDialog();
+            OsvjeziDobavljece();
+        }
     }
 }
