@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocumentsForms\FormAzurirajArtikl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForms\FormAzurirajArtikl.Designer.cs">
+      <DependentUpon>FormAzurirajArtikl.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocumentsForms\FormDodajArtikl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="DocumentsForms\FormKategorija.Designer.cs">
       <DependentUpon>FormKategorija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentsForms\FormNovaNarudzbenica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForms\FormNovaNarudzbenica.Designer.cs">
+      <DependentUpon>FormNovaNarudzbenica.cs</DependentUpon>
     </Compile>
     <Compile Include="DocumentsForms\FormNoviRacun.cs">
       <SubType>Form</SubType>
@@ -164,6 +176,9 @@
     <Compile Include="StartForm\FormStart.Designer.cs">
       <DependentUpon>FormStart.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DocumentsForms\FormAzurirajArtikl.resx">
+      <DependentUpon>FormAzurirajArtikl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormDodajArtikl.resx">
       <DependentUpon>FormDodajArtikl.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormKategorija.resx">
       <DependentUpon>FormKategorija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentsForms\FormNovaNarudzbenica.resx">
+      <DependentUpon>FormNovaNarudzbenica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormNoviRacun.resx">
       <DependentUpon>FormNoviRacun.cs</DependentUpon>

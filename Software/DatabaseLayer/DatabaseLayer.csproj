@@ -53,10 +53,12 @@
     <Compile Include="Interfaces\IKategorijaArtiklaRepository.cs" />
     <Compile Include="Interfaces\IPrimkaRepository.cs" />
     <Compile Include="Interfaces\IRacunRepository.cs" />
+    <Compile Include="Interfaces\IStavkaNarudzbenice.cs" />
     <Compile Include="Interfaces\IStavkaPrimke.cs" />
     <Compile Include="Interfaces\IStavkaRacuna.cs" />
     <Compile Include="Interfaces\IUlogaRepository.cs" />
     <Compile Include="Interfaces\IZaposlenikRepository.cs" />
+    <Compile Include="Interfaces\INarudzbenica.cs" />
     <Compile Include="Model\Artikl.cs" />
     <Compile Include="Model\Dobavljac.cs" />
     <Compile Include="Model\KategorijaArtikla.cs" />

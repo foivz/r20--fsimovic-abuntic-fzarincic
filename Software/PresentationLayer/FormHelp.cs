@@ -87,5 +87,11 @@ namespace PresentationLayer
                 HelpButton = true;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormNovaNarudzbenica form = new FormNovaNarudzbenica();
+            form.ShowDialog();
+        }
     }
 }

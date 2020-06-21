@@ -31,6 +31,7 @@ namespace PresentationLayer.DocumentsForms
         {
             Artikli = UnitOfWork.Artikli.GetAll();
             DohvatiArtikle();
+            //tboZaposlenik.Text = UserManager.LogiranKorisnik.ToString();
         }
         private void DohvatiArtikle()
         {

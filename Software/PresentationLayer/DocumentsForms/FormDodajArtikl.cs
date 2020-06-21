@@ -11,7 +11,7 @@ using BusinessLayer.Repositories;
 using BusinessLayer.Services;
 using DatabaseLayer.Interfaces;
 using DatabaseLayer.Model;
-
+using PresentationLayer.Services;
 namespace PresentationLayer.DocumentsForms
 {
     public partial class FormDodajArtikl : Form
@@ -26,6 +26,9 @@ namespace PresentationLayer.DocumentsForms
         {
             try
             {
+                if (ValidationService.ParseDoubleNumber(textBoxCijena.Text, out double number) == false) throw new Exception();
+                if (ValidationService.AssertStringLenght(textBoxNaziv.Text, 1) == false) throw new Exception();
+                if (double.Parse(textBoxCijena.Text) < 0) throw new Exception();
                 Artikl artikl = new Artikl(textBoxNaziv.Text, double.Parse(textBoxCijena.Text), comboBoxKategorija.SelectedItem as KategorijaArtikla);
                 unitOfWork.Artikli.Add(artikl);
                 unitOfWork.Complete();
@@ -33,8 +36,7 @@ namespace PresentationLayer.DocumentsForms
             }
             catch (Exception)
             {
-
-                throw;
+                NotificationService.InvalidInput();
             }
         }
 

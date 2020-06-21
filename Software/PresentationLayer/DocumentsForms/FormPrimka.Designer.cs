@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtZaposlenikIme = new System.Windows.Forms.Label();
             this.txtZaposlenik = new System.Windows.Forms.Label();
             this.btnDodajArtikl = new System.Windows.Forms.Button();
             this.txtKolicina = new System.Windows.Forms.Label();
@@ -49,17 +48,12 @@
             this.cboDobavljac = new System.Windows.Forms.ComboBox();
             this.btnNoviDobavljac = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tboZaposlenik = new System.Windows.Forms.TextBox();
+            this.btnAzuriraj = new System.Windows.Forms.Button();
+            this.btnIzbrisi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkePrimke)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtZaposlenikIme
-            // 
-            this.txtZaposlenikIme.AutoSize = true;
-            this.txtZaposlenikIme.Location = new System.Drawing.Point(672, 9);
-            this.txtZaposlenikIme.Name = "txtZaposlenikIme";
-            this.txtZaposlenikIme.Size = new System.Drawing.Size(0, 17);
-            this.txtZaposlenikIme.TabIndex = 35;
             // 
             // txtZaposlenik
             // 
@@ -226,9 +220,9 @@
             // 
             // btnNoviDobavljac
             // 
-            this.btnNoviDobavljac.Location = new System.Drawing.Point(589, 78);
+            this.btnNoviDobavljac.Location = new System.Drawing.Point(667, 78);
             this.btnNoviDobavljac.Name = "btnNoviDobavljac";
-            this.btnNoviDobavljac.Size = new System.Drawing.Size(199, 34);
+            this.btnNoviDobavljac.Size = new System.Drawing.Size(121, 34);
             this.btnNoviDobavljac.TabIndex = 45;
             this.btnNoviDobavljac.Text = "Novi dobavljac";
             this.btnNoviDobavljac.UseVisualStyleBackColor = true;
@@ -236,6 +230,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnIzbrisi);
+            this.groupBox1.Controls.Add(this.btnAzuriraj);
             this.groupBox1.Controls.Add(this.txtArtikl);
             this.groupBox1.Controls.Add(this.dgvStavkePrimke);
             this.groupBox1.Controls.Add(this.cmbArtikl);
@@ -250,11 +246,39 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Stavke primke:";
             // 
+            // tboZaposlenik
+            // 
+            this.tboZaposlenik.Enabled = false;
+            this.tboZaposlenik.Location = new System.Drawing.Point(667, 9);
+            this.tboZaposlenik.Name = "tboZaposlenik";
+            this.tboZaposlenik.Size = new System.Drawing.Size(100, 22);
+            this.tboZaposlenik.TabIndex = 47;
+            // 
+            // btnAzuriraj
+            // 
+            this.btnAzuriraj.Location = new System.Drawing.Point(503, 36);
+            this.btnAzuriraj.Name = "btnAzuriraj";
+            this.btnAzuriraj.Size = new System.Drawing.Size(123, 48);
+            this.btnAzuriraj.TabIndex = 37;
+            this.btnAzuriraj.Text = "Azuriraj odabrani artikl";
+            this.btnAzuriraj.UseVisualStyleBackColor = true;
+            this.btnAzuriraj.Click += new System.EventHandler(this.btnAzuriraj_Click);
+            // 
+            // btnIzbrisi
+            // 
+            this.btnIzbrisi.Location = new System.Drawing.Point(632, 36);
+            this.btnIzbrisi.Name = "btnIzbrisi";
+            this.btnIzbrisi.Size = new System.Drawing.Size(106, 48);
+            this.btnIzbrisi.TabIndex = 38;
+            this.btnIzbrisi.Text = "Izbrisi odabrani artikl";
+            this.btnIzbrisi.UseVisualStyleBackColor = true;
+            // 
             // FormPrimka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(818, 550);
+            this.Controls.Add(this.tboZaposlenik);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnNoviDobavljac);
             this.Controls.Add(this.cboDobavljac);
@@ -265,7 +289,6 @@
             this.Controls.Add(this.txtOdgoda);
             this.Controls.Add(this.txtDatum);
             this.Controls.Add(this.dtpDatum);
-            this.Controls.Add(this.txtZaposlenikIme);
             this.Controls.Add(this.txtZaposlenik);
             this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnIzradi);
@@ -281,8 +304,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label txtZaposlenikIme;
         private System.Windows.Forms.Label txtZaposlenik;
         private System.Windows.Forms.Button btnDodajArtikl;
         private System.Windows.Forms.Label txtKolicina;
@@ -303,5 +324,8 @@
         private System.Windows.Forms.ComboBox cboDobavljac;
         private System.Windows.Forms.Button btnNoviDobavljac;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox tboZaposlenik;
+        private System.Windows.Forms.Button btnIzbrisi;
+        private System.Windows.Forms.Button btnAzuriraj;
     }
 }

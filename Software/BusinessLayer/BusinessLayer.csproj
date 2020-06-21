@@ -163,8 +163,10 @@
     <Compile Include="Repositories\DobavljacRepository.cs" />
     <Compile Include="Repositories\GenericRepository.cs" />
     <Compile Include="Repositories\KategorijaRepository.cs" />
+    <Compile Include="Repositories\NarudzbenicaRepository.cs" />
     <Compile Include="Repositories\PrimkaRepository.cs" />
     <Compile Include="Repositories\RacunRepository.cs" />
+    <Compile Include="Repositories\StavkaNarudzbeniceRepository.cs" />
     <Compile Include="Repositories\StavkaPrimkeRepository.cs" />
     <Compile Include="Repositories\StavkeRacunaRepository.cs" />
     <Compile Include="Repositories\UlogaRepository.cs" />

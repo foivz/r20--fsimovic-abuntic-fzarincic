@@ -25,6 +25,7 @@ namespace PresentationLayer.DocumentsForms
         {
             OsvjeziDobavljece();
             DohvatiArtikle();
+            //tboZaposlenik.Text = UserManager.LogiranKorisnik.ToString();
         }
 
         private void DohvatiArtikle()
@@ -59,7 +60,7 @@ namespace PresentationLayer.DocumentsForms
 
         private void btnDodajArtikl_Click(object sender, EventArgs e)
         {
-            //TODOO
+            
             var artikl = cmbArtikl.SelectedItem as Artikl;
             if (artikl != null && ValidationService.ParseNumber(tboKolicina.Text, out int kolicina) && kolicina > 0)
             {
@@ -76,6 +77,9 @@ namespace PresentationLayer.DocumentsForms
                         Kolicina = kolicina,
                     });
                 }
+
+                Artikl ArtiklUBazi = UnitOfWork.Artikli.GetById(artikl.Id);
+                ArtiklUBazi.Kolicina += kolicina;
 
             }
             else
@@ -127,7 +131,7 @@ namespace PresentationLayer.DocumentsForms
         private void btnIzradi_Click(object sender, EventArgs e)
         {
             NovaPrimka.Datum = dtpDatum.Value;
-
+            bool izdaj = true;
             if (ValidationService.IsNotNull(cboDobavljac.SelectedItem as Dobavljac))
             {
                 NovaPrimka.Dobavljac = cboDobavljac.SelectedItem as Dobavljac;
@@ -135,6 +139,7 @@ namespace PresentationLayer.DocumentsForms
             else
             {
                 NotificationService.InvalidInput();
+                izdaj = false;
             }
 
             NovaPrimka.Zaposlenik = UserManager.LogiranKorisnik;
@@ -147,18 +152,12 @@ namespace PresentationLayer.DocumentsForms
             else
             {
                 NotificationService.InvalidInput();
-            }
-           
-            // UPDATENJE STANJA NAD ARTIKLIMA
-            foreach (var item in NovaPrimka.StavkaPrimke)
-            {
-                //UnitOfWork.Artikli.GetById(item.Artikl.Id);
-                
+                izdaj = false;
             }
 
             UnitOfWork.Primke.Add(NovaPrimka);
             string message = "";
-            if (UnitOfWork.Complete() >= 0)
+            if (UnitOfWork.Complete() >= 0 && izdaj)
             {
                 message = "Uspješno izdana primka";
             }
@@ -168,6 +167,14 @@ namespace PresentationLayer.DocumentsForms
             }
             NotificationService.Notify(message);
             this.Close();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+            Artikl artikl = cmbArtikl.SelectedItem as Artikl;
+            FormAzurirajArtikl form = new FormAzurirajArtikl(artikl);
+            form.ShowDialog();
+            DohvatiArtikle();
         }
     }
 }
