@@ -128,7 +128,6 @@ C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\Presenta
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\System.Buffers.xml
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.csprojAssemblyReference.cache
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.FormHelp.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.LoginForms.FormLogin.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.QRForms.FormQrGenerate.resources
@@ -138,11 +137,8 @@ C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\Presenta
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.pdb
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormDodajArtikl.resources
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormKategorija.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormSviZaposlenici.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNoviDobavljac.resources
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormPrimka.resources
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.RegistrationForms.FormRegistration.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNoviRacun.resources
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
@@ -746,13 +742,6 @@ C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\Pre
 C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
 C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\PresentationLayer.pdb
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\netstandard.dll
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.EntityFrameworkCore.xml
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\System.Collections.Immutable.xml
-C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviArtikli.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviDobavljaci.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviZaposlenici.resources
@@ -789,3 +778,9 @@ D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Deb
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNovaPrimka.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.MainForm.FormMain.resources
 D:\Projekt_Pi\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.RegistrationForms.FormRegistrationOrEdit.resources
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ChartForms.FormArtikliChart.resources
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormAzurirajDobavljaca.resources
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNovaKategorija.resources
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNovaPrimka.resources
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.MainForm.FormMain.resources
+C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.RegistrationForms.FormRegistrationOrEdit.resources

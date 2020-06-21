@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="helpProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="$this.HelpString" xml:space="preserve">
+    <value>Datum primke mozete odabrati u kalendaru, odgodu je potrebno upisati bez teksta odnosno samo broj dana (npr. 10). Napomena je tekstualnog oblika. Dobavljaca birate iz padajuceg izbornika. Ako zelite obrisati ili azurirati dobavljaca odaberete ga u padajucem izborniku te kliknete na gumb Brisi dobavljaca odnosno Azuriraj dobavljaca (kod azuriranja je bitno da ispunite sve podatke i unesete valjanu email adresu). Artikl se dodaje iz padajuceg izbornika upisivanje kolicine te stiskom gumba Dodaj artikl. Ako zelite dodati novi artikl kliknite na Dodaj novi artikl i otvorit ce vam se forma za dodavanje novog artikla. Ako zelite azurirati ili izbrisati artikl to radite odabirom u padajucem izborniku te pritiskom na gumb azuriraj/obrisi odabrani artikl. Klikom na izradi primku se primka izraduje i mjenja se stanje zaliha.</value>
+  </data>
 </root>
