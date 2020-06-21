@@ -24,6 +24,8 @@ namespace DatabaseLayer.Model
         public double Ukupno { get { return Artikl.Cijena * Kolicina; } set {; } }
         [NotMapped]
         public double Cijena { get { return Artikl.Cijena; } set {; } }
+        [NotMapped]
+        public string Ime { get { return Artikl.Naziv; } set {; } }
         #endregion
     }
 }

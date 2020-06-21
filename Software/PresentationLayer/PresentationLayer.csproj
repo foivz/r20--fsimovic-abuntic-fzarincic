@@ -235,6 +235,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportArtkli.rdlc" />
     <EmbeddedResource Include="Reports\ReportDobavljaci.rdlc" />
+    <EmbeddedResource Include="Reports\ReportRacun.rdlc" />
     <EmbeddedResource Include="Reports\ReportZaposlenici.rdlc" />
     <EmbeddedResource Include="StartForm\FormStart.resx">
       <DependentUpon>FormStart.cs</DependentUpon>

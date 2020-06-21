@@ -548,7 +548,6 @@ D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarinci
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.QRForms.FormQrGenerate.resources
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.RegistrationForms.FormRegistration.resources
-D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.FormSviZaposleniciReport.resources
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.StartForm.FormStart.resources
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
@@ -557,7 +556,6 @@ D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarinci
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.pdb
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\RdlCompile.cache
 D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\RdlCompile.compiled
-D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.FormSviDobavljaciReport.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -759,7 +757,6 @@ C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\Pre
 C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
 C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\PresentationLayer.exe
 C:\Users\Ante\Desktop\Projektv18.6.2020\Software\PresentationLayer\obj\Debug\PresentationLayer.pdb
-D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.FormSviArtikliReport.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\netstandard.dll
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
@@ -775,3 +772,16 @@ C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\Presenta
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviZaposlenici.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNovaNarudzbenica.resources
 C:\Users\Ante\Documents\GitHub\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormAzurirajArtikl.resources
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\netstandard.dll
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.EntityFrameworkCore.xml
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\System.Collections.Immutable.xml
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormAzurirajArtikl.resources
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.DocumentsForms.FormNovaNarudzbenica.resources
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviArtikli.resources
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviDobavljaci.resources
+D:\Filip FOI 1\VIII. semestar\PROJEKT\Path\Clone2\r20--fsimovic-abuntic-fzarincic\Software\PresentationLayer\obj\Debug\PresentationLayer.ReportForms.ReportSviZaposlenici.resources

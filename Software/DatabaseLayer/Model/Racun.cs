@@ -31,23 +31,25 @@ namespace DatabaseLayer.Model
         {
             get
             {
-                return Ukupno * 0.25;
+                return Ukupno * 0.2;
             }
         }
-        [NotMapped]
-        public double PorezNaPotrosnju
-        {
-            get
-            {
-                return Ukupno * 0.03;
-            }
-        }
+        
         [NotMapped]
         public double Osnovica
         {
             get
             {
-                return Ukupno - Pdv - PorezNaPotrosnju;
+                return Ukupno/1.28;
+            }
+        }
+
+        [NotMapped]
+        public double PorezNaPotrosnju
+        {
+            get
+            {
+                return Osnovica * 0.03;
             }
         }
         #endregion
