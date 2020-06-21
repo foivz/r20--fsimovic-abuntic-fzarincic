@@ -11,6 +11,7 @@ using BusinessLayer.Repositories;
 using BusinessLayer.Services;
 using DatabaseLayer.Interfaces;
 using DatabaseLayer.Model;
+using PresentationLayer.Services;
 
 namespace PresentationLayer.DocumentsForms
 {
@@ -36,6 +37,14 @@ namespace PresentationLayer.DocumentsForms
         {
             try
             {
+                if (
+                    !ValidationService.IsNotEmpty(tboNaziv.Text) ||
+                    !ValidationService.IsNotEmpty(tboOIB.Text) ||
+                    !ValidationService.IsNotEmpty(tboTelefon.Text) ||
+                    !ValidationService.IsNotEmpty(tboEmail.Text) ||
+                    !ValidationService.IsNotEmpty(tboAdresa.Text) ||
+                    !ValidationService.AssertEmail(tboEmail.Text)
+                    ) throw new Exception();
                 Dobavljac dobavljac = new Dobavljac(tboNaziv.Text, tboOIB.Text, tboTelefon.Text, tboEmail.Text, tboAdresa.Text);
                 unitOfWork.Dobavljaci.Add(dobavljac);
                 unitOfWork.Complete();
@@ -43,8 +52,7 @@ namespace PresentationLayer.DocumentsForms
             }
             catch (Exception)
             {
-
-                throw;
+                NotificationService.InvalidInput();
             }
         }
     }

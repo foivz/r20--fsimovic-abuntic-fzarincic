@@ -48,9 +48,9 @@
             this.cboDobavljac = new System.Windows.Forms.ComboBox();
             this.btnNoviDobavljac = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tboZaposlenik = new System.Windows.Forms.TextBox();
-            this.btnAzuriraj = new System.Windows.Forms.Button();
             this.btnIzbrisi = new System.Windows.Forms.Button();
+            this.btnAzuriraj = new System.Windows.Forms.Button();
+            this.tboZaposlenik = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStavkePrimke)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -246,13 +246,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Stavke primke:";
             // 
-            // tboZaposlenik
+            // btnIzbrisi
             // 
-            this.tboZaposlenik.Enabled = false;
-            this.tboZaposlenik.Location = new System.Drawing.Point(667, 9);
-            this.tboZaposlenik.Name = "tboZaposlenik";
-            this.tboZaposlenik.Size = new System.Drawing.Size(100, 22);
-            this.tboZaposlenik.TabIndex = 47;
+            this.btnIzbrisi.Location = new System.Drawing.Point(632, 36);
+            this.btnIzbrisi.Name = "btnIzbrisi";
+            this.btnIzbrisi.Size = new System.Drawing.Size(106, 48);
+            this.btnIzbrisi.TabIndex = 38;
+            this.btnIzbrisi.Text = "Izbrisi odabrani artikl";
+            this.btnIzbrisi.UseVisualStyleBackColor = true;
+            this.btnIzbrisi.Click += new System.EventHandler(this.btnIzbrisi_Click);
             // 
             // btnAzuriraj
             // 
@@ -264,14 +266,13 @@
             this.btnAzuriraj.UseVisualStyleBackColor = true;
             this.btnAzuriraj.Click += new System.EventHandler(this.btnAzuriraj_Click);
             // 
-            // btnIzbrisi
+            // tboZaposlenik
             // 
-            this.btnIzbrisi.Location = new System.Drawing.Point(632, 36);
-            this.btnIzbrisi.Name = "btnIzbrisi";
-            this.btnIzbrisi.Size = new System.Drawing.Size(106, 48);
-            this.btnIzbrisi.TabIndex = 38;
-            this.btnIzbrisi.Text = "Izbrisi odabrani artikl";
-            this.btnIzbrisi.UseVisualStyleBackColor = true;
+            this.tboZaposlenik.Enabled = false;
+            this.tboZaposlenik.Location = new System.Drawing.Point(667, 9);
+            this.tboZaposlenik.Name = "tboZaposlenik";
+            this.tboZaposlenik.Size = new System.Drawing.Size(100, 22);
+            this.tboZaposlenik.TabIndex = 47;
             // 
             // FormPrimka
             // 
