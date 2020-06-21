@@ -54,7 +54,7 @@
             this.buttonDodaj.Name = "buttonDodaj";
             this.buttonDodaj.Size = new System.Drawing.Size(75, 23);
             this.buttonDodaj.TabIndex = 18;
-            this.buttonDodaj.Text = "Dodaj";
+            this.buttonDodaj.Text = "Azuriraj";
             this.buttonDodaj.UseVisualStyleBackColor = true;
             this.buttonDodaj.Click += new System.EventHandler(this.buttonDodaj_Click);
             // 

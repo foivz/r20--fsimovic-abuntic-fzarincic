@@ -25,7 +25,7 @@ namespace PresentationLayer.DocumentsForms
         {
             OsvjeziDobavljece();
             DohvatiArtikle();
-            //tboZaposlenik.Text = UserManager.LogiranKorisnik.ToString();
+            //tboZaposlenik.Text = UserManager.LogiranKorisnik.Ime.ToString();
         }
 
         private void DohvatiArtikle()
@@ -175,6 +175,30 @@ namespace PresentationLayer.DocumentsForms
             FormAzurirajArtikl form = new FormAzurirajArtikl(artikl);
             form.ShowDialog();
             DohvatiArtikle();
+        }
+
+        private void btnIzbrisi_Click(object sender, EventArgs e)
+        {
+            Artikl artikl = cmbArtikl.SelectedItem as Artikl;
+            UnitOfWork.Artikli.Delete(artikl);
+            UnitOfWork.Complete();
+            DohvatiArtikle();
+        }
+
+        private void btnBrisiDobavljaca_Click(object sender, EventArgs e)
+        {
+            Dobavljac dobavljac = cboDobavljac.SelectedItem as Dobavljac;
+            UnitOfWork.Dobavljaci.Delete(dobavljac);
+            UnitOfWork.Complete();
+            OsvjeziDobavljece();
+        }
+
+        private void btnAzurirajDobavljaca_Click(object sender, EventArgs e)
+        {
+            Dobavljac dobavljac = cboDobavljac.SelectedItem as Dobavljac;
+            FormAzurirajDobavljaca form = new FormAzurirajDobavljaca(dobavljac);
+            form.ShowDialog();
+            OsvjeziDobavljece();
         }
     }
 }

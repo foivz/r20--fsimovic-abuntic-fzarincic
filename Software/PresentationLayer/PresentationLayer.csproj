@@ -83,6 +83,12 @@
     <Compile Include="DocumentsForms\FormAzurirajArtikl.Designer.cs">
       <DependentUpon>FormAzurirajArtikl.cs</DependentUpon>
     </Compile>
+    <Compile Include="DocumentsForms\FormAzurirajDobavljaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForms\FormAzurirajDobavljaca.Designer.cs">
+      <DependentUpon>FormAzurirajDobavljaca.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocumentsForms\FormDodajArtikl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormAzurirajArtikl.resx">
       <DependentUpon>FormAzurirajArtikl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentsForms\FormAzurirajDobavljaca.resx">
+      <DependentUpon>FormAzurirajDobavljaca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DocumentsForms\FormDodajArtikl.resx">
       <DependentUpon>FormDodajArtikl.cs</DependentUpon>

@@ -50,8 +50,7 @@ namespace PresentationLayer.DocumentsForms
         {
             var artikal = cmbArtikl.SelectedItem as Artikl;
             if (artikal != null && ValidationService.ParseNumber(tboKolicina.Text, out int kolicina) && kolicina > 0)
-            {
-
+            {                
                 var postojeciArtikal = NoviRacun.StavkaRacuna.FirstOrDefault(sr => sr.Artikl.Id == artikal.Id);
                 if (postojeciArtikal != null)
                 {
@@ -67,6 +66,10 @@ namespace PresentationLayer.DocumentsForms
                 }
                 OsvjeziDgv();
                 OsvjeziIznose();
+
+                Artikl ArtiklUBazi = UnitOfWork.Artikli.GetById(artikal.Id);
+                ArtiklUBazi.Kolicina -= kolicina;
+
             }
             else
             {
@@ -88,6 +91,7 @@ namespace PresentationLayer.DocumentsForms
             dgvStavkeRacuna.Columns["Racun"].Visible = false;
             dgvStavkeRacuna.Columns["RacunId"].Visible = false;
             dgvStavkeRacuna.Columns["ArtiklId"].Visible = false;
+            dgvStavkeRacuna.Columns["Ime"].Visible = false;
             dgvStavkeRacuna.Columns["Artikl"].DisplayIndex = 0;
             dgvStavkeRacuna.Columns["Kolicina"].DisplayIndex = 1;
             dgvStavkeRacuna.Columns["Cijena"].DisplayIndex = 2;
